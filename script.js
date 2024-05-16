@@ -1,7 +1,7 @@
 // import toggleTheme from "./js/toggleTheme.js";
 import scrollSpy from "./js/scrollEspia.js";
 import contactFormValidations from "./js/validacionForm.js";
-import Calculadora from "./js/Calculadora.js";
+import Calculadora from "./js/calculadora.js";
 import GeneradorQR from "./js/GereadorQR.js";
 import Tags from "./js/Tags.js";
 // import ToDo from "./js/ToDo.js";
