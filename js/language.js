@@ -1,34 +1,39 @@
 const d = document;
 const ls = localStorage;
+
 export default function Language(btns, textsToChange) {
-  const $flagsElement = d.getElementById(btns),
-    $textsToChange = d.querySelectorAll(textsToChange);
+  const $flagsElement = d.getElementById(btns);
+  const $textsToChange = d.querySelectorAll(textsToChange);
 
   const changeLanguage = async (language) => {
-    const requestJson = await fetch(`../lenguajes/${language}.json`);
-    const texts = await requestJson.json();
+    try {
+      const requestJson = await fetch(`./lenguajes/${language}.json`);
+      if (!requestJson.ok)
+        throw new Error(`HTTP error! status: ${requestJson.status}`);
 
-    for (const textToChange of $textsToChange) {
-      // console.log(textToChange);
-      // console.log(textToChange.textContent);
-      const section = textToChange.dataset.section;
-      const value = textToChange.dataset.value;
-      // console.log(section, ">", value);
+      const texts = await requestJson.json();
 
-      textToChange.innerHTML = texts[section][value];
-      // textToChange.textContent = texts[section][value];
+      for (const textToChange of $textsToChange) {
+        const section = textToChange.dataset.section;
+        const value = textToChange.dataset.value;
+        textToChange.innerHTML = texts[section][value];
+      }
+    } catch (error) {
+      console.error("Error loading language file:", error);
     }
-    // console.log(texts);
   };
-  $flagsElement.addEventListener("click", (e) => {
-    const lang = e.target.parentElement.dataset.language;
-    changeLanguage(lang);
 
-    // Guardar el idioma seleccionado en localStorage
-    ls.setItem("language", lang);
+  $flagsElement.addEventListener("click", (e) => {
+    // Asegúrate de que `data-language` esté en el elemento correcto
+    const lang = e.target.dataset.language;
+    if (lang) {
+      changeLanguage(lang);
+      ls.setItem("language", lang);
+    }
   });
 
-  // Recuperar el idioma almacenado en localStorage cuando se carga la página
   const storedLanguage = ls.getItem("language");
-  if (storedLanguage) changeLanguage(storedLanguage);
+  if (storedLanguage) {
+    changeLanguage(storedLanguage);
+  }
 }
