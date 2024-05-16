@@ -1,0 +1,38 @@
+{
+  "menu": {
+    "h3": ""
+  },
+  "modal": {
+    "h3": ""
+  },
+  "home": {
+    "h3": "Desarrollador Frontend Web"
+  },
+  "sombreMi": {
+    "h2": "Sobre mi",
+    "p": "Tengo un perfil autodidacta de continuo aprendizaje, receptivo al feedback recibido. Me enfoco en las bases de las tecnologías,tener buenas prácticas, identificar las prioridades de trabajo yusar la programación como herramienta para crear soluciones.Valoro la comunicación clara para tener una colaboración efectiva.Tengo buena capacidad de adaptación al entorno laboral."
+  },
+  "habilidades": {
+    "leng": "Lenguajes",
+    "inte": "Interés en aprender",
+    "tecn": "Tecnologías y Herramientas"
+  },
+  "proyecto": {
+    "h2": "Proyectos",
+    "title-1": "Efecto de serie slider",
+    "p-1": "Slider automático hecho con HTML, CSS y JS",
+    "title-2": "Slider Reloj inteligente",
+    "p-2": "Slider de productos hecho con HTML, CSS y JS",
+    "title-3": "Carro de compra",
+    "p-3": "Carga carrito de productos hecho con HTML, CSS y JS",
+    "qr": "",
+    "tags-des": "Puede elegir más de una etiqueta",
+    "tag-btn": "Borrar todo"
+  },
+  "contacto": {
+    "h2": "Contacto",
+    "h3": "Gracias por su visita",
+    "small": "Sitio diseñado por <a href='#Fernando'>@FernandoSosa</a>",
+    "a": "Ver CV <svg width='30' height='30' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'><path d='M23.0401 11.972H15.6819C15.0128 11.972 14.3711 11.7062 13.898 11.2331C13.4249 10.76 13.1591 10.1183 13.1591 9.44917V2.09097C13.1591 2.03521 13.1369 1.98174 13.0975 1.94231C13.0581 1.90289 13.0046 1.88074 12.9488 1.88074H8.11345C7.22132 1.88074 6.36574 2.23513 5.73491 2.86596C5.10409 3.49678 4.74969 4.35237 4.74969 5.24449V22.0632C4.74969 22.9554 5.10409 23.8109 5.73491 24.4418C6.36574 25.0726 7.22132 25.427 8.11345 25.427H19.8866C20.7787 25.427 21.6343 25.0726 22.2651 24.4418C22.8959 23.8109 23.2503 22.9554 23.2503 22.0632V12.1822C23.2503 12.1265 23.2282 12.073 23.1887 12.0336C23.1493 11.9941 23.0958 11.972 23.0401 11.972ZM18.2047 20.3814H9.79532C9.57229 20.3814 9.35839 20.2928 9.20069 20.1351C9.04298 19.9774 8.95438 19.7635 8.95438 19.5404C8.95438 19.3174 9.04298 19.1035 9.20069 18.9458C9.35839 18.7881 9.57229 18.6995 9.79532 18.6995H18.2047C18.4277 18.6995 18.6416 18.7881 18.7993 18.9458C18.957 19.1035 19.0456 19.3174 19.0456 19.5404C19.0456 19.7635 18.957 19.9774 18.7993 20.1351C18.6416 20.2928 18.4277 20.3814 18.2047 20.3814ZM18.2047 16.1767H9.79532C9.57229 16.1767 9.35839 16.0881 9.20069 15.9304C9.04298 15.7727 8.95438 15.5588 8.95438 15.3357C8.95438 15.1127 9.04298 14.8988 9.20069 14.7411C9.35839 14.5834 9.57229 14.4948 9.79532 14.4948H18.2047C18.4277 14.4948 18.6416 14.5834 18.7993 14.7411C18.957 14.8988 19.0456 15.1127 19.0456 15.3357C19.0456 15.5588 18.957 15.7727 18.7993 15.9304C18.6416 16.0881 18.4277 16.1767 18.2047 16.1767Z' fill='#currentColor'/> <path d='M22.5786 10.1109L15.0202 2.55242C15.0055 2.53781 14.9868 2.52787 14.9664 2.52385C14.9461 2.51983 14.925 2.52191 14.9059 2.52983C14.8867 2.53775 14.8704 2.55115 14.8588 2.56836C14.8472 2.58556 14.841 2.6058 14.8409 2.62653V9.44916C14.8409 9.67219 14.9295 9.88608 15.0872 10.0438C15.245 10.2015 15.4588 10.2901 15.6819 10.2901H22.5045C22.5252 10.29 22.5455 10.2838 22.5627 10.2722C22.5799 10.2607 22.5933 10.2443 22.6012 10.2251C22.6091 10.206 22.6112 10.1849 22.6072 10.1646C22.6032 10.1443 22.5932 10.1256 22.5786 10.1109Z' fill='#currentColor'/>"
+  }
+}

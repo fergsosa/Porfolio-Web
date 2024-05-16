@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/icono-page.ico" />
+    <title>Fernando Sosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    ></script>
+
+    <script>
+      // (function () {
+      const userTheme = localStorage.getItem("theme"),
+        darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+      if (userTheme === "dark" || (!userTheme && darkQuery.matches)) {
+        setTheme("dark");
+      }
+
+      darkQuery.addEventListener("change", function (e) {
+        if (!localStorage.getItem("theme"))
+          setTheme(e.matches ? "dark" : "light");
+      });
+
+      function setTheme(newTheme) {
+        document.documentElement.setAttribute("data-theme", newTheme);
+      }
+      // });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container container">
+        <a class="header-logo" href="index.html">
+          <svg
+            width="52"
+            height="36"
+            viewBox="0 0 52 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M44.333 11.0841C44.2 9.74285 43.6291 8.70089 42.6204 7.95821C41.6117 7.21553 40.2427 6.8442 38.5135 6.8442C37.3386 6.8442 36.3465 7.01047 35.5373 7.34301C34.7281 7.66447 34.1074 8.1134 33.6751 8.6898C33.2538 9.26621 33.0432 9.92021 33.0432 10.6518C33.0211 11.2615 33.1485 11.7935 33.4256 12.248C33.7138 12.7025 34.1074 13.096 34.6062 13.4285C35.105 13.75 35.6814 14.0326 36.3354 14.2765C36.9894 14.5093 37.6877 14.7088 38.4304 14.8751L41.4898 15.6067C42.9751 15.9392 44.3386 16.3826 45.58 16.9368C46.8215 17.4911 47.8967 18.1728 48.8057 18.982C49.7146 19.7911 50.4185 20.7444 50.9173 21.8418C51.4272 22.9392 51.6877 24.1973 51.6988 25.6162C51.6877 27.7001 51.1557 29.5069 50.1026 31.0366C49.0606 32.5552 47.5531 33.7357 45.58 34.5782C43.618 35.4095 41.2515 35.8252 38.4803 35.8252C35.7313 35.8252 33.337 35.404 31.2974 34.5615C29.2689 33.7191 27.6838 32.4721 26.542 30.8204C25.4114 29.1577 24.8184 27.1015 24.7629 24.6518H31.7297C31.8073 25.7935 32.1343 26.7468 32.7107 27.5117C33.2982 28.2654 34.0796 28.8363 35.0551 29.2242C36.0416 29.6011 37.1557 29.7896 38.3971 29.7896C39.6165 29.7896 40.6751 29.6122 41.5729 29.2575C42.4819 28.9028 43.1857 28.4095 43.6846 27.7777C44.1834 27.1459 44.4328 26.4198 44.4328 25.5995C44.4328 24.8347 44.2055 24.1918 43.7511 23.6708C43.3077 23.1498 42.6537 22.7064 41.7891 22.3406C40.9355 21.9748 39.888 21.6423 38.6466 21.343L34.9387 20.4119C32.0678 19.7136 29.8009 18.6217 28.1382 17.1364C26.4755 15.651 25.6497 13.6502 25.6608 11.134C25.6497 9.07222 26.1984 7.27096 27.3069 5.73018C28.4264 4.18941 29.9617 2.98672 31.9126 2.12211C33.8635 1.2575 36.0804 0.825195 38.5634 0.825195C41.0907 0.825195 43.2966 1.2575 45.181 2.12211C47.0765 2.98672 48.5507 4.18941 49.6038 5.73018C50.6568 7.27096 51.2 9.0556 51.2332 11.0841H44.333Z"
+              fill="currentColor"
+            />
+            <path
+              d="M0.844482 35.2727V1.27271H23.3562V7.19946H8.03296V15.301H21.8621V21.2278H8.03296V35.2727H0.844482Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+
+        <div id="flags" class="flags">
+          <button class="btn-mode-dark">
+            <img src="assets/icon-sunny.svg" alt="dark" />
+          </button>
+          <button class="btn-mode-light">
+            <img src="assets/icon-moon.svg" alt="light" />
+          </button>
+
+          <div class="flags-item first-item" data-language="es">
+            <img
+              class="flags-img first-img"
+              src="/assets/bandera-es.svg"
+              alt="es"
+            />
+          </div>
+          <div class="flags-item" data-language="en">
+            <img class="flags-img" src="/assets/bandera-gb.svg" alt="en" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu">
+      <nav class="menu-nav">
+        <a href="#inicio" data-scroll-spy>
+          <img
+            class="menu-home"
+            src="assets/btn-light-home.svg"
+            alt="Home"
+            title="Home"
+          />
+        </a>
+        <a href="#sobreMi" data-scroll-spy>
+          <img
+            class="menu-about"
+            src="assets/btn-light-perfil.svg"
+            alt="About"
+            title="About"
+          />
+        </a>
+        <a href="#habilidades" data-scroll-spy>
+          <img
+            class="menu-skills"
+            src="assets/btn-light-habilidades.svg"
+            alt="Skills"
+            title="Skills"
+          />
+        </a>
+        <a href="#proyectos" data-scroll-spy>
+          <img
+            class="menu-project"
+            src="assets/btn-light-proyectos.svg"
+            alt="Porfolio"
+            title="Porfolio"
+          />
+        </a>
+        <a href="#contacto" data-scroll-spy>
+          <img
+            class="menu-contact"
+            src="assets/btn-light-contacto.svg"
+            alt="Contact"
+            title="Contact"
+          />
+        </a>
+      </nav>
+    </div>
+
+    <section class="modal-offer">
+      <article id="modal" class="modal-window">
+        <div class="modal-box">
+          <!-- action="https://formspree.io/f/meqyeeed" -->
+          <form
+            action="https://formspree.io/f/xdoqjybb"
+            class="modal-form"
+            method="POST"
+            target="_blank"
+          >
+            <label title="nombre">
+              <svg
+                width="29"
+                height="28"
+                viewBox="0 0 29 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.5641 3.61475C17.5083 2.47488 16.0337 1.84717 14.4061 1.84717C12.7698 1.84717 11.2903 2.47108 10.2395 3.6039C9.17718 4.74919 8.6596 6.30572 8.78113 7.98649C9.02201 11.3025 11.5453 13.9999 14.4061 13.9999C17.2669 13.9999 19.7859 11.303 20.0306 7.98758C20.1537 6.32199 19.6329 4.76872 18.5641 3.61475ZM23.9547 26.1527H4.85752C4.60755 26.156 4.36 26.1035 4.13289 25.999C3.90577 25.8946 3.70479 25.7408 3.54458 25.5489C3.19193 25.1273 3.04979 24.5517 3.15504 23.9696C3.61294 21.4294 5.04198 19.2956 7.28807 17.7977C9.28351 16.4679 11.8112 15.7361 14.4061 15.7361C17.0011 15.7361 19.5287 16.4685 21.5242 17.7977C23.7703 19.2951 25.1993 21.4289 25.6572 23.969C25.7625 24.5512 25.6203 25.1268 25.2677 25.5483C25.1075 25.7403 24.9066 25.8942 24.6794 25.9988C24.4523 26.1033 24.2047 26.1559 23.9547 26.1527Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <input
+                type="text"
+                name="name"
+                placeholder="Nombre"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                title="El nombre solo acepta letras y espacios en blanco"
+                required
+              />
+            </label>
+
+            <label title="email">
+              <svg
+                width="28"
+                height="27"
+                viewBox="0 0 28 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.7364 4.20947H5.07807C4.29778 4.21031 3.54968 4.52065 2.99793 5.0724C2.44618 5.62415 2.13584 6.37224 2.13501 7.15253V19.7656C2.13584 20.5459 2.44618 21.294 2.99793 21.8458C3.54968 22.3975 4.29778 22.7079 5.07807 22.7087H22.7364C23.5167 22.7079 24.2648 22.3975 24.8166 21.8458C25.3683 21.294 25.6787 20.5459 25.6795 19.7656V7.15253C25.6787 6.37224 25.3683 5.62415 24.8166 5.0724C24.2648 4.52065 23.5167 4.21031 22.7364 4.20947ZM21.9912 9.07761L14.4233 14.9637C14.2758 15.0785 14.0942 15.1407 13.9073 15.1407C13.7203 15.1407 13.5387 15.0785 13.3912 14.9637L5.82329 9.07761C5.73438 9.01046 5.6597 8.92632 5.60358 8.83006C5.54747 8.7338 5.51105 8.62734 5.49643 8.51688C5.48181 8.40643 5.4893 8.29416 5.51844 8.18662C5.54759 8.07908 5.59782 7.97841 5.66621 7.89044C5.7346 7.80248 5.81979 7.72899 5.91683 7.67424C6.01387 7.61948 6.12083 7.58456 6.23148 7.5715C6.34213 7.55844 6.45428 7.5675 6.5614 7.59816C6.66852 7.62882 6.76848 7.68046 6.85547 7.75008L13.9073 13.2347L20.959 7.75008C21.1354 7.61692 21.357 7.55851 21.5761 7.5875C21.7951 7.61648 21.994 7.73053 22.1296 7.90497C22.2652 8.07941 22.3268 8.30023 22.3009 8.51967C22.275 8.73911 22.1637 8.93954 21.9912 9.07761Z"
+                  fill="currentColor"
+                />
+              </svg>
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                title="Email incorrecto"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                required
+              />
+            </label>
+            <label class="input-asunto">
+              <input
+                type="text"
+                name="asunto"
+                placeholder="Asunto a tratar"
+                title="El asunto es requerido"
+                required
+              />
+            </label>
+            <textarea
+              name="message"
+              cols="50"
+              rows="5"
+              placeholder="Escribe tu comentario"
+              title="Tu comentario no debe exceder los 255 caracteres"
+              data-pattern="^.{1,255}$"
+              required
+            ></textarea>
+            <input type="submit" value="ENVIAR" />
+            <div class="contact-form-loader none">
+              <div class="loader">
+                <span>Cargando...</span>
+
+                <div class="loading-bar">
+                  <div class="blue-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form-response none">
+              <p>Los datos han sido enviados</p>
+            </div>
+          </form>
+          <a class="modal-cerrar" href="#cerrar">
+            <img src="assets/close.svg" alt="cerrar" title="cerrar" />
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <div class="home-img-hero">
+      <img
+        class="home-logo-hero"
+        src="assets/logo-hero-light.svg"
+        alt="logo-hero"
+      />
+    </div>
+
+    <main>
+      <section id="inicio" class="home" data-scroll-spy>
+        <div class="home-box container">
+          <div class="home-info">
+            <h1>Fernando Sosa</h1>
+            <h3 data-section="home" data-value="h3">
+              Desarrollador Frontend Web
+            </h3>
+            <div class="box-contact">
+              <a
+                href="https://www.linkedin.com/in/fercode"
+                title="LinkedIn"
+                target="_blank"
+              >
+                <svg
+                  width="28"
+                  height="27"
+                  viewBox="0 0 28 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.9815 1.68689H4.33186C3.25817 1.68689 2.32007 2.45944 2.32007 3.52052V23.2138C2.32007 24.2807 3.25817 25.2314 4.33186 25.2314H23.9757C25.0552 25.2314 25.8646 24.2743 25.8646 23.2138V3.52052C25.8709 2.45944 25.0552 1.68689 23.9815 1.68689ZM9.61833 21.3124H6.24538V10.8251H9.61833V21.3124ZM8.04852 9.23058H8.02435C6.94488 9.23058 6.2459 8.42702 6.2459 7.42113C6.2459 6.39684 6.96327 5.6122 8.06692 5.6122C9.17057 5.6122 9.84589 6.39106 9.87007 7.42113C9.86954 8.42702 9.17057 9.23058 8.04852 9.23058ZM21.9456 21.3124H18.5726V15.5781C18.5726 14.2044 18.0817 13.2657 16.8614 13.2657C15.9291 13.2657 15.3773 13.8964 15.1318 14.5107C15.0399 14.7315 15.0152 15.0321 15.0152 15.339V21.3124H11.6422V10.8251H15.0152V12.2845C15.506 11.5856 16.2728 10.5797 18.057 10.5797C20.2712 10.5797 21.9461 12.0391 21.9461 15.1856L21.9456 21.3124Z"
+                    fill="#currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/fergsosa"
+                title="GitHub"
+                target="_blank"
+              >
+                <svg
+                  width="28"
+                  height="27"
+                  viewBox="0 0 28 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.9998 1.68689C7.49883 1.68689 2.2276 7.09476 2.2276 13.7587C2.2276 19.093 5.60161 23.6127 10.279 25.2104C10.3446 25.2246 10.4115 25.2316 10.4787 25.2314C10.9149 25.2314 11.0831 24.9108 11.0831 24.6322C11.0831 24.3432 11.0725 23.5864 11.0673 22.5774C10.6779 22.6687 10.2795 22.7162 9.87956 22.7193C7.61445 22.7193 7.09942 20.9587 7.09942 20.9587C6.56336 19.566 5.79081 19.1928 5.79081 19.1928C4.76599 18.4728 5.78555 18.4518 5.86438 18.4518H5.86964C7.05212 18.5569 7.67226 19.7026 7.67226 19.7026C8.26087 20.7327 9.04919 21.0217 9.75343 21.0217C10.2191 21.0124 10.6775 20.905 11.0988 20.7064C11.2039 19.9286 11.5087 19.3978 11.8451 19.093C9.23313 18.7882 6.48453 17.7528 6.48453 13.128C6.48453 11.8089 6.94175 10.7315 7.69328 9.89067C7.57241 9.58585 7.16774 8.35607 7.8089 6.69535C7.89491 6.67477 7.9833 6.66593 8.07168 6.66907C8.49737 6.66907 9.45912 6.83199 11.0463 7.93564C12.9748 7.39606 15.0144 7.39606 16.9429 7.93564C18.5301 6.83199 19.4918 6.66907 19.9175 6.66907C20.0059 6.66593 20.0943 6.67477 20.1803 6.69535C20.8214 8.35607 20.4168 9.58585 20.2959 9.89067C21.0474 10.7368 21.5046 11.8142 21.5046 13.128C21.5046 17.7634 18.7508 18.7829 16.1283 19.0825C16.5487 19.4556 16.9271 20.1914 16.9271 21.3161C16.9271 22.9295 16.9114 24.2328 16.9114 24.627C16.9114 24.9108 17.0743 25.2314 17.5105 25.2314C17.5811 25.2317 17.6516 25.2246 17.7207 25.2104C22.4033 23.6127 25.7721 19.0877 25.7721 13.7587C25.7721 7.09476 20.5009 1.68689 13.9998 1.68689Z"
+                    fill="#currentColor"
+                  />
+                </svg>
+              </a>
+
+              <a href="#modal" title="Email">
+                <svg
+                  width="28"
+                  height="27"
+                  viewBox="0 0 28 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.7364 4.20947H5.07807C4.29778 4.21031 3.54968 4.52065 2.99793 5.0724C2.44618 5.62415 2.13584 6.37224 2.13501 7.15253V19.7656C2.13584 20.5459 2.44618 21.294 2.99793 21.8458C3.54968 22.3975 4.29778 22.7079 5.07807 22.7087H22.7364C23.5167 22.7079 24.2648 22.3975 24.8166 21.8458C25.3683 21.294 25.6787 20.5459 25.6795 19.7656V7.15253C25.6787 6.37224 25.3683 5.62415 24.8166 5.0724C24.2648 4.52065 23.5167 4.21031 22.7364 4.20947ZM21.9912 9.07761L14.4233 14.9637C14.2758 15.0785 14.0942 15.1407 13.9073 15.1407C13.7203 15.1407 13.5387 15.0785 13.3912 14.9637L5.82329 9.07761C5.73438 9.01046 5.6597 8.92632 5.60358 8.83006C5.54747 8.7338 5.51105 8.62734 5.49643 8.51688C5.48181 8.40643 5.4893 8.29416 5.51844 8.18662C5.54759 8.07908 5.59782 7.97841 5.66621 7.89044C5.7346 7.80248 5.81979 7.72899 5.91683 7.67424C6.01387 7.61948 6.12083 7.58456 6.23148 7.5715C6.34213 7.55844 6.45428 7.5675 6.5614 7.59816C6.66852 7.62882 6.76848 7.68046 6.85547 7.75008L13.9073 13.2347L20.959 7.75008C21.1354 7.61692 21.357 7.55851 21.5761 7.5875C21.7951 7.61648 21.994 7.73053 22.1296 7.90497C22.2652 8.07941 22.3268 8.30023 22.3009 8.51967C22.275 8.73911 22.1637 8.93954 21.9912 9.07761Z"
+                    fill="#currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobreMi" class="about" data-scroll-spy>
+        <div class="about-box container">
+          <img id="Fernando" src="assets/fer-cv.png" alt="Fernando" />
+          <div class="about-text">
+            <h2 data-section="sombreMi" data-value="h2">Sobre mi</h2>
+            <p data-section="sombreMi" data-value="p">
+              Tengo un perfil autodidacta de continuo aprendizaje, receptivo al
+              feedback recibido. Me enfoco en las bases de las tecnologías,
+              tener buenas prácticas, identificar las prioridades de trabajo y
+              usar la programación como herramienta para crear soluciones.
+              Valoro la comunicación clara para tener una colaboración efectiva.
+              Tengo buena capacidad de adaptación al entorno laboral.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="skills" data-scroll-spy>
+        <div class="skills-container container">
+          <div class="skills-box">
+            <h2 data-section="habilidades" data-value="leng">Lenguajes</h2>
+            <div class="skills-item">
+              <img src="assets/leng-html.svg" alt="html" />
+              <img src="assets/leng-css.svg" alt="css" />
+              <img src="assets/leng-js.svg" alt="js" />
+              <img src="assets/leng-ts.svg" alt="ts" />
+              <img src="assets/leng-react.svg" alt="react" />
+            </div>
+          </div>
+          <div class="skills-box">
+            <h2 data-section="habilidades" data-value="inte">
+              Interés en aprender
+            </h2>
+            <div class="skills-item interes">
+              <img src="assets/int-node.svg" alt="node" />
+              <img src="assets/int-sql.svg" alt="sql" />
+              <img src="assets/int-php.svg" alt="php" />
+              <img src="assets/int-angular.svg" alt="angular" />
+            </div>
+          </div>
+          <div class="skills-box">
+            <h2 data-section="habilidades" data-value="tecn">
+              Tecnologías y Herramientas
+            </h2>
+            <div class="skills-item herramie">
+              <img
+                src="assets/herr-terminal.svg
+              "
+                alt="terminal"
+              />
+              <img src="assets/herr-git.svg" alt="git" />
+              <img src="assets/herr-github.svg" alt="github" />
+              <img src="assets/herr-npm.svg" alt="npm" />
+              <img src="assets/herr-vite.svg" alt="vite" />
+              <img src="assets/herr-figma.svg" alt="figma" />
+              <img src="assets/herr-illustrator.svg" alt="illustrator" />
+              <img src="assets/herr-photoshop.svg" alt="photoshop" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="project container" data-scroll-spy>
+        <h2 data-section="proyecto" data-value="h2">Proyectos</h2>
+        <div class="proyecto-container">
+          <section class="proyecto-page">
+            <div class="box-img">
+              <div class="box-title">
+                <a
+                  href="https://fergsosa.github.io/Slider-Efectos-Series/"
+                  title="Pagina"
+                  target="_blank"
+                  data-section="proyecto"
+                  data-value="title-1"
+                >
+                  Slider Efecto Series
+                </a>
+                <p data-section="proyecto" data-value="p-1">
+                  Slider automático hecho con HTML, CSS y JS
+                </p>
+              </div>
+            </div>
+            <div class="box-img">
+              <div class="box-title">
+                <a
+                  href="https://fergsosa.github.io/Slider-Relojes/"
+                  title="Pagina"
+                  target="_blank"
+                  data-section="proyecto"
+                  data-value="title-2"
+                >
+                  Slider smartwatch
+                </a>
+
+                <p data-section="proyecto" data-value="p-2">
+                  Slider de productos hecho con HTML, CSS y JS
+                </p>
+              </div>
+            </div>
+            <div class="box-img">
+              <div class="box-title">
+                <a
+                  href="https://fergsosa.github.io/"
+                  title="Pagina"
+                  target="_blank"
+                  data-section="proyecto"
+                  data-value="title-3"
+                >
+                  Carro de compra
+                </a>
+
+                <p data-section="proyecto" data-value="p-3">
+                  Carga carrito de productos hecho con HTML, CSS y JS
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="proyecto-apk">
+            <div class="box-apk">
+              <div class="item-apk">
+                <div class="calculator">
+                  <div class="screen">
+                    <div class="last"></div>
+                    <div class="new"></div>
+                  </div>
+                  <div class="buttons">
+                    <button>AC</button>
+                    <button>±</button>
+                    <button>%</button>
+                    <button>÷</button>
+
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>x</button>
+
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>-</button>
+
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>+</button>
+
+                    <button>0</button>
+                    <button>.</button>
+                    <button>=</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-apk">
+              <div class="item-apk">
+                <div class="qr-contenedor">
+                  <form action="" id="qr-form" class="qr-form">
+                    <input
+                      type="text"
+                      id="link"
+                      placeholder="Generador de QR ..."
+                    />
+                    <button class="qr-btn">
+                      <img src="assets/QR.svg" alt="QR" />
+                    </button>
+                  </form>
+                  <div id="contenedorQR" class="contenedorQR"></div>
+                </div>
+              </div>
+            </div>
+            <div class="box-apk">
+              <div class="item-apk">
+                <div class="tags-container">
+                  <div class="tags-title">
+                    Tags
+                    <svg
+                      width="35"
+                      height="15"
+                      viewBox="0 0 47 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.77827 17.3333C-0.0409946 15.3411 -0.0410001 11.159 2.77826 9.16667L14.4528 0.91667C15.2968 0.320243 16.3049 0 17.3383 0H42C44.7614 0 47 2.23858 47 5V21.5C47 24.2614 44.7614 26.5 42 26.5H17.3383C16.3049 26.5 15.2968 26.1798 14.4528 25.5833L2.77827 17.3333ZM8.87497 16.5C10.7389 16.5 12.25 14.989 12.25 13.125C12.25 11.261 10.7389 9.75 8.87497 9.75C7.01101 9.75 5.49997 11.261 5.49997 13.125C5.49997 14.989 7.01101 16.5 8.87497 16.5Z"
+                        fill="#fff"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="tags-des"
+                    data-section="proyecto"
+                    data-value="tags-des"
+                  >
+                    Puede elegir más de una etiqueta
+                  </div>
+                  <div class="tags-input">
+                    <ul>
+                      <input type="text" name="" id="inputTag" />
+                    </ul>
+                  </div>
+                  <div
+                    class="btn-removeAll"
+                    data-section="proyecto"
+                    data-value="tag-btn"
+                  >
+                    <button>Borrar todo</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-apk">
+              <div class="item-apk">
+                <div class="to-do-container">
+                  <h3>ToDo</h3>
+                  <section class="agregar-tarea">
+                    <input
+                      type="text"
+                      id="input"
+                      placeholder="agregar una tarea"
+                    />
+                    <i id="boton-enter" class="fas fa-plus-circle"></i>
+                  </section>
+
+                  <section class="seccion-tarea">
+                    <ul id="lista"></ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact" data-scroll-spy>
+        <div class="contact-info container">
+          <h2 data-section="contacto" data-value="h2">Contacto</h2>
+          <h3 data-section="contacto" data-value="h3">Gracias por su visita</h3>
+          <div class="box-contact">
+            <a
+              href="https://www.linkedin.com/in/fercode"
+              title="LinkedIn"
+              target="_blank"
+            >
+              <svg
+                width="28"
+                height="27"
+                viewBox="0 0 28 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.9815 1.68689H4.33186C3.25817 1.68689 2.32007 2.45944 2.32007 3.52052V23.2138C2.32007 24.2807 3.25817 25.2314 4.33186 25.2314H23.9757C25.0552 25.2314 25.8646 24.2743 25.8646 23.2138V3.52052C25.8709 2.45944 25.0552 1.68689 23.9815 1.68689ZM9.61833 21.3124H6.24538V10.8251H9.61833V21.3124ZM8.04852 9.23058H8.02435C6.94488 9.23058 6.2459 8.42702 6.2459 7.42113C6.2459 6.39684 6.96327 5.6122 8.06692 5.6122C9.17057 5.6122 9.84589 6.39106 9.87007 7.42113C9.86954 8.42702 9.17057 9.23058 8.04852 9.23058ZM21.9456 21.3124H18.5726V15.5781C18.5726 14.2044 18.0817 13.2657 16.8614 13.2657C15.9291 13.2657 15.3773 13.8964 15.1318 14.5107C15.0399 14.7315 15.0152 15.0321 15.0152 15.339V21.3124H11.6422V10.8251H15.0152V12.2845C15.506 11.5856 16.2728 10.5797 18.057 10.5797C20.2712 10.5797 21.9461 12.0391 21.9461 15.1856L21.9456 21.3124Z"
+                  fill="#currentColor"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/fergsosa"
+              title="GitHub"
+              target="_blank"
+            >
+              <svg
+                width="28"
+                height="27"
+                viewBox="0 0 28 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.9998 1.68689C7.49883 1.68689 2.2276 7.09476 2.2276 13.7587C2.2276 19.093 5.60161 23.6127 10.279 25.2104C10.3446 25.2246 10.4115 25.2316 10.4787 25.2314C10.9149 25.2314 11.0831 24.9108 11.0831 24.6322C11.0831 24.3432 11.0725 23.5864 11.0673 22.5774C10.6779 22.6687 10.2795 22.7162 9.87956 22.7193C7.61445 22.7193 7.09942 20.9587 7.09942 20.9587C6.56336 19.566 5.79081 19.1928 5.79081 19.1928C4.76599 18.4728 5.78555 18.4518 5.86438 18.4518H5.86964C7.05212 18.5569 7.67226 19.7026 7.67226 19.7026C8.26087 20.7327 9.04919 21.0217 9.75343 21.0217C10.2191 21.0124 10.6775 20.905 11.0988 20.7064C11.2039 19.9286 11.5087 19.3978 11.8451 19.093C9.23313 18.7882 6.48453 17.7528 6.48453 13.128C6.48453 11.8089 6.94175 10.7315 7.69328 9.89067C7.57241 9.58585 7.16774 8.35607 7.8089 6.69535C7.89491 6.67477 7.9833 6.66593 8.07168 6.66907C8.49737 6.66907 9.45912 6.83199 11.0463 7.93564C12.9748 7.39606 15.0144 7.39606 16.9429 7.93564C18.5301 6.83199 19.4918 6.66907 19.9175 6.66907C20.0059 6.66593 20.0943 6.67477 20.1803 6.69535C20.8214 8.35607 20.4168 9.58585 20.2959 9.89067C21.0474 10.7368 21.5046 11.8142 21.5046 13.128C21.5046 17.7634 18.7508 18.7829 16.1283 19.0825C16.5487 19.4556 16.9271 20.1914 16.9271 21.3161C16.9271 22.9295 16.9114 24.2328 16.9114 24.627C16.9114 24.9108 17.0743 25.2314 17.5105 25.2314C17.5811 25.2317 17.6516 25.2246 17.7207 25.2104C22.4033 23.6127 25.7721 19.0877 25.7721 13.7587C25.7721 7.09476 20.5009 1.68689 13.9998 1.68689Z"
+                  fill="#currentColor"
+                />
+              </svg>
+            </a>
+
+            <a href="#modal" title="Email">
+              <svg
+                width="28"
+                height="27"
+                viewBox="0 0 28 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.7364 4.20947H5.07807C4.29778 4.21031 3.54968 4.52065 2.99793 5.0724C2.44618 5.62415 2.13584 6.37224 2.13501 7.15253V19.7656C2.13584 20.5459 2.44618 21.294 2.99793 21.8458C3.54968 22.3975 4.29778 22.7079 5.07807 22.7087H22.7364C23.5167 22.7079 24.2648 22.3975 24.8166 21.8458C25.3683 21.294 25.6787 20.5459 25.6795 19.7656V7.15253C25.6787 6.37224 25.3683 5.62415 24.8166 5.0724C24.2648 4.52065 23.5167 4.21031 22.7364 4.20947ZM21.9912 9.07761L14.4233 14.9637C14.2758 15.0785 14.0942 15.1407 13.9073 15.1407C13.7203 15.1407 13.5387 15.0785 13.3912 14.9637L5.82329 9.07761C5.73438 9.01046 5.6597 8.92632 5.60358 8.83006C5.54747 8.7338 5.51105 8.62734 5.49643 8.51688C5.48181 8.40643 5.4893 8.29416 5.51844 8.18662C5.54759 8.07908 5.59782 7.97841 5.66621 7.89044C5.7346 7.80248 5.81979 7.72899 5.91683 7.67424C6.01387 7.61948 6.12083 7.58456 6.23148 7.5715C6.34213 7.55844 6.45428 7.5675 6.5614 7.59816C6.66852 7.62882 6.76848 7.68046 6.85547 7.75008L13.9073 13.2347L20.959 7.75008C21.1354 7.61692 21.357 7.55851 21.5761 7.5875C21.7951 7.61648 21.994 7.73053 22.1296 7.90497C22.2652 8.07941 22.3268 8.30023 22.3009 8.51967C22.275 8.73911 22.1637 8.93954 21.9912 9.07761Z"
+                  fill="#currentColor"
+                />
+              </svg>
+            </a>
+          </div>
+          <a
+            href="assets/FernandoSosa-Frontend-CV.pdf"
+            target="_blank"
+            class="contact-cv"
+            data-section="contacto"
+            data-value="a"
+          >
+            ver CV
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 28 28"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.0401 11.972H15.6819C15.0128 11.972 14.3711 11.7062 13.898 11.2331C13.4249 10.76 13.1591 10.1183 13.1591 9.44917V2.09097C13.1591 2.03521 13.1369 1.98174 13.0975 1.94231C13.0581 1.90289 13.0046 1.88074 12.9488 1.88074H8.11345C7.22132 1.88074 6.36574 2.23513 5.73491 2.86596C5.10409 3.49678 4.74969 4.35237 4.74969 5.24449V22.0632C4.74969 22.9554 5.10409 23.8109 5.73491 24.4418C6.36574 25.0726 7.22132 25.427 8.11345 25.427H19.8866C20.7787 25.427 21.6343 25.0726 22.2651 24.4418C22.8959 23.8109 23.2503 22.9554 23.2503 22.0632V12.1822C23.2503 12.1265 23.2282 12.073 23.1887 12.0336C23.1493 11.9941 23.0958 11.972 23.0401 11.972ZM18.2047 20.3814H9.79532C9.57229 20.3814 9.35839 20.2928 9.20069 20.1351C9.04298 19.9774 8.95438 19.7635 8.95438 19.5404C8.95438 19.3174 9.04298 19.1035 9.20069 18.9458C9.35839 18.7881 9.57229 18.6995 9.79532 18.6995H18.2047C18.4277 18.6995 18.6416 18.7881 18.7993 18.9458C18.957 19.1035 19.0456 19.3174 19.0456 19.5404C19.0456 19.7635 18.957 19.9774 18.7993 20.1351C18.6416 20.2928 18.4277 20.3814 18.2047 20.3814ZM18.2047 16.1767H9.79532C9.57229 16.1767 9.35839 16.0881 9.20069 15.9304C9.04298 15.7727 8.95438 15.5588 8.95438 15.3357C8.95438 15.1127 9.04298 14.8988 9.20069 14.7411C9.35839 14.5834 9.57229 14.4948 9.79532 14.4948H18.2047C18.4277 14.4948 18.6416 14.5834 18.7993 14.7411C18.957 14.8988 19.0456 15.1127 19.0456 15.3357C19.0456 15.5588 18.957 15.7727 18.7993 15.9304C18.6416 16.0881 18.4277 16.1767 18.2047 16.1767Z"
+                fill="#currentColor"
+              />
+              <path
+                d="M22.5786 10.1109L15.0202 2.55242C15.0055 2.53781 14.9868 2.52787 14.9664 2.52385C14.9461 2.51983 14.925 2.52191 14.9059 2.52983C14.8867 2.53775 14.8704 2.55115 14.8588 2.56836C14.8472 2.58556 14.841 2.6058 14.8409 2.62653V9.44916C14.8409 9.67219 14.9295 9.88608 15.0872 10.0438C15.245 10.2015 15.4588 10.2901 15.6819 10.2901H22.5045C22.5252 10.29 22.5455 10.2838 22.5627 10.2722C22.5799 10.2607 22.5933 10.2443 22.6012 10.2251C22.6091 10.206 22.6112 10.1849 22.6072 10.1646C22.6032 10.1443 22.5932 10.1256 22.5786 10.1109Z"
+                fill="#currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+        <small data-section="contacto" data-value="small"
+          >Sitio diseñado por <a href="#Fernando">@FernandoSosa</a></small
+        >
+      </section>
+    </main>
+
+    <script src="index.js" type="module"></script>
+    <!-- <script defer src="./js/themeDark.js"></script> -->
+  </body>
+</html>
