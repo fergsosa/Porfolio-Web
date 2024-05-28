@@ -7,14 +7,14 @@ const d = document,
 $btnModeLight.addEventListener("click", setModeDark);
 $btnModeDark.addEventListener("click", setModeLight);
 
-// * funcion para activar
+// * función para activar
 function setModeDark() {
   setUserTheme("dark");
   localStorage.setItem("dark");
 }
 function setModeLight() {
   setUserTheme("light");
-  localStorage.setItem("ligth");
+  localStorage.setItem("light");
 }
 
 // * cambia si es light o dark

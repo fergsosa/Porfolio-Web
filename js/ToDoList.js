@@ -10,9 +10,9 @@ export default function ToDoList(lista, input, btnEnter) {
     lineThrough = "line-through";
 
   let _LIST;
-  let id; // * para que inicie en 0 cada tarea tendra un id diferente
+  let id; // * para que inicie en 0 cada tarea tendrá un id diferente
 
-  // * funcion de agregar tarea
+  // * función de agregar tarea
   function agregarTarea(tarea, id, realizado, eliminado) {
     if (eliminado) return;
     // si existe eliminado es true si no es false
@@ -30,7 +30,7 @@ export default function ToDoList(lista, input, btnEnter) {
     $lista.insertAdjacentHTML("beforeend", elemento);
   }
 
-  // * funcion de Tarea Realizada
+  // * función de Tarea Realizada
   function tareaRealizada(element) {
     element.classList.toggle(check);
     element.classList.toggle(uncheck);
@@ -95,7 +95,7 @@ export default function ToDoList(lista, input, btnEnter) {
       tareaRealizada(element);
     } else if (elementData === "eliminado") {
       tareaEliminada(element);
-      console.log("elimnado");
+      console.log("eliminado");
     }
     localStorage.setItem("TODO", JSON.stringify(_LIST));
   });
