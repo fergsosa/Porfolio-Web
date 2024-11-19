@@ -1,9 +1,6 @@
-const d = document;
-const ls = localStorage;
-
 export default function Language(btns, textsToChange) {
-  const $flagsElement = d.getElementById(btns);
-  const $textsToChange = d.querySelectorAll(textsToChange);
+  const $flagsElement = document.getElementById(btns);
+  const $textsToChange = document.querySelectorAll(textsToChange);
 
   const changeLanguage = async (language) => {
     try {
@@ -24,16 +21,15 @@ export default function Language(btns, textsToChange) {
   };
 
   $flagsElement.addEventListener("click", (e) => {
-    // Asegúrate de que `data-language` esté en el elemento correcto
-    const lang = e.target.dataset.language;
+    //* Asegúrate de que `data-language` esté en el elemento correcto
+    const lang = e.target.parentElement.dataset.language;
+
     if (lang) {
       changeLanguage(lang);
-      ls.setItem("language", lang);
+      localStorage.setItem("language", lang);
     }
   });
 
-  const storedLanguage = ls.getItem("language");
-  if (storedLanguage) {
-    changeLanguage(storedLanguage);
-  }
+  const storedLanguage = localStorage.getItem("language");
+  if (storedLanguage) changeLanguage(storedLanguage);
 }

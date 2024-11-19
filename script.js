@@ -9,9 +9,7 @@ import ToDoList from "./js/ToDoList.js";
 import ThemeDark from "./js/themeDark-02.js";
 import Language from "./js/language.js";
 
-const d = document;
-
-d.addEventListener("DOMContentLoaded", (e) => {
+document.addEventListener("DOMContentLoaded", (e) => {
   scrollSpy();
   contactFormValidations();
   Calculadora(".buttons > button", ".screen .last", ".screen .new");
