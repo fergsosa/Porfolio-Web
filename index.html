@@ -220,8 +220,22 @@
               <p>Los datos han sido enviados</p>
             </div>
           </form>
-          <a class="modal-cerrar" href="#cerrar">
-            <img src="assets/close.svg" alt="cerrar" title="cerrar" />
+          <a class="modal-cerrar" href="#cerrar" title="cerrar">
+            <!-- <img src="assets/close.svg" alt="cerrar" title="cerrar" /> -->
+            <svg
+              alt="cerrar"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.59267 6.99943L13.0522 2.53988C13.2639 2.32861 13.3829 2.04191 13.3832 1.74285C13.3834 1.4438 13.2649 1.15689 13.0536 0.945242C12.8423 0.733593 12.5556 0.614541 12.2566 0.614277C11.9575 0.614013 11.6706 0.732558 11.459 0.943834L6.99943 5.40338L2.53988 0.943834C2.32823 0.732185 2.04118 0.613281 1.74186 0.613281C1.44254 0.613281 1.15548 0.732185 0.943834 0.943834C0.732185 1.15548 0.613281 1.44254 0.613281 1.74186C0.613281 2.04118 0.732185 2.32823 0.943834 2.53988L5.40338 6.99943L0.943834 11.459C0.732185 11.6706 0.613281 11.9577 0.613281 12.257C0.613281 12.5563 0.732185 12.8434 0.943834 13.055C1.15548 13.2667 1.44254 13.3856 1.74186 13.3856C2.04118 13.3856 2.32823 13.2667 2.53988 13.055L6.99943 8.59548L11.459 13.055C11.6706 13.2667 11.9577 13.3856 12.257 13.3856C12.5563 13.3856 12.8434 13.2667 13.055 13.055C13.2667 12.8434 13.3856 12.5563 13.3856 12.257C13.3856 11.9577 13.2667 11.6706 13.055 11.459L8.59267 6.99943Z"
+                fill="currentColor"
+                fill-opacity="1"
+              />
+            </svg>
           </a>
         </div>
       </article>
@@ -302,7 +316,12 @@
 
       <section id="sobreMi" class="about" data-scroll-spy>
         <div class="about-box container">
-          <img id="Fernando" src="assets/fer-cv.png" alt="Fernando" />
+          <img
+            id="Fernando"
+            src="assets/fer-cv.png"
+            alt="Fernando Sosa"
+            title="Programador"
+          />
           <div class="about-text">
             <h2 data-section="sombreMi" data-value="h2">Sobre mi</h2>
             <p data-section="sombreMi" data-value="p">
@@ -322,20 +341,20 @@
           <div class="skills-box">
             <h2 data-section="habilidades" data-value="leng">Lenguajes</h2>
             <div class="skills-item">
-              <img src="assets/leng-html.svg" alt="html" />
-              <img src="assets/leng-css.svg" alt="css" />
-              <img src="assets/leng-js.svg" alt="js" />
-              <img src="assets/leng-ts.svg" alt="ts" />
-              <img src="assets/leng-react.svg" alt="react" />
+              <img src="assets/leng-html.svg" alt="html" title="HTML" />
+              <img src="assets/leng-css.svg" alt="css" title="CSS" />
+              <img src="assets/leng-js.svg" alt="js" title="JavaScript" />
+              <img src="assets/leng-ts.svg" alt="ts" title="TypeScript" />
+              <img src="assets/leng-react.svg" alt="react" title="React" />
             </div>
           </div>
           <div class="skills-box">
             <h2 data-section="habilidades" data-value="inte">Aprendiendo</h2>
             <div class="skills-item interes">
-              <img src="assets/int-node.svg" alt="node" />
-              <!-- <img src="assets/int-sql.svg" alt="sql" /> -->
-              <!-- <img src="assets/int-php.svg" alt="php" /> -->
-              <!-- <img src="assets/int-angular.svg" alt="angular" /> -->
+              <img src="assets/int-node.svg" alt="node" title="Node.js" />
+              <!-- <img src="assets/int-sql.svg" alt="sql" title="sql" /> -->
+              <!-- <img src="assets/int-php.svg" alt="php" title="php" /> -->
+              <!-- <img src="assets/int-angular.svg" alt="angular" title="angular" /> -->
             </div>
           </div>
           <div class="skills-box">
@@ -347,14 +366,23 @@
                 src="assets/herr-terminal.svg
               "
                 alt="terminal"
+                title="terminal"
               />
-              <img src="assets/herr-git.svg" alt="git" />
-              <img src="assets/herr-github.svg" alt="github" />
-              <img src="assets/herr-npm.svg" alt="npm" />
-              <img src="assets/herr-vite.svg" alt="vite" />
-              <img src="assets/herr-figma.svg" alt="figma" />
-              <img src="assets/herr-illustrator.svg" alt="illustrator" />
-              <img src="assets/herr-photoshop.svg" alt="photoshop" />
+              <img src="assets/herr-git.svg" alt="git" title="Git" />
+              <img src="assets/herr-github.svg" alt="github" title="GitHub" />
+              <img src="assets/herr-npm.svg" alt="npm" title="npm" />
+              <img src="assets/herr-vite.svg" alt="vite" title="Vite" />
+              <img src="assets/herr-figma.svg" alt="figma" title="Figma" />
+              <img
+                src="assets/herr-illustrator.svg"
+                alt="illustrator"
+                title="Illustrator"
+              />
+              <img
+                src="assets/herr-photoshop.svg"
+                alt="photoshop"
+                title="Photoshop"
+              />
             </div>
           </div>
         </div>
@@ -369,12 +397,11 @@
               <a
                 class="link-title"
                 href="https://fergsosa.github.io/Slider-Efectos-Series/"
-                title="Slider Efecto Series"
                 target="_blank"
-                data-section="proyecto"
-                data-value="title-1"
               >
-                <b>Slider Efecto Series</b>
+                <b data-section="proyecto" data-value="title-1"
+                  >Slider Efecto Series</b
+                >
                 <p data-section="proyecto" data-value="p-1">
                   Slider automático hecho con HTML, CSS y JS
                 </p>
@@ -384,12 +411,11 @@
               <a
                 class="link-title"
                 href="https://fergsosa.github.io/Slider-Relojes/"
-                title="Slider smartwatch"
                 target="_blank"
-                data-section="proyecto"
-                data-value="title-2"
               >
-                <b>Slider smartwatch</b>
+                <b data-section="proyecto" data-value="title-2"
+                  >Slider smartwatch</b
+                >
 
                 <p data-section="proyecto" data-value="p-2">
                   Slider de productos hecho con HTML, CSS y JS
@@ -400,12 +426,11 @@
               <a
                 class="link-title"
                 href="https://fergsosa.github.io/Tarjeta-De-Compra/"
-                title="Carro de compra"
                 target="_blank"
-                data-section="proyecto"
-                data-value="title-3"
               >
-                <b>Carro de compra</b>
+                <b data-section="proyecto" data-value="title-3"
+                  >Carro de compra</b
+                >
 
                 <p data-section="proyecto" data-value="p-3">
                   Carga carrito de productos hecho con HTML, CSS y JS
@@ -621,6 +646,5 @@
     </main>
 
     <script src="script.js" type="module"></script>
-    <!-- <script defer src="./js/themeDark.js"></script> -->
   </body>
 </html>

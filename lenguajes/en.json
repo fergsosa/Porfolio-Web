@@ -1,10 +1,4 @@
 {
-  "menu": {
-    "h3": ""
-  },
-  "modal": {
-    "h3": ""
-  },
   "home": {
     "h3": "Frontend Web Developer"
   },
@@ -20,11 +14,11 @@
   "proyecto": {
     "h2": "Projects",
     "title-1": "Slider Series Effect",
-    "p-1": "Automatic slider made with HTML, CSS and JS.",
+    "p-1": "Automatic slider <span>HTML | CSS | JS</span>",
     "title-2": "Slider smartwatch",
-    "p-2": "Product slider made with HTML, CSS and JS.",
+    "p-2": "Product slider <span>HTML | CSS | JS</span>",
     "title-3": "Shopping cart",
-    "p-3": "Loading product cart made with HTML, CSS and JS.",
+    "p-3": "Loading product cart <span>HTML | CSS | JS</span>",
     "qr": "",
     "tags-des": "You can choose more than one tag",
     "tag-btn": "Delete all"

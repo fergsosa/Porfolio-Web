@@ -306,13 +306,17 @@ svg {
   cursor: pointer;
   .flags-item {
     width: 20px;
-    box-shadow: var(--box-shadow-s);
+    filter: drop-shadow(var(--box-shadow-s));
     cursor: pointer;
     /* &:hover {
       box-shadow: 0 0 15px var(--text-icon-color);
     } */
     .flags-img {
       border-radius: 0 7px 7px 0;
+      &:hover,
+      &:active {
+        filter: brightness(2) drop-shadow(0 0 2px #fff9);
+      }
     }
     .first-img {
       border-radius: 7px 0 0 7px;
@@ -448,8 +452,13 @@ svg {
         border-radius: 43px;
         background-color: var(--link-color);
         color: #fff;
-        box-shadow: 0 0 6px var(--link-color);
         cursor: pointer;
+        transition: filter var(--transition-s);
+        filter: opacity(0.75);
+
+        &:hover {
+          filter: opacity(1) contrast(2);
+        }
       }
 
       .contact-form-loader {
@@ -501,15 +510,20 @@ svg {
       background-color: #0005;
       box-shadow: var(--box-shadow-m);
 
+      & svg path {
+        fill: #f004;
+      }
+
       &:hover,
       &:active {
         background-color: #f004;
-        outline: 1.5px solid #f007;
+        background-color: #1009;
+        /* outline: 1.5px solid #f007; */
+        outline: 1.5px solid red;
         box-shadow: none;
-      }
-
-      & img {
-        width: 13px;
+        & svg path {
+          fill: red;
+        }
       }
     }
   }
@@ -900,6 +914,10 @@ main > section {
           color: #f8f9fc;
           opacity: 1;
           transition: all var(--transition-m);
+          p {
+            display: flex;
+            justify-content: space-between;
+          }
 
           &:hover {
             backdrop-filter: blur(8px) saturate(180%);
@@ -984,12 +1002,6 @@ main > section {
   ],
  */
 
-/*! RED  */
-/*TODO ORANGE  */
-/*? BLUE  */
-/*$1 CYAN  */
-/*$2 YELLOW  */
-/*$3 LIME  */
 /* ***** apk ***** */
 
 .calculator {
@@ -1343,10 +1355,11 @@ main > section {
   padding: 0.5rem 1rem;
   align-items: center;
   color: var(--text-icon-color);
-  border: 1px solid #17f4;
+  border: 1px solid #17f6;
   box-shadow: 0 0 12px #0006, 0 0 5px var(--link-color) inset;
   border-radius: 25px;
   transition: transform var(--transition-m);
+
   &:hover {
     background-color: #17f5;
   }

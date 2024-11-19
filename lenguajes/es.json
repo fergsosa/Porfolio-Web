@@ -1,10 +1,4 @@
 {
-  "menu": {
-    "h3": ""
-  },
-  "modal": {
-    "h3": ""
-  },
   "home": {
     "h3": "Desarrollador Frontend Web"
   },
@@ -20,11 +14,11 @@
   "proyecto": {
     "h2": "Proyectos",
     "title-1": "Efecto de serie slider",
-    "p-1": "Slider automático hecho con HTML, CSS y JS",
+    "p-1": "Slider automático  <span>HTML | CSS | JS</span>",
     "title-2": "Slider Reloj inteligente",
-    "p-2": "Slider de productos hecho con HTML, CSS y JS",
+    "p-2": "Slider de productos  <span>HTML | CSS | JS</span>",
     "title-3": "Carro de compra",
-    "p-3": "Carga carrito de productos hecho con HTML, CSS y JS",
+    "p-3": "Carga carrito de productos  <span>HTML | CSS | JS</span>",
     "qr": "",
     "tags-des": "Puede elegir más de una etiqueta",
     "tag-btn": "Borrar todo"
