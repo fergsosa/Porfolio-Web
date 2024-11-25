@@ -4,15 +4,14 @@ export default function Tags(tagsUl, tagsInput, btnRemoveAll) {
   const $ul = d.querySelector(tagsUl),
     $input = d.querySelector(tagsInput),
     $deleteAll = d.querySelector(btnRemoveAll);
+
   let tags = ["html", "css", "js"];
 
   function showTags() {
-    d.querySelectorAll(".tags-input ul li").forEach((li) => {
-      li.remove();
-    });
+    d.querySelectorAll(".tags-input ul li").forEach((li) => li.remove());
 
     tags.forEach((value, key) => {
-      // console.log(value);
+      console.log(value, key);
       let $newTag = d.createElement("li");
       $newTag.innerText = value;
       let $newRemove = d.createElement("div");

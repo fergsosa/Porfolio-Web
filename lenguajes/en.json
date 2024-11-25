@@ -4,7 +4,7 @@
   },
   "sombreMi": {
     "h2": "About",
-    "p": "I have a self-taught profile of continuous learning, receptive to feedback received. I focus on the basics of technologies, have good practices, identify work priorities and use programming as a tool to create solutions.I value clear communication to have an effective collaboration.I have good adaptability to the work environment."
+    "p": "I have a self-taught profile of continuous learning, receptive to the feedback received. I focus on the basics of technologies, have good practices, identify work priorities and use programming as a tool to create solutions. I value clear communication for effective collaboration. I have good adaptability to the work environment."
   },
   "habilidades": {
     "leng": "Languages",
@@ -19,7 +19,6 @@
     "p-2": "Product slider <span>HTML | CSS | JS</span>",
     "title-3": "Shopping cart",
     "p-3": "Loading product cart <span>HTML | CSS | JS</span>",
-    "qr": "",
     "tags-des": "You can choose more than one tag",
     "tag-btn": "Delete all"
   },

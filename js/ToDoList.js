@@ -91,9 +91,8 @@ export default function ToDoList(lista, input, btnEnter) {
     const elementData = element.attributes.data.value;
     // console.log({ element, elementData });
 
-    if (elementData === "realizado") {
-      tareaRealizada(element);
-    } else if (elementData === "eliminado") {
+    if (elementData === "realizado") tareaRealizada(element);
+    else if (elementData === "eliminado") {
       tareaEliminada(element);
       console.log("eliminado");
     }
@@ -101,7 +100,7 @@ export default function ToDoList(lista, input, btnEnter) {
   });
 
   function cargarLista(array) {
-    array.forEach(function (item) {
+    array.forEach((item) => {
       agregarTarea(item.nombre, item.id, item.realizado, item.eliminado);
     });
   }

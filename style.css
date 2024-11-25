@@ -158,6 +158,7 @@ h2 {
   font-family: var(--font);
   font-size: var(--font-24);
   color: var(--first-color);
+  text-shadow: 0 0 2px #3009;
 }
 h3 {
   margin: 0;
@@ -237,6 +238,7 @@ svg {
   box-shadow: var(--box-shadow-m);
   transition: background-color var(--transition-s), outline var(--transition-s);
 
+  &:hover,
   &:active {
     background-color: var(--bg-btn-active);
     outline: 0.5px solid var(--bg-btn-active-border);
@@ -250,6 +252,9 @@ svg {
   }
 }
 
+.btn-mode-dark:hover {
+  filter: brightness(2);
+}
 .btn-mode-light,
 .btn-mode-dark {
   display: flex;
@@ -308,9 +313,6 @@ svg {
     width: 20px;
     filter: drop-shadow(var(--box-shadow-s));
     cursor: pointer;
-    /* &:hover {
-      box-shadow: 0 0 15px var(--text-icon-color);
-    } */
     .flags-img {
       border-radius: 0 7px 7px 0;
       &:hover,
@@ -324,7 +326,6 @@ svg {
   }
   .first-item {
     margin-left: 0.5rem;
-    /* margin-right: 0.5rem; */
   }
 }
 
@@ -829,9 +830,11 @@ main > section {
     .about-text {
       & h2 {
         text-align: center;
+        /* padding-left: 1rem; */
       }
       & p {
         margin-top: 1rem;
+        font-weight: 500;
       }
     }
   }
@@ -1008,7 +1011,6 @@ main > section {
   background-image: linear-gradient(140deg, #222, #111);
   padding: 1.2rem;
   border-radius: 20px;
-  font-family: "Poppins", Helvetica, sans-serif;
 
   .screen {
     overflow: hidden;
@@ -1016,6 +1018,7 @@ main > section {
     padding-top: 0.5rem;
     color: #1177ff;
     text-shadow: 0 0 5px #000;
+    font-family: "Inter";
     font-size: 1.5rem;
     text-align: right;
 
@@ -1031,14 +1034,16 @@ main > section {
     grid-template-columns: repeat(4, minmax(40px, 1fr));
     grid-template-rows: repeat(5, minmax(45px, 1fr));
     gap: 8px;
+    aspect-ratio: 1/0.8;
 
     & button {
       display: flex;
       justify-content: center;
       align-items: center;
       border: none;
-      border-radius: 10px;
-      font-size: var(--font-16);
+      border-radius: 30px;
+      font-size: var(--font-24);
+      font-family: "Inter";
       color: #efefef;
       text-shadow: 0 0 5px #000;
       background-image: linear-gradient(140deg, #111, #222);
@@ -1059,9 +1064,11 @@ main > section {
       grid-column-end: 3;
     }
     & button:nth-child(-n + 3) {
-      background-image: linear-gradient(140deg, #333, #666);
-      box-shadow: inset 3px 3px 5px #6669, inset -3px -3px 10px #6669,
-        4px 4px 7px #222;
+      background-image: linear-gradient(140deg, #777, #fff);
+      box-shadow: inset 3px 3px 5px #fff9, inset -3px -3px 10px #fff9,
+        4px 4px 7px #000;
+      color: #000;
+      text-shadow: none;
 
       &:active {
         box-shadow: none;
@@ -1071,7 +1078,7 @@ main > section {
     & button:nth-child(19) {
       background: linear-gradient(140deg, #038, #17f);
       box-shadow: inset 3px 3px 5px #17f9, inset -3px -3px 10px #17f9,
-        4px 4px 7px #29f5;
+        4px 4px 7px #111;
 
       &:active {
         box-shadow: none;
@@ -1137,11 +1144,9 @@ main > section {
 
   .contenedorQR {
     display: flex;
-    /* height: 100%; */
-    /* max-height: 225px; */
-    padding: 2rem;
+    padding: 1rem;
     justify-content: center;
-    padding: 3rem;
+    aspect-ratio: 1;
   }
 }
 
@@ -1163,11 +1168,6 @@ main > section {
       margin-left: 5px;
       transform: translateY(5px);
     }
-  }
-
-  .tags-des {
-    margin-bottom: 1rem;
-    font-size: var(--font-16);
   }
 
   .tags-input {
@@ -1205,32 +1205,37 @@ main > section {
       display: flex;
       align-items: center;
       .remove {
-        width: 12px;
-        height: 12px;
-        background-image: url(assets/remove.png);
+        width: 15px;
+        height: 15px;
+        background-image: url(assets/remove.svg);
+        /* background-image: url(assets/remove-2.svg); */
         background-size: cover;
         margin-left: 10px;
+        cursor: pointer;
       }
     }
     & input {
-      order: 1;
+      /* order: 1; */
+      width: 100%;
       border: none;
       outline: none;
-      padding: 0.2rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 0.5rem;
+      background-color: darkgreen;
+      color: #fff;
     }
   }
 
   .btn-removeAll {
     text-align: right;
-
-    & button {
-      background-color: #0a4;
-      outline: 1px solid #0f69;
-      color: #eee;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-    }
+    font-weight: bold;
+    background-color: #0a4;
+    outline: 1px solid #0f69;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
   }
 }
 
@@ -1358,7 +1363,7 @@ main > section {
   border: 1px solid #17f6;
   box-shadow: 0 0 12px #0006, 0 0 5px var(--link-color) inset;
   border-radius: 25px;
-  transition: transform var(--transition-m);
+  /* transition: transform var(--transition-m); */
 
   &:hover {
     background-color: #17f5;
@@ -1366,7 +1371,7 @@ main > section {
 
   &:active {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
   & svg {
     transition: fill var(--transition-m);
@@ -1382,7 +1387,7 @@ main > section {
   .contact-cv {
     &:hover {
       opacity: 1;
-      transform: scale(1.1);
+      transform: scale(1.02);
     }
 
     & svg:hover {
@@ -1502,7 +1507,7 @@ main > section {
   /* ***** apk ***** */
 
   .calculator {
-    padding: 1rem;
+    padding: 0.6rem;
     border-radius: 1rem;
 
     .screen {
@@ -1513,10 +1518,10 @@ main > section {
 
     .buttons {
       grid-template-rows: repeat(5, minmax(27px, 1fr));
-      gap: 8px;
+      gap: 5px;
 
       & button {
-        border-radius: 8px;
+        /* border-radius: 8px; */
         font-size: var(--font-16);
       }
     }

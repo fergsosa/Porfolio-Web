@@ -4,7 +4,7 @@
   },
   "sombreMi": {
     "h2": "Sobre mi",
-    "p": "Tengo un perfil autodidacta de continuo aprendizaje, receptivo al feedback recibido. Me enfoco en las bases de las tecnologías,tener buenas prácticas, identificar las prioridades de trabajo yusar la programación como herramienta para crear soluciones.Valoro la comunicación clara para tener una colaboración efectiva.Tengo buena capacidad de adaptación al entorno laboral."
+    "p": "Tengo un perfil autodidacta de continuo aprendizaje, receptivo al feedback recibido. Me enfoco en las bases de las tecnologías, tener buenas prácticas, identificar las prioridades de trabajo y usar la programación como herramienta para crear soluciones. Valoro la comunicación clara para tener una colaboración efectiva. Tengo buena capacidad de adaptación al entorno laboral."
   },
   "habilidades": {
     "leng": "Lenguajes",
@@ -19,7 +19,6 @@
     "p-2": "Slider de productos  <span>HTML | CSS | JS</span>",
     "title-3": "Carro de compra",
     "p-3": "Carga carrito de productos  <span>HTML | CSS | JS</span>",
-    "qr": "",
     "tags-des": "Puede elegir más de una etiqueta",
     "tag-btn": "Borrar todo"
   },
