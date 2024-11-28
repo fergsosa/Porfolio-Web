@@ -158,7 +158,8 @@ h2 {
   font-family: var(--font);
   font-size: var(--font-24);
   color: var(--first-color);
-  text-shadow: 0 0 2px #3009;
+  /* text-shadow: 0 0 0px #3009; */
+  -webkit-text-stroke: 0.5px red;
 }
 h3 {
   margin: 0;
@@ -580,7 +581,7 @@ svg {
 
 section > div:not(.proyecto-container) {
   view-timeline-name: --scroll-section;
-  animation: show-section auto linear both;
+  /* animation: show-section auto linear both; */
   animation-timeline: --scroll-section;
   animation-range: entry 25% cover 47%;
 }
@@ -591,6 +592,7 @@ section > div:not(.proyecto-container) {
   }
   25% {
     scale: 50%;
+    background-color: red;
   }
   100% {
     opacity: 1;
@@ -700,8 +702,33 @@ main > section {
         font-weight: bold;
         letter-spacing: -1px;
         color: var(--first-color);
+        transform: translateY(50px);
+        filter: blur(20px);
+        opacity: 0;
+        /* animation: showContent 0.5s linear 1 forwards; */
+        animation: showContent 0.5s ease-in 1 forwards;
+      }
+      & h3 {
+        transform: translateY(50px);
+        filter: blur(20px);
+        opacity: 0;
+        animation: showContent 0.5s linear 0.8s 1 forwards;
+      }
+      & .box-contact {
+        transform: translateY(-30px);
+        filter: blur(5px);
+        opacity: 0;
+        /* animation: showContent 1s linear 1 forwards; */
+        animation: showContent 0.3s ease-out 2s 1 forwards;
       }
     }
+  }
+}
+@keyframes showContent {
+  to {
+    transform: translateY(0px);
+    filter: blur(0px);
+    opacity: 1;
   }
 }
 
@@ -726,7 +753,8 @@ main > section {
     margin-left: 2rem;
     margin-right: 2rem;
     filter: var(--filter-logo);
-    animation: bounce-in-top 1.1s both 1.24s;
+    /* animation: bounce-in-top 1.1s both 1.24s; */
+    animation: bounce-in-top 1.1s both 1.5s;
   }
 }
 @keyframes adjust-image {
@@ -1411,7 +1439,19 @@ main > section {
   }
   .home-box,
   .contact-info {
-    transform: scale(1.1);
+    & h1 {
+      font-size: var(--font-36);
+    }
+    & h2 {
+      font-size: var(--font-32);
+    }
+    & h3 {
+      font-size: var(--font-24);
+    }
+    & .box-contact a > svg {
+      width: 34px;
+      height: 32px;
+    }
   }
   .about-box > img {
     width: 30%;
