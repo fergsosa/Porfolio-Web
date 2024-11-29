@@ -158,7 +158,6 @@ h2 {
   font-family: var(--font);
   font-size: var(--font-24);
   color: var(--first-color);
-  /* text-shadow: 0 0 0px #3009; */
   -webkit-text-stroke: 0.5px red;
 }
 h3 {
@@ -894,9 +893,32 @@ main > section {
           box-shadow: var(--box-shadow-icon-s);
           transition: box-shadow var(--transition-m),
             transform var(--transition-m);
+          &:hover {
+            animation: nope 1s ease-in-out;
+          }
         }
       }
     }
+  }
+}
+@keyframes nope {
+  0% {
+    transform: translateX(0);
+  }
+  6.5% {
+    transform: translateX(-4px) rotateY(-7deg);
+  }
+  18.5% {
+    transform: translateX(3px) rotateY(5deg);
+  }
+  31.5% {
+    transform: translateX(-1px) rotateY(-3deg);
+  }
+  43.5% {
+    transform: translateX(1px) rotateY(2deg);
+  }
+  50% {
+    transform: translateX(0);
   }
 }
 
@@ -983,55 +1005,6 @@ main > section {
     }
   }
 }
-/* 
-"better-comments.tags": [
-    {
-      "tag": "!",
-      "color": "#ff3b30",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "?",
-      "color": "#3498DB",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "//",
-      "color": "#474747",
-      "strikethrough": true,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "todo",
-      "color": "#FF8C00",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "*",
-      "color": "#98C379",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    }
-  ],
- */
 
 /* ***** apk ***** */
 
