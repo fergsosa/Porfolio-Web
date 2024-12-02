@@ -646,7 +646,7 @@ main > section {
 
 .home {
   background-image: var(--bg-home);
-  min-height: 100svh;
+  min-height: 100vh;
 
   .home-box {
     display: flex;
@@ -884,7 +884,7 @@ main > section {
 }
 
 .project {
-  min-height: 100svh;
+  min-height: 100vh;
   flex-direction: column;
 
   h2 {
@@ -1284,7 +1284,7 @@ main > section {
 /* ***** apk ***** */
 
 .contact {
-  min-height: 100svh;
+  min-height: 100vh;
   position: relative;
   justify-content: center;
   align-items: center;
