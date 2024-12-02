@@ -916,7 +916,8 @@ main > section {
           background-image: url(assets/reloj-serie.png);
         }
         &:nth-child(2) {
-          background-image: url(assets/Carrusel-slider.blur.png);
+          /* background-image: url(assets/Carrusel-slider.blur.png); */
+          background-image: url(assets/carrusel-slider-blur.avif);
         }
         &:last-child {
           background-image: url(assets/12\ Add\ Card\ Shopping.webp);
