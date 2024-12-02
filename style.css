@@ -913,11 +913,10 @@ main > section {
 
         &:first-child {
           margin-top: 0.5rem;
-          background-image: url(assets/reloj-serie.png);
+          background-image: url(assets/reloj-serie.avif);
         }
         &:nth-child(2) {
-          /* background-image: url(assets/Carrusel-slider.blur.png); */
-          background-image: url(assets/carrusel-slider-blur.avif);
+          background-image: url(assets/incluir-html-ajax.avif);
         }
         &:last-child {
           background-image: url(assets/12\ Add\ Card\ Shopping.webp);
