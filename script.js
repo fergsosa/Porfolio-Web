@@ -18,3 +18,20 @@ document.addEventListener("DOMContentLoaded", (e) => {
   ThemeDark(".btn-mode-light", ".btn-mode-dark");
   Language("flags", "[data-section]");
 });
+document.addEventListener(
+  "scroll",
+  throttle(() => {
+    console.log("Scroll optimizado");
+  }, 200)
+);
+
+function throttle(callback, limit) {
+  let wait = false;
+  return function () {
+    if (!wait) {
+      callback.apply(this, arguments);
+      wait = true;
+      setTimeout(() => (wait = false), limit);
+    }
+  };
+}
