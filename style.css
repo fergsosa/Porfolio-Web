@@ -552,6 +552,7 @@ section > div:not(.proyecto-container) {
   /* animation: show-section auto linear both; */
   animation-timeline: --scroll-section;
   animation-range: entry 25% cover 47%;
+  content-visibility: auto;
 }
 @keyframes show-section {
   0% {
