@@ -919,8 +919,11 @@ main > section {
         &:nth-child(2) {
           background-image: url(assets/incluir-html-ajax.avif);
         }
-        &:last-child {
+        &:nth-child(3) {
           background-image: url(assets/e-commers.avif);
+        }
+        &:last-child {
+          background-image: url(assets/blog.avif);
         }
         .link-title {
           width: 100%;

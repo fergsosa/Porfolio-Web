@@ -19,6 +19,8 @@
     "p-2": "Integrar HTML con AJAX  <span>HTML | CSS | JS</span>",
     "title-3": "Carro de compra",
     "p-3": "Carga carrito de productos  <span> React | Tailwind </span>",
+    "title-4": "Blog",
+    "p-4": "Blog Markdown <span> Eleventy | Nunjucks </span>",
     "tags-des": "Puede elegir más de una etiqueta",
     "tag-btn": "Borrar todo"
   },
