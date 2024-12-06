@@ -536,6 +536,10 @@ svg {
 }
 /* ********** Utilities ********** */
 
+.c-visible {
+  content-visibility: auto;
+}
+
 .container {
   max-width: var(--max-width);
   margin-left: auto;
@@ -885,9 +889,7 @@ main > section {
 }
 
 .project {
-  min-height: 100vh;
   flex-direction: column;
-
   h2 {
     margin: auto;
   }
@@ -1346,7 +1348,7 @@ main > section {
     }
   }
 }
-@media screen and (width >= 768px) {
+@media screen and (width > 768px) {
   .menu-nav {
     padding: 8px;
     gap: var(--box-16-18);
@@ -1408,7 +1410,7 @@ main > section {
     bottom: 6rem;
   }
 }
-@media screen and (width >= 1024px) {
+@media screen and (width > 1024px) {
   .menu {
     .menu-nav {
       top: 10px;
@@ -1459,8 +1461,13 @@ main > section {
   }
   .project {
     .proyecto-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      .proyecto-page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .proyecto-apk {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
   }
 
