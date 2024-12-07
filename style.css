@@ -553,9 +553,10 @@ svg {
 
 section > div:not(.proyecto-container) {
   view-timeline-name: --scroll-section;
-  /* animation: show-section auto linear both; */
+  animation: show-section auto ease-in both;
   animation-timeline: --scroll-section;
   animation-range: entry 25% cover 47%;
+
   content-visibility: auto;
 }
 @keyframes show-section {
@@ -782,7 +783,7 @@ main > section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 var(--box-16-18) var(--box-16-18) var(--box-16-18);
+    padding: var(--box-16-18);
     border-radius: 20px;
     gap: var(--box-16-18);
     background-image: var(--bg-footer);
@@ -908,14 +909,13 @@ main > section {
         display: flex;
         align-items: end;
         overflow: hidden;
-        border-radius: 0.5rem;
+        border-radius: 10px;
         aspect-ratio: 16/9;
         background-position: center;
         background-size: cover;
         box-shadow: var(--box-shadow-icon-m);
 
         &:first-child {
-          margin-top: 0.5rem;
           background-image: url(assets/reloj-serie.avif);
         }
         &:nth-child(2) {
@@ -964,7 +964,7 @@ main > section {
         max-width: 450px;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 0.5rem;
+        border-radius: 20px;
         .item-apk > div {
           box-shadow: var(--box-shadow-icon-m);
         }
@@ -1375,17 +1375,17 @@ main > section {
       height: 32px;
     }
   }
-  .about-box > img {
-    width: 30%;
-  }
   .about {
     padding-left: var(--box-32-36);
     padding-right: var(--box-32-36);
 
     .about-box {
       flex-direction: row;
-      padding-top: var(--box-16-18);
+      padding-top: 0;
       background-image: var(--bg-box);
+      img {
+        width: 30%;
+      }
     }
   }
   .about-text > h2 {
@@ -1393,13 +1393,6 @@ main > section {
   }
   .project {
     .proyecto-container {
-      .proyecto-page {
-        .box-img {
-          border-radius: 0.5rem;
-          aspect-ratio: 16/9;
-        }
-      }
-
       .proyecto-apk {
         grid-template-columns: repeat(2, minmax(200px, 100%));
         align-items: start;
