@@ -227,7 +227,7 @@ svg {
 
 .title-second {
   font-family: "League Gothic";
-  font-size: 7rem;
+  font-size: 5rem;
   text-transform: uppercase;
   letter-spacing: -0.3px;
   -webkit-text-stroke: 0.1px #fff1;
@@ -1387,6 +1387,10 @@ main > section {
   }
 }
 @media screen and (width > 768px) {
+  .title-second {
+    font-size: 7rem;
+  }
+
   .menu {
     .menu-nav {
       padding: var(--box-8-9);
