@@ -36,6 +36,7 @@
 }
 /* * ROOT sizes */
 :root {
+  --step-title: clamp(5rem, 4.1304rem + 4.3478vw, 7.5rem);
   --font-64: clamp(3.875rem, 3.8295rem + 0.2273vw, 4rem);
   --font-54: clamp(3.25rem, 3.1875rem + 0.3125vw, 3.375rem);
   --font-48: clamp(2.875rem, 2.8295rem + 0.2273vw, 3rem);
@@ -227,7 +228,8 @@ svg {
 
 .title-second {
   font-family: "League Gothic";
-  font-size: 5rem;
+  /* font-size: 5rem; */
+  font-size: var(--step-title);
   text-transform: uppercase;
   letter-spacing: -0.3px;
   -webkit-text-stroke: 0.1px #fff1;
@@ -1388,7 +1390,7 @@ main > section {
 }
 @media screen and (width > 768px) {
   .title-second {
-    font-size: 7rem;
+    /* font-size: 7rem; */
   }
 
   .menu {
