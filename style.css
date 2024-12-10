@@ -36,7 +36,7 @@
 }
 /* * ROOT sizes */
 :root {
-  --step-title: clamp(4rem, 2.7826rem + 6.087vw, 7.5rem);
+  --step-title: clamp(3.2rem, 1.6875rem + 7.5vw, 7.5rem);
   --font-64: clamp(3.875rem, 3.8295rem + 0.2273vw, 4rem);
   --font-54: clamp(3.25rem, 3.1875rem + 0.3125vw, 3.375rem);
   --font-48: clamp(2.875rem, 2.8295rem + 0.2273vw, 3rem);
@@ -228,9 +228,9 @@ svg {
 
 .title-second {
   font-family: "League Gothic";
-  font-size: 3.2rem;
+  /* font-size: 3.2rem; */
   border: 10px solid lime;
-  /* font-size: var(--step-title); */
+  font-size: var(--step-title);
   text-transform: uppercase;
   letter-spacing: -0.3px;
   -webkit-text-stroke: 0.1px #fff1;
@@ -1391,7 +1391,7 @@ main > section {
 }
 @media screen and (width > 768px) {
   .title-second {
-    font-size: 7rem;
+    /* font-size: 7rem; */
     border: 10px solid red;
   }
 
@@ -1455,7 +1455,7 @@ main > section {
 }
 @media screen and (width > 1024px) {
   .title-second {
-    font-size: 7rem;
+    /* font-size: 7rem; */
     border: 10px solid yellow;
   }
   .menu {
