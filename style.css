@@ -36,7 +36,7 @@
 }
 /* * ROOT sizes */
 :root {
-  --step-title: clamp(5rem, 4.1304rem + 4.3478vw, 7.5rem);
+  --step-title: clamp(4rem, 2.7826rem + 6.087vw, 7.5rem);
   --font-64: clamp(3.875rem, 3.8295rem + 0.2273vw, 4rem);
   --font-54: clamp(3.25rem, 3.1875rem + 0.3125vw, 3.375rem);
   --font-48: clamp(2.875rem, 2.8295rem + 0.2273vw, 3rem);
@@ -228,7 +228,7 @@ svg {
 
 .title-second {
   font-family: "League Gothic";
-  font-size: 5rem;
+  font-size: 4rem;
   border: 10px solid lime;
   /* font-size: var(--step-title); */
   text-transform: uppercase;
