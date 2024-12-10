@@ -228,7 +228,7 @@ svg {
 
 .title-second {
   font-family: "League Gothic";
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   border: 10px solid lime;
   /* font-size: var(--step-title); */
   text-transform: uppercase;
