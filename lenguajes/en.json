@@ -1,4 +1,11 @@
 {
+  "menu": {
+    "m1": "Home",
+    "m2": "About",
+    "m3": "Skills",
+    "m4": "Project",
+    "m5": "Contact"
+  },
   "home": {
     "h3": "Frontend Web Developer"
   },
@@ -7,9 +14,8 @@
     "p": "I have a self-taught profile of continuous learning, receptive to the feedback received. I focus on the basics of technologies, have good practices, identify work priorities and use programming as a tool to create solutions. I value clear communication for effective collaboration. I have good adaptability to the work environment."
   },
   "habilidades": {
-    "leng": "Languages",
-    "inte": "Interest in learning",
-    "tecn": "Technologies and Tools"
+    "leng": "SKILLS",
+    "tecn": "TOOLS"
   },
   "proyecto": {
     "h2": "Projects",

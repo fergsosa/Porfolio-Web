@@ -401,7 +401,6 @@ svg {
         }
 
         input {
-          /* display: flex; */
           width: 100%;
           padding: 0.5rem 1rem 0.1rem;
           outline: 0;
@@ -615,13 +614,11 @@ header {
   display: flex;
 
   .menu-nav {
-    z-index: 998;
     width: max-content;
     position: fixed;
     bottom: 0.5rem;
     left: 0;
     right: 0;
-    z-index: 998;
     display: flex;
     padding: 4px;
     margin: auto;
@@ -631,12 +628,19 @@ header {
     box-shadow: var(--box-shadow-m);
     background-color: var(--bg-navbar);
     backdrop-filter: saturate(200%) blur(10px);
+    z-index: 1;
 
     a {
       display: flex;
-      border-radius: 35px;
+      border-radius: 22px;
       transition: background-color var(--transition-s);
 
+      span {
+        display: none;
+      }
+      img {
+        padding: var(--box-8-9);
+      }
       &:active {
         background-color: var(--bg-btn-active);
         outline: 0.5px solid var(--bg-btn-active-border);
@@ -647,10 +651,6 @@ header {
         outline: 0.5px solid var(--bg-btn-active-border);
         box-shadow: var(--box-shadow-m);
       }
-    }
-
-    img {
-      padding: var(--box-8-9);
     }
   }
 }
@@ -1138,12 +1138,10 @@ main > section {
   border-radius: 20px;
 
   .tags-title {
-    /* display: flex; */
     align-items: center;
     font-size: var(--font-20);
     font-weight: 500;
     margin-bottom: 1rem;
-    /* border: 10px solid red; */
 
     svg {
       width: 23px;
@@ -1368,13 +1366,17 @@ main > section {
   }
 }
 @media screen and (width > 768px) {
-  .menu-nav {
-    padding: 8px;
-    gap: var(--box-16-18);
+  .menu {
+    .menu-nav {
+      padding: var(--box-8-9);
 
-    a > img {
-      padding: var(--box-16-18);
-      transform: scale(1.2);
+      a {
+        border-radius: 35px;
+        img {
+          padding: var(--box-16-18);
+          transform: scale(1.2);
+        }
+      }
     }
   }
   .box-contact {
@@ -1428,33 +1430,23 @@ main > section {
       top: 10px;
       bottom: unset;
     }
-    .menu-nav img {
-      display: none;
-    }
-    a {
-      border-radius: 22px;
+    .menu-nav {
+      padding: 4px;
 
-      &::before {
-        font-size: var(--font-13);
-        font-weight: 500;
-        padding: 0.8rem 1.6rem;
-        color: var(--text-icon-color);
-      }
+      a {
+        border-radius: 22px;
 
-      &:first-child:before {
-        content: "Inicio";
-      }
-      &:nth-child(2):before {
-        content: "Perfil";
-      }
-      &:nth-child(3):before {
-        content: "Habilidades";
-      }
-      &:nth-child(4):before {
-        content: "Proyecto";
-      }
-      &:last-child:before {
-        content: "Contacto";
+        span {
+          display: inline-block;
+          color: var(--text-icon-color);
+          font-size: 16px;
+          font-weight: 500;
+          padding: 0.8rem 1.6rem;
+          color: var(--text-icon-color);
+        }
+        img {
+          display: none;
+        }
       }
     }
   }
