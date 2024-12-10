@@ -891,6 +891,7 @@ main > section {
         justify-content: center;
         margin-top: 1rem;
         gap: 1rem;
+        z-index: 1;
 
         img {
           border-radius: var(--box-8-9);
