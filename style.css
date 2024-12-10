@@ -264,7 +264,7 @@ svg {
 .btn-mode-light,
 .btn-mode-dark {
   display: flex;
-  z-index: 999;
+  z-index: 2;
   cursor: pointer;
   padding: var(--box-8-9);
   border-radius: 50%;
@@ -341,7 +341,7 @@ svg {
   position: fixed;
   justify-content: center;
   inset: 0;
-  z-index: 1100;
+  z-index: 2;
   display: flex;
   align-items: center;
   background-color: var(--bg-modal);
@@ -579,7 +579,7 @@ svg {
   display: none;
 }
 
-section:not(.home) {
+section:not(.home, .modal-offer) {
   content-visibility: auto;
 }
 .about-box,
@@ -643,7 +643,7 @@ header {
     box-shadow: var(--box-shadow-m);
     background-color: var(--bg-navbar);
     backdrop-filter: saturate(200%) blur(10px);
-    z-index: 1;
+    z-index: 2;
 
     a {
       display: flex;
