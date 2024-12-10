@@ -64,11 +64,10 @@
 }
 :root[data-theme="light"] {
   --text-icon-color: #1d1d1f;
-  --title-text-border: #f00;
-  --title-text: #f006;
 
-  --sec-titulo-bg: #666;
-  --sec-titulo-shadow: #ddd;
+  --title-first-border: #f00;
+  --title-first: #f006;
+  --title-second: #f008;
 
   --filter-logo: invert(0.3);
   --show-sun: block;
@@ -93,11 +92,10 @@
 /* @media (prefers-color-scheme: dark) { */
 :root[data-theme="dark"] {
   --text-icon-color: #f8f9fc;
-  --title-text-border: #600;
-  --title-text: #f00;
 
-  --sec-titulo-bg: #999;
-  --sec-titulo-shadow: #333;
+  --title-first-border: #600;
+  --title-text: #f00;
+  --title-second: #f003;
 
   --filter-logo: invert(1);
   --show-sun: none;
@@ -170,7 +168,6 @@ h2 {
   font-family: var(--font);
   font-size: var(--font-24);
   color: var(--first-color);
-  /* -webkit-text-stroke: 0.5px var(--title-text-border); */
 }
 h3 {
   margin: 0;
@@ -221,13 +218,13 @@ svg {
 
 /* ********** Components ********** */
 
-.title-mio {
-  -webkit-text-stroke: 0.1px var(--first-color);
+.title-second {
   font-family: "League Gothic";
   font-size: 4.5rem;
   text-transform: uppercase;
-  color: #f003;
   letter-spacing: -0.3px;
+  color: var(--title-second);
+  -webkit-text-stroke: 0.1px var(--first-color);
 }
 
 ::-webkit-scrollbar {
@@ -692,10 +689,11 @@ main > section {
         font-weight: bold;
         letter-spacing: -0.3px;
         color: var(--first-color);
-        text-shadow: -0.5px -0.5px 0px var(--title-text-border),
-          -0.5px 0.5px 0px var(--title-text-border),
-          0.5px 0.5px 0px var(--title-text-border),
-          0.5px -0.5px 0px var(--title-text-border), 0 0 10px var(--title-text);
+        text-shadow: -0.5px -0.5px 0px var(--title-first-border),
+          -0.5px 0.5px 0px var(--title-first-border),
+          0.5px 0.5px 0px var(--title-first-border),
+          0.5px -0.5px 0px var(--title-first-border),
+          0 0 10px var(--title-first);
       }
       h3 {
         transform: translateY(50px);
