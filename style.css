@@ -236,7 +236,7 @@ svg {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: translateY(40px);
+  transform: translateY(27px);
 }
 
 ::-webkit-scrollbar {
@@ -1390,6 +1390,7 @@ main > section {
 @media screen and (width > 768px) {
   .title-second {
     font-size: 7rem;
+    transform: translateY(40px);
   }
 
   .menu {
@@ -1453,6 +1454,7 @@ main > section {
 @media screen and (width > 1024px) {
   .title-second {
     font-size: 7rem;
+    transform: translateY(40px);
   }
   .menu {
     .menu-nav {
