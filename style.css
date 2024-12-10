@@ -579,7 +579,11 @@ svg {
   display: none;
 }
 
-section > div:not(.proyecto-container) {
+section:not(.home) {
+  content-visibility: auto;
+}
+.about-box,
+.contact-info {
   view-timeline-name: --scroll-section;
   animation: show-section auto ease-in both;
   animation-timeline: --scroll-section;
@@ -875,6 +879,11 @@ main > section {
     gap: var(--box-32-36);
 
     .skills-box {
+      view-timeline-name: --scroll-section;
+      animation: show-section auto linear both;
+      animation-timeline: --scroll-section;
+      animation-range: entry 25% cover 30%;
+
       .skills-item {
         display: flex;
         flex-wrap: wrap;
