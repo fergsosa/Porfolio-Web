@@ -6,7 +6,7 @@
     "m4": "Project",
     "m5": "Contact"
   },
-  "home": {
+  "inicio": {
     "h3": "Frontend Web Developer"
   },
   "sombreMi": {
@@ -14,8 +14,8 @@
     "p": "I have a self-taught profile of continuous learning, receptive to the feedback received. I focus on the basics of technologies, have good practices, identify work priorities and use programming as a tool to create solutions. I value clear communication for effective collaboration. I have good adaptability to the work environment."
   },
   "habilidades": {
-    "leng": "SKILLS",
-    "tecn": "TOOLS"
+    "skill": "SKILLS",
+    "tool": "TOOLS"
   },
   "proyecto": {
     "h2": "Projects",
@@ -27,7 +27,6 @@
     "p-3": "Loading product cart <span> React | Tailwind </span>",
     "title-4": "Blog",
     "p-4": "Blog Markdown <span> Eleventy | Nunjucks </span>",
-    "tags-des": "You can choose more than one tag",
     "tag-btn": "Delete all"
   },
   "contacto": {
