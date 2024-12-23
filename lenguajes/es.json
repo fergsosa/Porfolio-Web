@@ -27,6 +27,8 @@
     "p-3": "Carga carrito de productos  <span> React | Tailwind </span>",
     "title-4": "Blog",
     "p-4": "Blog Markdown <span> Eleventy | Nunjucks </span>",
+    "title-5": "Tema Itálica FS",
+    "p-5": "Tema Oscuro/Claro <span> .VSIX </span>",
     "tag-btn": "Borrar todo"
   },
   "contacto": {

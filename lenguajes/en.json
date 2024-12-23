@@ -27,6 +27,8 @@
     "p-3": "Loading product cart <span> React | Tailwind </span>",
     "title-4": "Blog",
     "p-4": "Blog Markdown <span> Eleventy | Nunjucks </span>",
+    "title-5": "Theme Italic FS",
+    "p-5": "Theme Dark/Light <span> .VSIX </span>",
     "tag-btn": "Delete all"
   },
   "contacto": {
