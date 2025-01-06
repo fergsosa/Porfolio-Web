@@ -29,6 +29,8 @@
     "p-4": "Blog Markdown <span> Eleventy | Nunjucks </span>",
     "title-5": "Tema Itálica FS",
     "p-5": "Tema Oscuro/Claro <span> .VSIX </span>",
+    "title-6": "CRUD",
+    "p-6": "Router/Context/Reducers/Redux <span>React</span>",
     "tag-btn": "Borrar todo"
   },
   "contacto": {
