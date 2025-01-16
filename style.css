@@ -1133,38 +1133,61 @@ main > section {
     }
   }
 }
+
 .contact-cv {
-  display: flex;
-  padding: 0.5rem 1rem;
-  align-items: center;
-  color: var(--text-icon-color);
-  border: 1px solid #17f6;
-  box-shadow: 0 0 12px #0006, 0 0 5px var(--link-color) inset;
-  border-radius: 25px;
+  position: relative;
+  border-radius: 32px;
+  padding: 15px 32px;
+  font-size: 20px;
+  border: none;
+  background-color: var(--border-contacto);
+  overflow: hidden;
 
-  &:active {
-    opacity: 1;
-    transform: scale(1.02);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 104%;
+    height: 40px;
+    background-image: linear-gradient(#07e, #0d549b);
+    animation: anim 2s linear infinite;
   }
-  svg {
-    transition: fill var(--transition-m);
-    margin-left: 0.5rem;
 
-    &:active {
-      fill: var(--link-alpha-color);
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 2.3px;
+    background-color: var(--bg-btn-contacto);
+    border-radius: 32px;
+    box-shadow: 0 0 10px #0006 inset;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-icon-color);
+    position: relative;
+    z-index: 1;
+    opacity: 0.75;
+  }
+}
+@keyframes anim {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
 @media (hover: hover) {
   .contact-cv {
-    &:hover {
+    &:hover svg,
+    &:hover a {
       opacity: 1;
-      background-color: #17f5;
-      transform: scale(1.02);
-    }
-
-    svg:hover {
+      color: var(--link-color);
       fill: var(--link-color);
     }
   }
