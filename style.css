@@ -1135,6 +1135,7 @@ main > section {
 }
 
 .contact-cv {
+  margin-top: 1.5rem;
   position: relative;
   border-radius: 32px;
   padding: 15px 32px;
@@ -1171,6 +1172,7 @@ main > section {
     position: relative;
     z-index: 1;
     opacity: 0.75;
+    user-select: none;
   }
 }
 @keyframes anim {
