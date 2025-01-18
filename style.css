@@ -243,7 +243,7 @@
           text-align: center;
 
           span {
-            font-weight: bold;
+            font-weight: 700;
             color: #f8f9fc;
           }
 
@@ -478,7 +478,7 @@ main > section {
       z-index: 1;
 
       h1 {
-        font-weight: bold;
+        font-weight: 700;
         letter-spacing: -0.3px;
         color: var(--first-color);
         text-shadow: -0.5px -0.5px 0px var(--title-first-border),
@@ -1012,7 +1012,7 @@ main > section {
 
   .btn-removeAll {
     text-align: right;
-    font-weight: bold;
+    font-weight: 700;
     background-color: #0a4;
     outline: 1px solid #0f69;
     color: #fff;
@@ -1128,7 +1128,7 @@ main > section {
     bottom: 4.5rem;
 
     a {
-      font-weight: bold;
+      font-weight: 700;
       color: var(--link-color);
     }
   }
