@@ -768,7 +768,7 @@ main > section {
           background-image: url(assets/theme-fs.avif);
         }
         &:nth-child(6) {
-          background-image: url(assets/crud.avif);
+          background-image: url(assets/CRUD.avif);
         }
         .link-title {
           width: 100%;
