@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
   Calculadora(".buttons > button", ".screen .last", ".screen .new");
   GeneradorQR("qr-form");
   Tags(".tags-input ul", ".tags-input input", ".btn-removeAll");
-  // ToDo("btnAdd", "ul.to-do-list");
   ToDoList("#lista", "#input", "#boton-enter");
   ThemeDark(".btn-mode-light", ".btn-mode-dark");
   Language("flags", "[data-section]");

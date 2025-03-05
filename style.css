@@ -688,13 +688,19 @@ main > section {
         margin-top: 1rem;
         gap: 1rem;
 
-        img {
-          border-radius: var(--box-8-9);
-          box-shadow: var(--box-shadow-icon-s);
-          transition: box-shadow var(--transition-m),
-            transform var(--transition-m);
-          &:hover {
-            animation: nope 1s ease-in-out;
+        .box-icon {
+          display: flex;
+          flex-direction: column;
+          img {
+            transition: box-shadow var(--transition-m),
+              transform var(--transition-m);
+
+            &:last-child {
+              padding-top: 0.2rem;
+            }
+            &:hover {
+              animation: nope 1s ease-in-out;
+            }
           }
         }
       }
