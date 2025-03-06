@@ -22,6 +22,33 @@
 
 /* ********** Components ********** */
 
+.box-copy-text {
+  background-color: #0006;
+  color: #d5d8dc;
+  border-radius: 2rem;
+  /* width: fit-content; */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+
+  button {
+    padding: 0.3rem 0.5rem;
+    border-radius: 5rem;
+    background-color: #181818;
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 1rem;
+    &:hover {
+      background-color: #060606;
+      /* background-color: #1e2f3f; */
+      /* background-color: #06e; */
+      color: #fff;
+      outline: 1px solid #06e;
+    }
+  }
+}
+
 .title-second {
   font-family: "League Gothic";
   font-size: 3.2rem;
@@ -229,7 +256,6 @@
         font-family: inherit;
         font-size: var(--font-16);
         resize: none;
-        padding: var(--box-16-18);
         padding: 16px;
         outline: none;
         border: 1px solid #fff1;
@@ -241,8 +267,6 @@
       input[type="submit"] {
         font-family: inherit;
         font-size: var(--font-16);
-        margin-top: var(--box-16-18);
-        margin-bottom: var(--box-8-9);
         padding: var(--box-12-14);
         outline: 0;
         border: none;
@@ -255,6 +279,16 @@
 
         &:hover {
           filter: opacity(1) contrast(2);
+        }
+      }
+
+      .linea-modal {
+        display: flex;
+        p {
+          padding: 0 0.5rem;
+        }
+        hr {
+          width: 100%;
         }
       }
 

@@ -6,6 +6,7 @@ import Tags from "./js/Tags.js";
 import ToDoList from "./js/ToDoList.js";
 import ThemeDark from "./js/themeDark-02.js";
 import Language from "./js/language.js";
+import copiarCorreo from "./js/copiarCorreo.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   scrollSpy();
@@ -16,4 +17,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
   ToDoList("#lista", "#input", "#boton-enter");
   ThemeDark(".btn-mode-light", ".btn-mode-dark");
   Language("flags", "[data-section]");
+  copiarCorreo("textCopy", "btnText", "icoCopy");
 });
