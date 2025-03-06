@@ -735,6 +735,7 @@ main > section {
           display: flex;
           flex-direction: column;
           img {
+            max-width: 57px;
             transition: box-shadow var(--transition-m),
               transform var(--transition-m);
 
