@@ -134,7 +134,7 @@
   --box-shadow-s: 0 0 6px #0006;
   --box-shadow-m: 0 0 12px #0006;
   --box-shadow-icon-s: 0 0 6px #fff6;
-  --box-shadow-icon-m: 0 0 12px #fff6;
+  --box-shadow-icon-m: 0 -6px 12px #fff6;
 }
 
 /* ********** Reset ********** */

@@ -739,7 +739,7 @@ main > section {
               filter: drop-shadow(var(--box-shadow-icon-m));
             }
             &:last-child {
-              transform: scale(1.7);
+              transform: scale(1.8);
             }
           }
           img {
