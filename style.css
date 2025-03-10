@@ -764,7 +764,7 @@ main > section {
           }
         }
       }
-      &:nth-child(2) h2 {
+      &:nth-child(even) h2 {
         text-align: end;
       }
     }
@@ -819,24 +819,6 @@ main > section {
         background-size: cover;
         box-shadow: var(--box-shadow-icon-m);
 
-        &:first-child {
-          background-image: url(assets/reloj-serie.avif);
-        }
-        &:nth-child(2) {
-          background-image: url(assets/incluir-html-ajax.avif);
-        }
-        &:nth-child(3) {
-          background-image: url(assets/e-commers.avif);
-        }
-        &:nth-child(4) {
-          background-image: url(assets/blog.avif);
-        }
-        &:nth-child(5) {
-          background-image: url(assets/theme-fs.avif);
-        }
-        &:nth-child(6) {
-          background-image: url(assets/crud.avif);
-        }
         .link-title {
           width: 100%;
           padding: 1rem;
@@ -860,6 +842,24 @@ main > section {
             text-shadow: 0 0 5px #000;
           }
         }
+      }
+      .bg-theme-fs {
+        background-image: url(assets/theme-fs.avif);
+      }
+      .bg-crud {
+        background-image: url(assets/crud.avif);
+      }
+      .bg-tarjeta-compra {
+        background-image: url(assets/e-commers.avif);
+      }
+      .bg-blog {
+        background-image: url(assets/blog.avif);
+      }
+      .bg-ajax {
+        background-image: url(assets/incluir-html-ajax.avif);
+      }
+      .bg-sliders {
+        background-image: url(assets/reloj-serie.avif);
       }
     }
 
