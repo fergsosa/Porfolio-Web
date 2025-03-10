@@ -746,7 +746,8 @@ main > section {
             max-width: 57px;
             transition: box-shadow var(--transition-m),
               transform var(--transition-m);
-            pointer-events: none;
+            /* pointer-events: none; */
+            /* background-color: red; */
 
             &:last-child {
               padding-top: 0.2rem;
@@ -755,12 +756,6 @@ main > section {
                 transform: scale(1.5);
               }
             }
-            &:hover {
-              /* filter: drop-shadow(var(--box-shadow-icon-m)); */
-            }
-          }
-          img:first-child:hover ~ img:last-child {
-            /* transform: scale(1.7); */
           }
         }
       }
