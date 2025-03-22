@@ -83,6 +83,7 @@
   --show-moon: none;
 
   --bg-body: #f8fbff;
+  --bg-puntos: #444;
   --bg-home: linear-gradient(#d4d7db, transparent);
   --bg-footer: linear-gradient(transparent, #d4d7db);
   --bg-box: linear-gradient(160deg, transparent 30%, #d4d7db);
@@ -116,6 +117,7 @@
   --show-moon: block;
 
   --bg-body: #2f3237;
+  --bg-puntos: #999;
   --bg-home: linear-gradient(#111213, transparent);
   --bg-footer: linear-gradient(transparent, #111213);
   --bg-box: linear-gradient(160deg, transparent 30%, #111213);
