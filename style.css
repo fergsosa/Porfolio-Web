@@ -450,7 +450,8 @@ section:not(.home, .modal-offer) {
 header {
   position: absolute;
   inset: 0;
-  height: 0px;
+  height: 0;
+  z-index: 1;
 
   .header-container {
     display: flex;
