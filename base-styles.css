@@ -226,6 +226,7 @@ img {
 
 p {
   margin: 0;
+  margin-block: 1lh;
   font-size: var(--font-16);
   text-wrap: pretty;
 }
