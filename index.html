@@ -8,15 +8,15 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+    /> -->
 
-    <script
+    <!-- <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
-    ></script>
+    ></script> -->
 
     <script src="script.js" type="module"></script>
     <script>
@@ -61,7 +61,7 @@
           </svg>
         </a>
 
-        <div id="flags" class="flags">
+        <div id="flags" class="header-flags">
           <button class="btn-mode-dark" title="light">
             <img src="assets/icon-sunny.svg" alt="dark" />
           </button>
@@ -72,12 +72,12 @@
           <div class="flags-item first-item" data-language="es" title="Idioma">
             <img
               class="flags-img first-img"
-              src="assets/bandera-es.svg"
+              src="assets/icon/bandera-es.svg"
               alt="es"
             />
           </div>
           <div class="flags-item" data-language="en">
-            <img class="flags-img" src="assets/bandera-gb.svg" alt="en" />
+            <img class="flags-img" src="assets/icon/bandera-gb.svg" alt="en" />
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
           <span data-section="menu" data-value="m1">Home</span>
           <img
             class="menu-home"
-            src="assets/btn-light-home.svg"
+            src="assets/icon/btn-menu-home.svg"
             alt="Home"
             title="Home"
           />
@@ -98,7 +98,7 @@
           <span data-section="menu" data-value="m2">About</span>
           <img
             class="menu-about"
-            src="assets/btn-light-perfil.svg"
+            src="assets/icon/btn-menu-perfil.svg"
             alt="About"
             title="About"
           />
@@ -107,7 +107,7 @@
           <span data-section="menu" data-value="m3">Skills</span>
           <img
             class="menu-skills"
-            src="assets/btn-light-habilidades.svg"
+            src="assets/icon/btn-menu-habilidades.svg"
             alt="Skills"
             title="Skills"
           />
@@ -116,7 +116,7 @@
           <span data-section="menu" data-value="m4">Porfolio</span>
           <img
             class="menu-project"
-            src="assets/btn-light-proyectos.svg"
+            src="assets/icon/btn-menu-proyectos.svg"
             alt="Porfolio"
             title="Porfolio"
           />
@@ -125,7 +125,7 @@
           <span data-section="menu" data-value="m5">Contact</span>
           <img
             class="menu-contact"
-            src="assets/btn-light-contacto.svg"
+            src="assets/icon/btn-menu-contacto.svg"
             alt="Contact"
             title="Contact"
           />
@@ -383,12 +383,14 @@
               About
             </h2>
             <p data-section="sombreMi" data-value="p">
-              I have a self-taught profile of continuous learning, receptive to
-              the feedback received. I focus on the basics of technologies, have
-              good practices, identify work priorities and use programming as a
-              tool to create solutions. I value clear communication for
-              effective collaboration. I have good adaptability to the work
-              environment.
+              I am a developer with +2 years of experience, specialized in
+              scalable and maintainable projects, which has allowed me to
+              consolidate my logical and technical skills. I consider myself
+              proactive, self-taught and always willing to learn, valuing
+              feedback and teamwork. My goal is to grow professionally in roles
+              such as Full Stack Developer, Frontend Developer, Backend
+              Developer or Web Programmer, providing value through my
+              commitment, dedication and adaptability.
             </p>
           </div>
         </div>
@@ -513,11 +515,11 @@
                 href="https://marketplace.visualstudio.com/items?itemName=cod-fs.theme-italic-fs"
                 target="_blank"
               >
-                <b data-section="proyecto" data-value="title-5"
+                <b data-section="proyecto" data-value="title-theme"
                   >Theme Italic FS</b
                 >
 
-                <p data-section="proyecto" data-value="p-5">
+                <p data-section="proyecto" data-value="p-theme">
                   Theme Dark/Light <span>.VSIX</span>
                 </p>
               </a>
@@ -528,10 +530,23 @@
                 href="https://fergsosa.github.io/react-app-crud"
                 target="_blank"
               >
-                <b data-section="proyecto" data-value="title-6">CRUD</b>
+                <b data-section="proyecto" data-value="title-crud">CRUD</b>
 
-                <p data-section="proyecto" data-value="p-6">
+                <p data-section="proyecto" data-value="p-crud">
                   Router/Context/Reducers/Redux <span>React</span>
+                </p>
+              </a>
+            </div>
+            <div class="box-img bg-spa-apis">
+              <a
+                class="link-title"
+                href="https://fergsosa.github.io/app-SPA-apis/"
+                target="_blank"
+              >
+                <b data-section="proyecto" data-value="title-apis">SPA APIS</b>
+
+                <p data-section="proyecto" data-value="p-apis">
+                  Multiple apis consumption <span> HTML | CSS | JS </span>
                 </p>
               </a>
             </div>
@@ -541,11 +556,11 @@
                 href="https://fergsosa.github.io/react-app-tarjeta_de_compra/"
                 target="_blank"
               >
-                <b data-section="proyecto" data-value="title-3"
+                <b data-section="proyecto" data-value="title-shopping"
                   >Shopping cart</b
                 >
 
-                <p data-section="proyecto" data-value="p-3">
+                <p data-section="proyecto" data-value="p-shopping">
                   Loading product cart <span> React | Tailwind </span>
                 </p>
               </a>
@@ -556,9 +571,9 @@
                 href="https://fergsosa.github.io/eleventy-blog-started/"
                 target="_blank"
               >
-                <b data-section="proyecto" data-value="title-4">Blog</b>
+                <b data-section="proyecto" data-value="title-blog">Blog</b>
 
-                <p data-section="proyecto" data-value="p-4">
+                <p data-section="proyecto" data-value="p-blog">
                   Blog Markdown <span> Eleventy | Nunjucks </span>
                 </p>
               </a>
@@ -569,9 +584,11 @@
                 href="https://fergsosa.github.io/Incluir-html-AJAX/"
                 target="_blank"
               >
-                <b data-section="proyecto" data-value="title-2">Simple Page</b>
+                <b data-section="proyecto" data-value="title-ajax"
+                  >Simple Page</b
+                >
 
-                <p data-section="proyecto" data-value="p-2">
+                <p data-section="proyecto" data-value="p-ajax">
                   Integrating HTML with AJAX <span>HTML | CSS | JS</span>
                 </p>
               </a>
@@ -582,10 +599,10 @@
                 href="https://fergsosa.github.io/Slider-Efectos-Series/"
                 target="_blank"
               >
-                <b data-section="proyecto" data-value="title-1"
+                <b data-section="proyecto" data-value="title-slider"
                   >Slider Effect</b
                 >
-                <p data-section="proyecto" data-value="p-1">
+                <p data-section="proyecto" data-value="p-slider">
                   Slider details/automatic <span>HTML | CSS | JS</span>
                 </p>
               </a>
@@ -593,7 +610,7 @@
           </section>
 
           <section class="proyecto-apk">
-            <div class="box-apk">
+            <!-- <div class="box-apk">
               <div class="item-apk">
                 <div class="calculator">
                   <div class="screen">
@@ -627,8 +644,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="box-apk">
+            </div> -->
+
+            <!-- <div class="box-apk">
               <div class="item-apk">
                 <div class="qr-contenedor">
                   <form action="" id="qr-form" class="qr-form">
@@ -644,8 +662,9 @@
                   <div id="contenedorQR" class="contenedorQR"></div>
                 </div>
               </div>
-            </div>
-            <div class="box-apk">
+            </div> -->
+
+            <!-- <div class="box-apk">
               <div class="item-apk">
                 <div class="tags-container">
                   <div class="tags-title">
@@ -679,8 +698,9 @@
                   </button>
                 </div>
               </div>
-            </div>
-            <div class="box-apk">
+            </div> -->
+
+            <!-- <div class="box-apk">
               <div class="item-apk">
                 <div class="to-do-container">
                   <h3>ToDo</h3>
@@ -698,7 +718,7 @@
                   </section>
                 </div>
               </div>
-            </div>
+            </div> -->
           </section>
         </div>
       </section>
@@ -767,7 +787,7 @@
           </div>
           <button class="contact-cv">
             <a
-              href="assets/CV-Fer-Programacion-F.pdf"
+              href="assets/cv/CV-Fer-Programacion-F.pdf"
               target="_blank"
               data-section="contacto"
               data-value="a"

@@ -11,26 +11,27 @@
   },
   "sombreMi": {
     "h2": "About",
-    "p": "I have a self-taught profile of continuous learning, receptive to the feedback received. I focus on the basics of technologies, have good practices, identify work priorities and use programming as a tool to create solutions. I value clear communication for effective collaboration. I have good adaptability to the work environment."
+    "p": "I am a developer with +2 years of experience, specialized in scalable and maintainable projects, which has allowed me to consolidate my logical and technical skills. I consider myself proactive, self-taught and always willing to learn, valuing feedback and teamwork. My goal is to grow professionally in roles such as Full Stack Developer, Frontend Developer, Backend Developer or Web Programmer, providing value through my commitment, dedication and adaptability."
   },
   "habilidades": {
     "tool": "TOOLS"
   },
   "proyecto": {
     "h2": "Projects",
-    "title-1": "Slider Effect",
-    "p-1": "Slider details/automatic <span>HTML | CSS | JS</span>",
-    "title-2": "Simple Page",
-    "p-2": "Integrating HTML with AJAX <span>HTML | CSS | JS</span>",
-    "title-3": "Shopping cart",
-    "p-3": "Loading product cart <span> React | Tailwind </span>",
-    "title-4": "Blog",
-    "p-4": "Blog Markdown <span> Eleventy | Nunjucks </span>",
-    "title-5": "Theme Italic FS",
-    "p-5": "Theme Dark/Light <span> .VSIX </span>",
-    "title-6": "CRUD",
-    "p-6": "Router/Context/Reducers/Redux <span>React</span>",
-    "tag-btn": "Delete all"
+    "title-slider": "Slider Effect",
+    "p-slider": "Slider details/automatic <span>HTML | CSS | JS</span>",
+    "title-ajax": "Simple Page",
+    "p-ajax": "Integrating HTML with AJAX <span>HTML | CSS | JS</span>",
+    "title-shopping": "Shopping cart",
+    "p-shopping": "Loading product cart <span> React | Tailwind </span>",
+    "title-blog": "Blog",
+    "p-blog": "Blog Markdown <span> Eleventy | Nunjucks </span>",
+    "title-theme": "Theme Italic FS",
+    "p-theme": "Theme Dark/Light <span> .VSIX </span>",
+    "title-crud": "CRUD",
+    "p-crud": "Router/Context/Reducers/Redux <span>React</span>",
+    "title-apis": "SPA APIS",
+    "p-apis": "Multiple apis consumption <span> HTML | CSS | JS </span>"
   },
   "contacto": {
     "h2": "Contact",

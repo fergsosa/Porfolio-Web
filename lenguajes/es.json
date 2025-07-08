@@ -11,26 +11,27 @@
   },
   "sombreMi": {
     "h2": "Sobre mi",
-    "p": "Tengo un perfil autodidacta de continuo aprendizaje, receptivo al feedback recibido. Me enfoco en las bases de las tecnologías, tener buenas prácticas, identificar las prioridades de trabajo y usar la programación como herramienta para crear soluciones. Valoro la comunicación clara para tener una colaboración efectiva. Tengo buena capacidad de adaptación al entorno laboral."
+    "p": "Soy un desarrollador con +2 años de experiencia, especializado en proyectos escalables y mantenibles, lo que me ha permitido consolidar mis habilidades lógicas y técnicas. Me considero proactivo, autodidacta y siempre dispuesto a aprender, valorando el feedback y el trabajo en equipo. Mi objetivo es crecer profesionalmente en roles como Full Stack Developer, Frontend Developer, Backend Developer o Programador Web, aportando valor a través de mi compromiso, dedicación y adaptabilidad."
   },
   "habilidades": {
     "tool": "HERRAMIENTAS"
   },
   "proyecto": {
     "h2": "Proyectos",
-    "title-1": "Efectos de slider",
-    "p-1": "Slider detalles/automático  <span>HTML | CSS | JS</span>",
-    "title-2": "Página Simple",
-    "p-2": "Integrar HTML con AJAX  <span>HTML | CSS | JS</span>",
-    "title-3": "Carro de compra",
-    "p-3": "Carga carrito de productos  <span> React | Tailwind </span>",
-    "title-4": "Blog",
-    "p-4": "Blog Markdown <span> Eleventy | Nunjucks </span>",
-    "title-5": "Tema Itálica FS",
-    "p-5": "Tema Oscuro/Claro <span> .VSIX </span>",
-    "title-6": "CRUD",
-    "p-6": "Router/Context/Reducers/Redux <span>React</span>",
-    "tag-btn": "Borrar todo"
+    "title-slider": "Efectos de slider",
+    "p-slider": "Slider detalles/automático  <span>HTML | CSS | JS</span>",
+    "title-ajax": "Página Simple",
+    "p-ajax": "Integrar HTML con AJAX  <span>HTML | CSS | JS</span>",
+    "title-shopping": "Carro de compra",
+    "p-shopping": "Carga carrito de productos  <span> React | Tailwind </span>",
+    "title-blog": "Blog",
+    "p-blog": "Blog Markdown <span> Eleventy | Nunjucks </span>",
+    "title-theme": "Tema Itálica FS",
+    "p-theme": "Tema Oscuro/Claro <span> .VSIX </span>",
+    "title-crud": "CRUD",
+    "p-crud": "Router/Context/Reducers/Redux <span>React</span>",
+    "title-apis": "SPA APIS",
+    "p-apis": "Consumo de multiples apis <span> HTML | CSS | JS </span>"
   },
   "contacto": {
     "h2": "Contacto",
