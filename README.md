@@ -66,6 +66,10 @@ Este portafolio fue construido utilizando las siguientes tecnologías fundamenta
 - **CSS3**: Para un diseño responsivo, moderno y visualmente atractivo.
 - **JavaScript (Vanilla)**: Para añadir interactividad dinámica y funcionalidades personalizadas sin dependencias adicionales.
 
+## 🖥️ Capturas de pantalla
+
+![Capturas de pantalla](./screenshot.png)
+
 ---
 
 ## 📩 Conecta conmigo
