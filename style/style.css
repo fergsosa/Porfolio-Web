@@ -350,6 +350,13 @@
     .modal-form > .contact-form-error {
       transform: translateY(109px);
     }
+    .modal-form > textarea,
+    .modal-form input {
+      &::placeholder {
+        color: #fff8;
+        font-family: inherit;
+      }
+    }
 
     .modal-cerrar {
       position: absolute;
@@ -396,14 +403,6 @@
   100% {
     visibility: visible;
     opacity: 1;
-  }
-}
-
-.modal-form > textarea,
-.modal-form input {
-  &::placeholder {
-    color: #fff8;
-    font-family: inherit;
   }
 }
 
