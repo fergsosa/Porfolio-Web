@@ -157,23 +157,25 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+
   .flags-item {
-    width: 20px;
+    width: 22px;
     filter: drop-shadow(var(--box-shadow-s));
     cursor: pointer;
-    .flags-img {
-      border-radius: 0 7px 7px 0;
+
+    &:first-of-type {
+      margin-left: 0.5rem;
+      img {
+        border-radius: 8px 0 0 8px;
+      }
+    }
+    img {
+      border-radius: 0 8px 8px 0;
       &:hover,
       &:active {
         filter: brightness(2) drop-shadow(0 0 2px #fff9);
       }
     }
-    .first-img {
-      border-radius: 7px 0 0 7px;
-    }
-  }
-  .first-item {
-    margin-left: 0.5rem;
   }
 }
 
@@ -582,18 +584,17 @@ main > section {
   justify-content: center;
   left: 50%;
   transform: translate(-50%, 0%);
+  z-index: -1;
+
   view-timeline: --header-vtl;
   animation: adjust-image linear both;
   animation-timeline: --header-vtl;
   animation-range: exit;
-  z-index: -1;
 
-  .home-logo-hero {
+  img {
     min-width: 300px;
     max-width: 500px;
-    margin-top: 3rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 3rem 2rem;
     filter: var(--filter-logo);
     animation: bounce-in-top 1.1s both 1.5s;
   }
