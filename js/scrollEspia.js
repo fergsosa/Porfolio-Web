@@ -6,15 +6,12 @@ export default function scrollSpy() {
   const cb = (entries) => {
     entries.forEach((entry) => {
       const id = entry.target.getAttribute("id");
+      const $link = d.querySelector(`a[data-scroll-spy][href="#${id}"]`);
 
       if (entry.isIntersecting) {
-        d.querySelector(`a[data-scroll-spy][href="#${id}"]`).classList.add(
-          "active"
-        );
+        $link.classList.add("active");
       } else {
-        d.querySelector(`a[data-scroll-spy][href="#${id}"]`).classList.remove(
-          "active"
-        );
+        $link.classList.remove("active");
       }
     });
   };

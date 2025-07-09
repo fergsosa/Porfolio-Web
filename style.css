@@ -503,17 +503,18 @@ header {
       }
       &:active {
         background-color: var(--bg-btn-active);
-        outline: 0.5px solid var(--bg-btn-active-border);
+        outline: 0.5px solid var(--btn-navbar-active-border);
         box-shadow: var(--box-shadow-m);
       }
       &.active {
         background-color: var(--bg-btn-active);
-        outline: 0.5px solid var(--bg-btn-active-border);
+        outline: 0.5px solid var(--btn-navbar-active-border);
         box-shadow: var(--box-shadow-m);
+        /* box-shadow: var(--box-shadow-nav); */
       }
       &:hover {
         background-color: var(--bg-btn-active);
-        outline: 0.5px solid var(--bg-btn-active-border);
+        outline: 0.5px solid var(--btn-navbar-active-border);
         box-shadow: var(--box-shadow-m);
       }
     }
