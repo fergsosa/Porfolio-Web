@@ -1,22 +1,22 @@
 @import "./base-styles.css";
 @font-face {
   font-family: "Inter";
-  src: url(./font/Inter-Medium.woff2) format("woff2"),
-    url(./font/Inter-Medium.woff) format("woff");
+  src: url(../font/Inter-Medium.woff2) format("woff2"),
+    url(../font/Inter-Medium.woff) format("woff");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url(./font/Inter-Bold.woff2) format("woff2"),
-    url(./font/Inter-Bold.woff) format("woff");
+  src: url(../font/Inter-Bold.woff2) format("woff2"),
+    url(../font/Inter-Bold.woff) format("woff");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "League Gothic";
-  src: url(./font/LeagueGothic-Regular-VariableFont_wdth.woff2) format("woff2"),
-    url(./font/LeagueGothic-Regular-VariableFont_wdth.woff) format("woff");
+  src: url(../font/LeagueGothic-Regular-VariableFont_wdth.woff2) format("woff2"),
+    url(../font/LeagueGothic-Regular-VariableFont_wdth.woff) format("woff");
   font-display: swap;
 }
 
@@ -844,25 +844,25 @@ main > section {
         }
       }
       .bg-theme-fs {
-        background-image: url(assets/project/theme-fs.avif);
+        background-image: url(../assets/project/theme-fs.avif);
       }
       .bg-crud {
-        background-image: url(assets/project/crud.avif);
+        background-image: url(../assets/project/crud.avif);
       }
       .bg-spa-apis {
-        background-image: url(assets/project/spa_apis.png);
+        background-image: url(../assets/project/spa_apis.png);
       }
       .bg-tarjeta-compra {
-        background-image: url(assets/project/e-commers.avif);
+        background-image: url(../assets/project/e-commers.avif);
       }
       .bg-blog {
-        background-image: url(assets/project/blog.avif);
+        background-image: url(../assets/project/blog.avif);
       }
       .bg-ajax {
-        background-image: url(assets/project/incluir-html-ajax.avif);
+        background-image: url(../assets/project/incluir-html-ajax.avif);
       }
       .bg-sliders {
-        background-image: url(assets/project/reloj-serie.avif);
+        background-image: url(../assets/project/reloj-serie.avif);
       }
     }
   }
