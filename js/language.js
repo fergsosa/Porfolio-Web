@@ -11,7 +11,7 @@ export default function Language(btns, textsToChange) {
       const texts = await requestJson.json();
 
       for (const textToChange of $textsToChange) {
-        const { section, value } = textToChange;
+        const { section, value } = textToChange.dataset;
         textToChange.innerHTML = texts[section][value];
       }
     } catch (error) {
