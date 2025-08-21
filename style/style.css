@@ -472,7 +472,7 @@ header {
   position: relative;
   display: flex;
 
-  .menu-nav {
+  nav {
     width: max-content;
     position: fixed;
     bottom: 0.5rem;
@@ -957,7 +957,7 @@ main > section {
   }
 
   .menu {
-    .menu-nav {
+    nav {
       padding: var(--box-8-9);
 
       a {
@@ -1012,11 +1012,9 @@ main > section {
     transform: translateY(40px);
   }
   .menu {
-    .menu-nav {
+    nav {
       top: 10px;
       bottom: unset;
-    }
-    .menu-nav {
       padding: 4px;
 
       a {
