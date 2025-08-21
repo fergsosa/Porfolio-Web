@@ -560,7 +560,7 @@ main > section {
         opacity: 0;
         animation: showContent 0.5s linear 0.8s forwards;
       }
-      & .box-contact {
+      .box-contact {
         transform: translateY(-30px);
         filter: blur(5px);
         opacity: 0;
@@ -698,9 +698,11 @@ main > section {
         --f: 1.15;
       }
     }
+
     .about-text {
       h2 {
-        text-align: center;
+        text-align: start;
+        /* border: 3px solid red; */
       }
       p {
         margin-top: 1rem;
@@ -1003,10 +1005,12 @@ main > section {
       img {
         width: 30%;
       }
+
+      .about-text > h2 {
+        text-align: center;
+        /* background-color: red; */
+      }
     }
-  }
-  .about-text > h2 {
-    text-align: start;
   }
   .contact > small {
     bottom: 6rem;
