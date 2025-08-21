@@ -236,6 +236,9 @@ p {
 button {
   border: none;
 }
+figure {
+  margin: 0;
+}
 svg {
   transition: color var(--transition-m);
 }

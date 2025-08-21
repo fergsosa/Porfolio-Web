@@ -735,9 +735,10 @@ main > section {
         margin-top: 1rem;
         gap: 1rem;
 
-        .box-icon {
+        figure {
           display: flex;
           flex-direction: column;
+          z-index: 1;
           &:hover img {
             &:first-child {
               filter: drop-shadow(var(--box-shadow-icon-m));
@@ -750,8 +751,6 @@ main > section {
             max-width: 57px;
             transition: box-shadow var(--transition-m),
               transform var(--transition-m);
-            /* pointer-events: none; */
-            /* background-color: red; */
 
             &:last-child {
               padding-top: 0.2rem;
@@ -802,7 +801,7 @@ main > section {
     .proyecto-page {
       max-width: 100%;
 
-      .box-img {
+      figure {
         view-timeline-name: --scroll-section;
         animation: show-section auto linear both;
         animation-timeline: --scroll-section;
@@ -1057,7 +1056,7 @@ main > section {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
 
-        .box-img:nth-last-child(1):nth-child(odd) {
+        figure:nth-last-child(1):nth-child(odd) {
           grid-column: span 2;
         }
       }
