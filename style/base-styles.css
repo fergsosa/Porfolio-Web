@@ -218,7 +218,7 @@ ul {
 li {
   list-style: none;
   font-size: var(--font-13);
-  line-height: 1.6;
+  /* line-height: 1.6; */
 }
 
 img {
