@@ -884,7 +884,7 @@ main > section {
     align-items: center;
     gap: 1rem;
 
-    span {
+    p {
       font-weight: 600;
       font-size: var(--font-20);
     }
