@@ -53,17 +53,25 @@
 
         <div id="flags" class="header-flags">
           <button class="btn-mode-dark" title="light">
-            <img src="assets/icon-sunny.svg" alt="dark" />
+            <img src="assets/icon-sunny.svg" alt="dark" fetchpriority="high" />
           </button>
           <button class="btn-mode-light" title="dark">
-            <img src="assets/icon-moon.svg" alt="light" />
+            <img src="assets/icon-moon.svg" alt="light" fetchpriority="high" />
           </button>
 
           <figure class="flags-item" data-language="es" title="español">
-            <img src="assets/icon/bandera-es.svg" alt="es" />
+            <img
+              src="assets/icon/bandera-es.svg"
+              alt="es"
+              fetchpriority="high"
+            />
           </figure>
           <figure class="flags-item" data-language="en" title="ingles">
-            <img src="assets/icon/bandera-gb.svg" alt="en" />
+            <img
+              src="assets/icon/bandera-gb.svg"
+              alt="en"
+              fetchpriority="high"
+            />
           </figure>
         </div>
       </div>
@@ -95,7 +103,11 @@
     </figure>
 
     <figure class="home-img-hero">
-      <img src="assets/logo-hero-light.svg" alt="logo-hero" />
+      <img
+        src="assets/logo-hero-light.svg"
+        alt="logo-hero"
+        fetchpriority="high"
+      />
     </figure>
 
     <div class="menu">
@@ -107,6 +119,7 @@
             src="assets/icon/btn-menu-home.svg"
             alt="Home"
             title="Home"
+            fetchpriority="high"
           />
         </a>
         <a href="#sobreMi" data-scroll-spy>
@@ -116,6 +129,7 @@
             src="assets/icon/btn-menu-perfil.svg"
             alt="About"
             title="About"
+            fetchpriority="high"
           />
         </a>
         <a href="#habilidades" data-scroll-spy>
@@ -125,6 +139,7 @@
             src="assets/icon/btn-menu-habilidades.svg"
             alt="Skills"
             title="Skills"
+            fetchpriority="high"
           />
         </a>
         <a href="#proyectos" data-scroll-spy>
@@ -134,6 +149,7 @@
             src="assets/icon/btn-menu-proyectos.svg"
             alt="Porfolio"
             title="Porfolio"
+            fetchpriority="high"
           />
         </a>
         <a href="#contacto" data-scroll-spy>
@@ -143,6 +159,7 @@
             src="assets/icon/btn-menu-contacto.svg"
             alt="Contact"
             title="Contact"
+            fetchpriority="high"
           />
         </a>
       </nav>
@@ -357,7 +374,7 @@
             src="assets/fer-cv.avif"
             alt="Fernando Sosa"
             title="Programador"
-            loading="lazy"
+            decoding="async"
           />
           <article class="about-text">
             <h2 class="title-second" data-section="sombreMi" data-value="h2">
@@ -383,24 +400,64 @@
             <h2 class="title-second">FRONTEND</h2>
             <div class="skills-item">
               <figure>
-                <img src="assets/skill/front-html.svg" alt="html" />
-                <img src="assets/skill/front-html-text.svg" alt="html" />
+                <img
+                  src="assets/skill/front-html.svg"
+                  alt="html"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/front-html-text.svg"
+                  alt="html"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/front-css.svg" alt="css" />
-                <img src="assets/skill/front-css-text.svg" alt="css" />
+                <img
+                  src="assets/skill/front-css.svg"
+                  alt="css"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/front-css-text.svg"
+                  alt="css"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/front-js.svg" alt="JavaScript" />
-                <img src="assets/skill/front-js-text.svg" alt="JavaScript" />
+                <img
+                  src="assets/skill/front-js.svg"
+                  alt="JavaScript"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/front-js-text.svg"
+                  alt="JavaScript"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/front-ts.svg" alt="TypeScript" />
-                <img src="assets/skill/front-ts-text.svg" alt="TypeScript" />
+                <img
+                  src="assets/skill/front-ts.svg"
+                  alt="TypeScript"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/front-ts-text.svg"
+                  alt="TypeScript"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/front-react.svg" alt="react" />
-                <img src="assets/skill/front-react-text.svg" alt="react" />
+                <img
+                  src="assets/skill/front-react.svg"
+                  alt="react"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/front-react-text.svg"
+                  alt="react"
+                  decoding="async"
+                />
               </figure>
             </div>
           </div>
@@ -408,24 +465,58 @@
             <h2 class="title-second">BACKEND</h2>
             <div class="skills-item">
               <figure>
-                <img src="assets/skill/back-nodejs.svg" alt="node" js" /> <img
-                src="assets/skill/back-nodejs-text.svg" alt="node" js" />
+                <img src="assets/skill/back-nodejs.svg" alt="node"
+                decoding="async" js" /> <img
+                src="assets/skill/back-nodejs-text.svg" alt="node"
+                decoding="async" js" />
               </figure>
               <figure>
-                <img src="assets/skill/back-express.svg" alt="express" />
-                <img src="assets/skill/back-express-text.svg" alt="express" />
+                <img
+                  src="assets/skill/back-express.svg"
+                  alt="express"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/back-express-text.svg"
+                  alt="express"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/back-mysql.svg" alt="MySQL" />
-                <img src="assets/skill/back-mysql-text.svg" alt="MySQL" />
+                <img
+                  src="assets/skill/back-mysql.svg"
+                  alt="MySQL"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/back-mysql-text.svg"
+                  alt="MySQL"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/back-sqlite.svg" alt="SQLite" />
-                <img src="assets/skill/back-sqlite-text.svg" alt="SQLite" />
+                <img
+                  src="assets/skill/back-sqlite.svg"
+                  alt="SQLite"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/back-sqlite-text.svg"
+                  alt="SQLite"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/back-mongodb.svg" alt="MongoDB" />
-                <img src="assets/skill/back-mongodb-text.svg" alt="MongoDB" />
+                <img
+                  src="assets/skill/back-mongodb.svg"
+                  alt="MongoDB"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/back-mongodb-text.svg"
+                  alt="MongoDB"
+                  decoding="async"
+                />
               </figure>
             </div>
           </div>
@@ -439,44 +530,99 @@
             </h2>
             <div class="skills-item herramie">
               <figure>
-                <img src="assets/skill/herr-terminal.svg" alt="terminal" />
-                <img src="assets/skill/herr-terminal-text.svg" alt="terminal" />
+                <img
+                  src="assets/skill/herr-terminal.svg"
+                  alt="terminal"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/herr-terminal-text.svg"
+                  alt="terminal"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/herr-git.svg" alt="git" />
-                <img src="assets/skill/herr-git-text.svg" alt="git" />
+                <img
+                  src="assets/skill/herr-git.svg"
+                  alt="git"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/herr-git-text.svg"
+                  alt="git"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/herr-github.svg" alt="github" />
-                <img src="assets/skill/herr-github-text.svg" alt="github" />
+                <img
+                  src="assets/skill/herr-github.svg"
+                  alt="github"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/herr-github-text.svg"
+                  alt="github"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/herr-npm.svg" alt="npm" />
-                <img src="assets/skill/herr-npm-text.svg" alt="npm" />
+                <img
+                  src="assets/skill/herr-npm.svg"
+                  alt="npm"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/herr-npm-text.svg"
+                  alt="npm"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/herr-vite.svg" alt="vite" />
-                <img src="assets/skill/herr-vite-text.svg" alt="vite" />
+                <img
+                  src="assets/skill/herr-vite.svg"
+                  alt="vite"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/herr-vite-text.svg"
+                  alt="vite"
+                  decoding="async"
+                />
               </figure>
               <figure>
-                <img src="assets/skill/herr-figma.svg" alt="figma" />
-                <img src="assets/skill/herr-figma-text.svg" alt="figma" />
+                <img
+                  src="assets/skill/herr-figma.svg"
+                  alt="figma"
+                  decoding="async"
+                />
+                <img
+                  src="assets/skill/herr-figma-text.svg"
+                  alt="figma"
+                  decoding="async"
+                />
               </figure>
               <figure>
                 <img
                   src="assets/skill/herr-illustrator.svg"
                   alt="illustrator"
+                  decoding="async"
                 />
                 <img
                   src="assets/skill/herr-illustrator-text.svg"
                   alt="illustrator"
+                  decoding="async"
                 />
               </figure>
               <figure>
-                <img src="assets/skill/herr-photoshop.svg" alt="photoshop" />
+                <img
+                  src="assets/skill/herr-photoshop.svg"
+                  alt="photoshop"
+                  decoding="async"
+                />
                 <img
                   src="assets/skill/herr-photoshop-text.svg"
                   alt="photoshop"
+                  decoding="async"
                 />
               </figure>
             </div>
