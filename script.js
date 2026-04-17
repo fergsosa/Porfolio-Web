@@ -2,6 +2,8 @@ import language from "./js/language.js";
 import { revealObserver, toggleObserver } from "./js/scroll-observer.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
+  console.log("se cargo el script");
+
   language("flags", "[data-section]");
   revealObserver(".animation", { className: "revealed", threshold: 0.2 });
   revealObserver(".animation.fade-up-hidden", {
