@@ -68,8 +68,7 @@ Este portafolio fue construido utilizando las siguientes tecnologías fundamenta
 
 ## 🖥️ Capturas de pantalla
 
-![Capturas de pantalla light](./screenshot-light.png)
-![Capturas de pantalla dark](./screenshot-dark.png)
+![Capturas de pantalla](./screenshot.png)
 
 ---
 

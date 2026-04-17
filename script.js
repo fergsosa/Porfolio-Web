@@ -1,13 +1,16 @@
-import scrollSpy from "./js/scrollEspia.js";
-import contactFormValidations from "./js/validacionForm.js";
-import ThemeDark from "./js/themeDark-02.js";
-import Language from "./js/language.js";
-import copiarCorreo from "./js/copiarCorreo.js";
+import language from "./js/language.js";
+import { revealObserver, toggleObserver } from "./js/scroll-observer.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  scrollSpy();
-  contactFormValidations();
-  ThemeDark(".btn-mode-light", ".btn-mode-dark");
-  Language("flags", "[data-section]");
-  copiarCorreo("textCopy", "btnText", "icoCopy");
+  language("flags", "[data-section]");
+  revealObserver(".animation", { className: "revealed", threshold: 0.2 });
+  revealObserver(".animation.fade-up-hidden", {
+    className: "revealed",
+    threshold: 0.3,
+  });
+
+  toggleObserver("#animation-menu-trigger", ".menu", {
+    className: "scroll-menu",
+    rootMargin: "130px 0px 0px 0px",
+  });
 });

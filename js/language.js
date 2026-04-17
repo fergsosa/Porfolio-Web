@@ -1,4 +1,4 @@
-export default function Language(btns, textsToChange) {
+export default function language(btns, textsToChange) {
   const $flagsElement = document.getElementById(btns);
   const $textsToChange = document.querySelectorAll(textsToChange);
 

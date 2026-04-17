@@ -1,862 +1,861 @@
-<!DOCTYPE html>
-<html lang="es" data-theme="light">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fernando Sosa</title>
-    <link rel="icon" href="assets/icono-page.ico" />
-
-    <link rel="stylesheet" href="./style/style.css" />
-
-    <script src="script.js" type="module" defer></script>
-    <script>
-      // (function () {
-      const userTheme = localStorage.getItem("theme"),
-        darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-      if (userTheme === "dark" || (!userTheme && darkQuery.matches)) {
-        setTheme("dark");
-      }
-
-      darkQuery.addEventListener("change", function (e) {
-        if (!localStorage.getItem("theme"))
-          setTheme(e.matches ? "dark" : "light");
-      });
-
-      function setTheme(newTheme) {
-        document.documentElement.setAttribute("data-theme", newTheme);
-      }
-      // });
-    </script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Porfolio nuevo</title>
   </head>
   <body>
-    <header>
-      <div class="header-container container">
-        <a class="header-logo" href="index.html" title="Inicio">
-          <svg
-            width="52"
-            height="36"
-            viewBox="0 0 52 36"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M44.333 11.0841C44.2 9.74285 43.6291 8.70089 42.6204 7.95821C41.6117 7.21553 40.2427 6.8442 38.5135 6.8442C37.3386 6.8442 36.3465 7.01047 35.5373 7.34301C34.7281 7.66447 34.1074 8.1134 33.6751 8.6898C33.2538 9.26621 33.0432 9.92021 33.0432 10.6518C33.0211 11.2615 33.1485 11.7935 33.4256 12.248C33.7138 12.7025 34.1074 13.096 34.6062 13.4285C35.105 13.75 35.6814 14.0326 36.3354 14.2765C36.9894 14.5093 37.6877 14.7088 38.4304 14.8751L41.4898 15.6067C42.9751 15.9392 44.3386 16.3826 45.58 16.9368C46.8215 17.4911 47.8967 18.1728 48.8057 18.982C49.7146 19.7911 50.4185 20.7444 50.9173 21.8418C51.4272 22.9392 51.6877 24.1973 51.6988 25.6162C51.6877 27.7001 51.1557 29.5069 50.1026 31.0366C49.0606 32.5552 47.5531 33.7357 45.58 34.5782C43.618 35.4095 41.2515 35.8252 38.4803 35.8252C35.7313 35.8252 33.337 35.404 31.2974 34.5615C29.2689 33.7191 27.6838 32.4721 26.542 30.8204C25.4114 29.1577 24.8184 27.1015 24.7629 24.6518H31.7297C31.8073 25.7935 32.1343 26.7468 32.7107 27.5117C33.2982 28.2654 34.0796 28.8363 35.0551 29.2242C36.0416 29.6011 37.1557 29.7896 38.3971 29.7896C39.6165 29.7896 40.6751 29.6122 41.5729 29.2575C42.4819 28.9028 43.1857 28.4095 43.6846 27.7777C44.1834 27.1459 44.4328 26.4198 44.4328 25.5995C44.4328 24.8347 44.2055 24.1918 43.7511 23.6708C43.3077 23.1498 42.6537 22.7064 41.7891 22.3406C40.9355 21.9748 39.888 21.6423 38.6466 21.343L34.9387 20.4119C32.0678 19.7136 29.8009 18.6217 28.1382 17.1364C26.4755 15.651 25.6497 13.6502 25.6608 11.134C25.6497 9.07222 26.1984 7.27096 27.3069 5.73018C28.4264 4.18941 29.9617 2.98672 31.9126 2.12211C33.8635 1.2575 36.0804 0.825195 38.5634 0.825195C41.0907 0.825195 43.2966 1.2575 45.181 2.12211C47.0765 2.98672 48.5507 4.18941 49.6038 5.73018C50.6568 7.27096 51.2 9.0556 51.2332 11.0841H44.333Z"
-              fill="currentColor"
-            />
-            <path
-              d="M0.844482 35.2727V1.27271H23.3562V7.19946H8.03296V15.301H21.8621V21.2278H8.03296V35.2727H0.844482Z"
-              fill="currentColor"
-            />
-          </svg>
-        </a>
+    <div class="animation-curtain">
+      <header>
+        <div class="header-container container">
+          <a class="header-logo" href="index.html" title="Inicio">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="52"
+              height="36"
+              fill="none"
+              viewBox="0 0 52 36"
+            >
+              <path
+                fill="currentColor"
+                d="M44.333 11.084q-.2-2.011-1.713-3.126-1.512-1.114-4.106-1.114-1.763 0-2.977.499-1.214.482-1.862 1.347a3.24 3.24 0 0 0-.632 1.962q-.034.915.383 1.596.432.682 1.18 1.18a9 9 0 0 0 1.73.848q.98.35 2.094.6l3.06.73q2.228.5 4.09 1.33 1.863.832 3.226 2.046a8.5 8.5 0 0 1 2.111 2.86q.764 1.646.782 3.774-.017 3.125-1.596 5.42-1.563 2.28-4.523 3.542-2.943 1.247-7.1 1.247-4.123 0-7.183-1.264-3.042-1.263-4.755-3.74-1.695-2.495-1.78-6.17h6.968q.116 1.714.98 2.86.882 1.131 2.345 1.713 1.48.566 3.342.566 1.83 0 3.176-.532 1.363-.532 2.112-1.48a3.42 3.42 0 0 0 .748-2.178q0-1.147-.682-1.93-.664-.78-1.962-1.33-1.28-.548-3.142-.997l-3.708-.931q-4.307-1.047-6.8-3.276-2.495-2.228-2.478-6.002-.017-3.093 1.646-5.404 1.68-2.31 4.606-3.608Q34.838.826 38.563.825q3.792 0 6.618 1.297 2.844 1.297 4.423 3.608t1.63 5.354zM.844 35.273v-34h22.512v5.926H8.033v8.102h13.83v5.927H8.032v14.045z"
+              />
+            </svg>
+          </a>
 
-        <div id="flags" class="header-flags">
-          <button class="btn-mode-dark" title="light">
-            <img src="assets/icon-sunny.svg" alt="dark" fetchpriority="high" />
-          </button>
-          <button class="btn-mode-light" title="dark">
-            <img src="assets/icon-moon.svg" alt="light" fetchpriority="high" />
-          </button>
-
-          <figure class="flags-item" data-language="es" title="español">
-            <img
-              src="assets/icon/bandera-es.svg"
-              alt="es"
-              fetchpriority="high"
-            />
-          </figure>
-          <figure class="flags-item" data-language="en" title="ingles">
-            <img
-              src="assets/icon/bandera-gb.svg"
-              alt="en"
-              fetchpriority="high"
-            />
-          </figure>
+          <div id="flags" class="header-flags">
+            <figure class="flags-item" data-language="es" title="español">
+              <img
+                src="assets/icon/bandera-es.svg"
+                alt="es"
+                fetchpriority="high"
+              />
+            </figure>
+            <figure class="flags-item" data-language="en" title="ingles">
+              <img
+                src="assets/icon/bandera-gb.svg"
+                alt="en"
+                fetchpriority="high"
+              />
+            </figure>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
 
-    <figure class="home-bg-puntos">
-      <svg
-        style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px"
-      >
-        <pattern
-          id="pattern-1:rb:"
-          x="4"
-          y="2"
-          width="24"
-          height="24"
-          patternUnits="userSpaceOnUse"
-          patternTransform="translate(-0.5,-0.5)"
-        >
-          <circle cx="0.5" cy="0.5" r="0.5" fill="var(--bg-puntos)"></circle>
-        </pattern>
-        <rect
-          x="0"
-          y="0"
-          width="100%"
-          height="100%"
-          fill="url(#pattern-1:rb:)"
-        ></rect>
-      </svg>
-    </figure>
-
-    <figure class="home-img-hero">
-      <img
-        src="assets/logo-hero-light.svg"
-        alt="logo-hero"
-        fetchpriority="high"
-      />
-    </figure>
-
-    <nav aria-label="menu">
+    <div id="animation-menu-trigger"></div>
+    <nav aria-label="menu" class="menu">
       <ul>
-        <li>
-          <a href="#inicio" data-scroll-spy>
-            <img
+        <li class="nav-inicio">
+          <a href="#inicio">
+            <!-- <img
               class="menu-home"
               src="assets/icon/btn-menu-home.svg"
               alt="Home"
               fetchpriority="high"
-            />
+            /> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="none"
+              viewBox="0 0 29 28"
+            >
+              <path
+                fill="currentColor"
+                d="M14.896 5.606a.434.434 0 0 0-.6 0l-9.988 9.541a.43.43 0 0 0-.134.314l-.002 8.955a1.736 1.736 0 0 0 1.736 1.737h5.214a.87.87 0 0 0 .868-.868v-7.379a.434.434 0 0 1 .434-.434h4.34a.434.434 0 0 1 .434.434v7.379a.87.87 0 0 0 .868.868h5.212a1.736 1.736 0 0 0 1.736-1.736V15.46a.43.43 0 0 0-.134-.314z"
+              />
+              <path
+                fill="currentColor"
+                d="M27.339 13.357 23.28 9.475V3.583a.87.87 0 0 0-.868-.868h-2.605a.87.87 0 0 0-.868.868V5.32l-3.142-3.004c-.294-.297-.731-.468-1.204-.468-.47 0-.907.17-1.201.468L1.853 13.356c-.337.325-.38.861-.072 1.214a.87.87 0 0 0 1.257.057L14.296 3.87a.434.434 0 0 1 .6 0l11.258 10.757a.87.87 0 0 0 1.226-.024c.333-.345.306-.915-.041-1.246"
+              />
+            </svg>
             <span data-section="menu" data-value="m1">Home</span>
           </a>
         </li>
-        <li>
-          <a href="#sobreMi" data-scroll-spy>
-            <img
-              class="menu-about"
-              src="assets/icon/btn-menu-perfil.svg"
-              alt="About"
-              fetchpriority="high"
-            />
-            <span data-section="menu" data-value="m2">About</span>
-          </a>
-        </li>
-        <li>
-          <a href="#habilidades" data-scroll-spy>
-            <img
-              class="menu-skills"
-              src="assets/icon/btn-menu-habilidades.svg"
-              alt="Skills"
-              fetchpriority="high"
-            />
+        <li class="nav-habilidades">
+          <a href="#habilidades">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="none"
+              viewBox="0 0 28 28"
+            >
+              <g fill="currentColor" clip-path="url(#clip0_292_674)">
+                <path
+                  d="M27.432 6.958a.914.914 0 0 0-1.468-.247l-2.775 2.775a.605.605 0 0 1-.85 0l-1.22-1.22a.606.606 0 0 1 0-.85l2.76-2.76a.914.914 0 0 0-.285-1.487c-2.155-.923-4.833-.404-6.51 1.263-1.455 1.444-1.89 3.69-1.194 6.169a.6.6 0 0 1-.172.602l-9.38 8.716a3.08 3.08 0 1 0 4.348 4.35l8.794-9.397a.6.6 0 0 1 .591-.172c2.442.651 4.666.217 6.1-1.193.825-.814 1.4-1.963 1.622-3.24.207-1.204.076-2.41-.36-3.31"
+                />
+                <path
+                  d="M23.838 20.641c-.757-.629-2.372-2.083-4.019-3.592l-3.584 3.83c1.532 1.628 2.919 3.139 3.526 3.846l.004.004a1.63 1.63 0 0 0 1.164.556h.06c.426-.002.835-.17 1.14-.468l.003-.004 1.814-1.81a1.6 1.6 0 0 0-.109-2.362m-17.296-8.89a1.1 1.1 0 0 0-.163-.583.15.15 0 0 1 .143-.23h.003c.045.005.29.04.635.25.256.156.989.656 2.264 1.929-.014.433.125.858.391 1.2l3.594-3.34a1.83 1.83 0 0 0-1.172-.498l-.012-.015-.035-.037-1.331-1.836a1.54 1.54 0 0 1-.217-1.417c.122-.351.344-.66.639-.887.308-.239 1.005-.527 1.597-.576a3 3 0 0 1 .824.051q.195.048.383.116a.868.868 0 0 0 1.005-1.325 4 4 0 0 0-.156-.203 5 5 0 0 0-.521-.562c-.442-.4-1.588-1.073-3.093-1.073a6.7 6.7 0 0 0-2.512.489c-2.081.838-3.443 1.984-4.07 2.592l-.004.005q-.632.625-1.167 1.336c-.134.19-.222.408-.255.639a.4.4 0 0 1-.418.334h-.06a1.12 1.12 0 0 0-.791.32L.445 9.988l-.017.017a1.133 1.133 0 0 0 .018 1.59l2.577 2.514a1.14 1.14 0 0 0 1.586.005l1.599-1.562a1.1 1.1 0 0 0 .334-.8"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_292_674">
+                  <path fill="#fff" d="M.111.111h27.778V27.89H.111z" />
+                </clipPath>
+              </defs>
+            </svg>
             <span data-section="menu" data-value="m3">Skills</span>
           </a>
         </li>
-        <li>
-          <a href="#proyectos" data-scroll-spy>
-            <img
-              class="menu-project"
-              src="assets/icon/btn-menu-proyectos.svg"
-              alt="Porfolio"
-              fetchpriority="high"
-            />
+        <li class="nav-proyectos">
+          <a href="#proyectos">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="none"
+              viewBox="0 0 29 28"
+            >
+              <path
+                fill="currentColor"
+                d="m26.837 14.689-1.736-8.236c-.335-1.797-1.626-2.87-3.454-2.87H7.758c-.911 0-1.681.255-2.284.757-.602.501-.996 1.21-1.17 2.11l-1.737 8.239a1 1 0 0 0-.017.179v6.076a3.47 3.47 0 0 0 3.472 3.473h17.361a3.47 3.47 0 0 0 3.473-3.473v-6.076q0-.09-.019-.18M6.004 6.8v-.015c.192-1 .75-1.465 1.752-1.465h13.891c1.01 0 1.567.464 1.751 1.46l.004.022 1.46 6.938a.218.218 0 0 1-.212.261h-6.475a.864.864 0 0 0-.868.858 2.604 2.604 0 0 1-5.208 0 .865.865 0 0 0-.868-.86H4.755a.216.216 0 0 1-.21-.165.2.2 0 0 1-.002-.096z"
+              />
+              <path
+                fill="currentColor"
+                d="M20.78 8.792H8.625a.868.868 0 1 1 0-1.737H20.78a.868.868 0 0 1 0 1.737m.867 3.472H7.758a.868.868 0 0 1 0-1.736h13.89a.868.868 0 0 1 0 1.736"
+              />
+            </svg>
             <span data-section="menu" data-value="m4">Porfolio</span>
           </a>
         </li>
-        <li>
-          <a href="#contacto" data-scroll-spy>
-            <img
-              class="menu-contact"
-              src="assets/icon/btn-menu-contacto.svg"
-              alt="Contact"
-              fetchpriority="high"
-            />
+        <li class="nav-sobre-mi">
+          <a href="#sobreMi">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="none"
+              viewBox="0 0 29 28"
+            >
+              <!-- fill="#242424" -->
+              <path
+                fill="currentColor"
+                d="M26.19 11.316c-.56-2.64-2.048-5.042-4.189-6.765a12.34 12.34 0 0 0-7.714-2.704c-3.305 0-6.392 1.273-8.7 3.586-2.23 2.237-3.452 5.191-3.443 8.316a11.7 11.7 0 0 0 1.934 6.443l.236.328-1.302 5.633 6.229-1.55s.124.042.217.077c.092.036.886.34 1.728.575.7.196 2.156.489 3.297.489 3.236 0 6.258-1.254 8.508-3.53a11.96 11.96 0 0 0 3.459-8.459c0-.82-.087-1.638-.26-2.44m-17.1 4.421a1.737 1.737 0 1 1 0-3.473 1.737 1.737 0 0 1 0 3.473m5.208 0a1.737 1.737 0 1 1 0-3.473 1.737 1.737 0 0 1 0 3.473m5.209 0a1.737 1.737 0 1 1 0-3.473 1.737 1.737 0 0 1 0 3.473"
+              />
+            </svg>
+            <span data-section="menu" data-value="m2">About</span>
+          </a>
+        </li>
+        <li class="nav-contacto">
+          <a href="#contacto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="none"
+              viewBox="0 0 29 28"
+            >
+              <path
+                fill="currentColor"
+                d="M18.564 3.615c-1.056-1.14-2.53-1.768-4.158-1.768-1.636 0-3.116.624-4.167 1.757-1.062 1.145-1.58 2.702-1.458 4.382C9.022 11.303 11.545 14 14.406 14c2.86 0 5.38-2.697 5.625-6.012.123-1.666-.398-3.22-1.467-4.373m5.39 22.538H4.859a1.68 1.68 0 0 1-1.313-.604c-.353-.422-.495-.997-.39-1.58.458-2.54 1.887-4.673 4.133-6.171 1.996-1.33 4.523-2.062 7.118-2.062s5.123.732 7.118 2.062c2.246 1.497 3.675 3.63 4.133 6.171.105.582-.037 1.158-.39 1.58a1.68 1.68 0 0 1-1.312.604"
+              />
+            </svg>
             <span data-section="menu" data-value="m5">Contact</span>
           </a>
         </li>
       </ul>
     </nav>
 
-    <section class="modal-offer">
-      <article id="modal" class="modal-window c-visible">
-        <div class="modal-box">
-          <form
-            action="https://formspree.io/f/mpzvedjo"
-            class="modal-form"
-            method="POST"
-            target="_blank"
-          >
-            <label title="nombre">
-              <svg
-                width="29"
-                height="28"
-                viewBox="0 0 29 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18.5641 3.61475C17.5083 2.47488 16.0337 1.84717 14.4061 1.84717C12.7698 1.84717 11.2903 2.47108 10.2395 3.6039C9.17718 4.74919 8.6596 6.30572 8.78113 7.98649C9.02201 11.3025 11.5453 13.9999 14.4061 13.9999C17.2669 13.9999 19.7859 11.303 20.0306 7.98758C20.1537 6.32199 19.6329 4.76872 18.5641 3.61475ZM23.9547 26.1527H4.85752C4.60755 26.156 4.36 26.1035 4.13289 25.999C3.90577 25.8946 3.70479 25.7408 3.54458 25.5489C3.19193 25.1273 3.04979 24.5517 3.15504 23.9696C3.61294 21.4294 5.04198 19.2956 7.28807 17.7977C9.28351 16.4679 11.8112 15.7361 14.4061 15.7361C17.0011 15.7361 19.5287 16.4685 21.5242 17.7977C23.7703 19.2951 25.1993 21.4289 25.6572 23.969C25.7625 24.5512 25.6203 25.1268 25.2677 25.5483C25.1075 25.7403 24.9066 25.8942 24.6794 25.9988C24.4523 26.1033 24.2047 26.1559 23.9547 26.1527Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <input
-                type="text"
-                name="name"
-                placeholder="Nombre"
-                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-                title="El nombre solo acepta letras y espacios en blanco"
-                required
-              />
-            </label>
-            <label title="email">
-              <svg
-                width="28"
-                height="27"
-                viewBox="0 0 28 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22.7364 4.20947H5.07807C4.29778 4.21031 3.54968 4.52065 2.99793 5.0724C2.44618 5.62415 2.13584 6.37224 2.13501 7.15253V19.7656C2.13584 20.5459 2.44618 21.294 2.99793 21.8458C3.54968 22.3975 4.29778 22.7079 5.07807 22.7087H22.7364C23.5167 22.7079 24.2648 22.3975 24.8166 21.8458C25.3683 21.294 25.6787 20.5459 25.6795 19.7656V7.15253C25.6787 6.37224 25.3683 5.62415 24.8166 5.0724C24.2648 4.52065 23.5167 4.21031 22.7364 4.20947ZM21.9912 9.07761L14.4233 14.9637C14.2758 15.0785 14.0942 15.1407 13.9073 15.1407C13.7203 15.1407 13.5387 15.0785 13.3912 14.9637L5.82329 9.07761C5.73438 9.01046 5.6597 8.92632 5.60358 8.83006C5.54747 8.7338 5.51105 8.62734 5.49643 8.51688C5.48181 8.40643 5.4893 8.29416 5.51844 8.18662C5.54759 8.07908 5.59782 7.97841 5.66621 7.89044C5.7346 7.80248 5.81979 7.72899 5.91683 7.67424C6.01387 7.61948 6.12083 7.58456 6.23148 7.5715C6.34213 7.55844 6.45428 7.5675 6.5614 7.59816C6.66852 7.62882 6.76848 7.68046 6.85547 7.75008L13.9073 13.2347L20.959 7.75008C21.1354 7.61692 21.357 7.55851 21.5761 7.5875C21.7951 7.61648 21.994 7.73053 22.1296 7.90497C22.2652 8.07941 22.3268 8.30023 22.3009 8.51967C22.275 8.73911 22.1637 8.93954 21.9912 9.07761Z"
-                  fill="currentColor"
-                />
-              </svg>
+    <div id="inicio" class="home-hero">
+      <video
+        class="op-pd"
+        poster="./assets/fondo-hero-720.avif"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+      >
+        <source src="./assets/fondo-hero-02.mp4" type="video/mp4" />
+        <source src="./assets/fondo-hero-01.mp4" type="video/mp4" />
+      </video>
 
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                title="Email incorrecto"
-                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                required
+      <div class="home">
+        <div class="home-info">
+          <div class="animation-zoom">
+            <div class="home-box-perfil">
+              <img
+                src="./assets/fer-icon-verficado.svg"
+                alt="fer-desarrollador"
+                class="home-image"
               />
-            </label>
-            <label class="input-asunto">
-              <input
-                type="text"
-                name="asunto"
-                placeholder="Asunto a tratar"
-                title="El asunto es requerido"
-                required
-              />
-            </label>
-            <textarea
-              name="message"
-              cols="50"
-              rows="5"
-              placeholder="Escribe tu comentario"
-              title="Tu comentario no debe exceder los 255 caracteres"
-              data-pattern="^.{1,255}$"
-              required
-            ></textarea>
-
-            <input type="submit" value="ENVIAR" />
-
-            <div class="linea-modal">
-              <hr />
-              <p>correo</p>
-              <hr />
+              <p class="home-name_role" data-section="inicio" data-value="p">
+                Fernando Sosa. Desarrollador Web
+              </p>
             </div>
+          </div>
 
-            <div class="box-copy-text">
-              <span id="textCopy">fer.sosa.info@gmail.com</span>
-
-              <button id="btnCopiar" onclick="copiarUrl()">
-                <span id="icoCopy">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="13px"
-                    viewBox="0 -960 960 960"
-                    width="13px"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-520q0-17 11.5-28.5T160-720q17 0 28.5 11.5T200-680v520h400q17 0 28.5 11.5T640-120q0 17-11.5 28.5T600-80H200Zm160-240v-480 480Z"
-                    />
-                  </svg>
-                </span>
-
-                <span id="btnText">Copiar</span>
-              </button>
+          <div class="home-title-propuesta">
+            <div class="animation-curtain">
+              <h1
+                class="home-title-propuesta propuesta-one"
+                data-section="inicio"
+                data-value="title-1"
+              >
+                Desarrollador Full Stack enfocado
+              </h1>
             </div>
+            <div class="animation-curtain">
+              <h1
+                class="home-title-propuesta propuesta-two"
+                data-section="inicio"
+                data-value="title-2"
+              >
+                en crear soluciones reales
+              </h1>
+            </div>
+          </div>
 
-            <div class="contact-form-loader none">
-              <div class="loader">
-                <span>Cargando...</span>
+          <div class="animation-curtain">
+            <p
+              class="home-subtitle-resumen"
+              data-section="inicio"
+              data-value="sub-title"
+            >
+              Construyo aplicaciones web completas con JavaScript, React y
+              Node.js, aplicando buenas prácticas, arquitectura escalable y
+              resolución eficiente de problemas.
+            </p>
+          </div>
 
-                <div class="loading-bar">
-                  <div class="blue-bar"></div>
-                </div>
+          <div class="animation-opacity">
+            <div class="home-competencias">
+              <div class="home-competencias-box home-experiencia">
+                <img
+                  loading="lazy"
+                  src="./assets/icon/check.svg"
+                  alt="check"
+                  class="image-check"
+                />
+                <p data-section="inicio" data-value="competencias-01">
+                  Experiencia práctica construyendo aplicaciones reales (MERN,
+                  SPAs, APIs REST).
+                </p>
+              </div>
+              <div class="home-competencias-box home-oferta">
+                <img
+                  loading="lazy"
+                  src="./assets/icon/check.svg"
+                  alt="check"
+                  class="image-check"
+                />
+                <p data-section="inicio" data-value="competencias-02">
+                  Código mantenible, enfoque en performance y capacidad de
+                  adaptación.
+                </p>
               </div>
             </div>
-            <div class="contact-form-response none">
-              <p>Los datos han sido enviados</p>
-            </div>
-          </form>
-          <a class="modal-cerrar" href="#cerrar" title="cerrar">
+          </div>
+
+          <div class="home-disponiblidad animation-opacity">
             <svg
-              alt="cerrar"
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-              fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <mask
+                id="mask0_292_3975"
+                width="24"
+                height="24"
+                x="0"
+                y="0"
+                maskUnits="userSpaceOnUse"
+                style="mask-type: alpha"
+              >
+                <path fill="#d9d9d9" d="M0 0h24v24H0z" />
+              </mask>
+              <g mask="url(#mask0_292_3975)">
+                <path
+                  fill="#6e6e73"
+                  d="m12 11.925-1.7 1.3q-.15.125-.3.013-.15-.113-.1-.288l.65-2.1-1.75-1.4a.27.27 0 0 1-.075-.287Q8.775 9 8.95 9h2.15l.65-2.05q.05-.175.25-.175t.25.175L12.9 9h2.125q.175 0 .237.162a.25.25 0 0 1-.062.288l-1.775 1.4.65 2.1q.05.175-.1.288t-.3-.013zM12 21l-4.675 1.55a.94.94 0 0 1-.913-.125.94.94 0 0 1-.412-.8v-6.35a7.7 7.7 0 0 1-1.475-2.4A7.9 7.9 0 0 1 4 10q0-3.35 2.325-5.675T12 2t5.675 2.325T20 10a7.9 7.9 0 0 1-.525 2.875q-.525 1.35-1.475 2.4v6.35q0 .5-.413.8a.94.94 0 0 1-.912.125zm0-5q2.5 0 4.25-1.75T18 10t-1.75-4.25T12 4 7.75 5.75 6 10t1.75 4.25T12 16"
+                />
+              </g>
+            </svg>
+
+            <p data-section="inicio" data-value="disponiblidad">
+              Disponibilidad para trabajar • Enfoque en resultados • Aprendizaje
+              continuo
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="habilidades" class="skills op-render">
+      <div class="f-hidden">
+        <h2
+          class="title-second animation fade-up-hidden"
+          data-section="habil"
+          data-value="skills"
+        >
+          Habilidades
+        </h2>
+      </div>
+      <div class="skill-container container">
+        <div class="skill-box op-card front-end">
+          <h2 class="skill-title">FRONTEND</h2>
+
+          <div class="skill-item animation fade-right delay-1">
+            <img
+              src="assets/skill/front-html.svg"
+              alt="html"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>HTML</h3>
+              <p data-section="habil" data-value="html">
+                Estructura el contenido de la web.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-2">
+            <img
+              src="assets/skill/front-css-new.svg"
+              alt="CSS"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>CSS</h3>
+              <p data-section="habil" data-value="css">
+                Define estilos, diseño y responsividad.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-3">
+            <img
+              src="assets/skill/front-js.svg"
+              alt="javascript"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>JavaScript</h3>
+              <p data-section="habil" data-value="js">
+                Agrega lógica y comportamiento dinámico.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-1">
+            <img
+              src="assets/skill/front-ts.svg"
+              alt="typescript"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>TypeScript</h3>
+              <p data-section="habil" data-value="ts">
+                JavaScript con tipado estático para mayor control.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-2">
+            <img
+              src="assets/skill/front-react.svg"
+              alt="React"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>React JS</h3>
+              <p data-section="habil" data-value="react">
+                Librería para crear interfaces dinámicas basadas en componentes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-box op-card back-ent">
+          <h2 class="skill-title">BACKEND</h2>
+
+          <div class="skill-item animation fade-right delay-1">
+            <img
+              src="assets/skill/back-nodejs.svg"
+              alt="nodejs"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>Node JS</h3>
+              <p data-section="habil" data-value="node">
+                Entorno JavaScript para servidor backend
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-2">
+            <img
+              src="assets/skill/back-express.svg"
+              alt="express"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>Express</h3>
+              <p data-section="habil" data-value="express">
+                Framework NodeJS para servidores y APIs rápidas.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-3">
+            <img
+              src="assets/skill/back-mysql.svg"
+              alt="mysql"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>MySQL</h3>
+              <p data-section="habil" data-value="mysql">
+                Base de datos relacional estructurada (SQL).
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-1">
+            <img
+              src="assets/skill/back-sqlite.svg"
+              alt="sqlite"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>SQLite</h3>
+              <p data-section="habil" data-value="sqlite">
+                Base de datos liviana, ideal para proyectos simples.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-2">
+            <img
+              src="assets/skill/back-mongodb.svg"
+              alt="mongodb"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>MongoDB</h3>
+              <p data-section="habil" data-value="mongodb">
+                Base de datos NoSQL basada en documentos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-box op-card tool">
+          <h2 class="skill-title" data-section="habil" data-value="tool">
+            TOOLS
+          </h2>
+
+          <div class="skill-item animation fade-right delay-2">
+            <img
+              src="assets/skill/herr-magento.svg"
+              alt="magento"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>Magento</h3>
+              <p data-section="habil" data-value="Magento">
+                Plataforma para desarrollo de e-commerce.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-1">
+            <img
+              src="assets/skill/herr-terminal.svg"
+              alt="terminal"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>Terminal</h3>
+              <p data-section="habil" data-value="terminal">
+                Consola para ejecutar comandos.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-2">
+            <img
+              src="assets/skill/herr-git.svg"
+              alt="git"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>Git</h3>
+              <p data-section="habil" data-value="git">
+                Controla versiones y historial de proyectos de código.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-3">
+            <img
+              src="assets/skill/herr-github.svg"
+              alt="github"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>GitHub</h3>
+              <p data-section="habil" data-value="github">
+                Aloja y colabora en repositorios Git.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-1">
+            <img
+              src="assets/skill/herr-npm.svg"
+              alt="npm"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>npm</h3>
+              <p data-section="habil" data-value="npm">
+                Gestor de paquetes de Node.js.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-2">
+            <img
+              src="assets/skill/herr-vite.svg"
+              alt="vite"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>Vite</h3>
+              <p data-section="habil" data-value="vite">
+                Herramienta rápida para desarrollo frontend.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-3">
+            <img
+              src="assets/skill/herr-figma.svg"
+              alt="figma"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>Figma</h3>
+              <p data-section="habil" data-value="figma">
+                Diseña interfaces y prototipos UI/UX colaborativos.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-item animation fade-right delay-1">
+            <img
+              src="assets/skill/herr-illustrator.svg"
+              alt="illustrator"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="skill-info">
+              <h3>Illustrator</h3>
+              <p data-section="habil" data-value="illustrator">
+                Diseño gráfico vectorial profesional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="project op-render">
+      <div class="f-hidden">
+        <h2
+          class="title-second animation fade-up-hidden"
+          data-section="proyecto"
+          data-value="h2"
+        >
+          Projects
+        </h2>
+      </div>
+
+      <div class="proyecto-container container">
+        <section class="proyecto-page op-card">
+          <figure class="bg-theme-fs animation fade-left delay-2">
+            <a
+              class="link-title"
+              href="https://marketplace.visualstudio.com/items?itemName=cod-fs.theme-italic-fs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b data-section="proyecto" data-value="title-theme"
+                >Theme Italic FS</b
+              >
+
+              <p data-section="proyecto" data-value="p-theme">
+                Theme Dark/Light <span>.VSIX</span>
+              </p>
+            </a>
+          </figure>
+          <figure class="bg-crud animation fade-right delay-3">
+            <a
+              class="link-title"
+              href="https://fergsosa.github.io/react-app-crud"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b data-section="proyecto" data-value="title-crud">CRUD</b>
+
+              <p data-section="proyecto" data-value="p-crud">
+                Router/Context/Reducers/Redux <span>React</span>
+              </p>
+            </a>
+          </figure>
+          <figure class="bg-spa-apis animation fade-left delay-2">
+            <a
+              class="link-title"
+              href="https://fergsosa.github.io/app-SPA-apis/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b data-section="proyecto" data-value="title-apis">SPA APIS</b>
+
+              <p data-section="proyecto" data-value="p-apis">
+                Multiple apis consumption <span> HTML | CSS | JS </span>
+              </p>
+            </a>
+          </figure>
+          <figure class="bg-tarjeta-compra animation fade-right delay-3">
+            <a
+              class="link-title"
+              href="https://fergsosa.github.io/react-app-tarjeta_de_compra/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b data-section="proyecto" data-value="title-shopping"
+                >Shopping cart</b
+              >
+
+              <p data-section="proyecto" data-value="p-shopping">
+                Loading product cart <span> React | Tailwind </span>
+              </p>
+            </a>
+          </figure>
+          <figure class="bg-blog animation fade-left delay-2">
+            <a
+              class="link-title"
+              target="_blank"
+              href="https://fergsosa.github.io/blog-lenguajes-eleventy/"
+              rel="noopener noreferrer"
+            >
+              <b data-section="proyecto" data-value="title-blog">Blog</b>
+
+              <p data-section="proyecto" data-value="p-blog">
+                Blog Markdown <span> Eleventy | Nunjucks </span>
+              </p>
+            </a>
+          </figure>
+          <figure class="bg-ajax animation fade-right delay-2">
+            <a
+              class="link-title"
+              href="https://fergsosa.github.io/Incluir-html-AJAX/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b data-section="proyecto" data-value="title-ajax">Simple Page</b>
+
+              <p data-section="proyecto" data-value="p-ajax">
+                Integrating HTML with AJAX <span>HTML | CSS | JS</span>
+              </p>
+            </a>
+          </figure>
+          <figure class="bg-sliders animation fade-up delay-3">
+            <a
+              class="link-title"
+              href="https://fergsosa.github.io/Slider-Efectos-Series/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b data-section="proyecto" data-value="title-slider"
+                >Slider Effect</b
+              >
+              <p data-section="proyecto" data-value="p-slider">
+                Slider details/automatic <span>HTML | CSS | JS</span>
+              </p>
+            </a>
+          </figure>
+        </section>
+      </div>
+    </section>
+
+    <section id="sobreMi" class="about op-render scroll-overlap-fija">
+      <div class="about-box container">
+        <img
+          class="animate-logo"
+          src="assets/fer-cv.avif"
+          alt="Desarrollador Fernando Sosa"
+          title="Programador"
+          decoding="async"
+        />
+        <article class="about-text">
+          <div class="f-hidden">
+            <h2
+              class="title-second animation fade-up-hidden"
+              data-section="sombreMi"
+              data-value="h2"
+            >
+              About
+            </h2>
+          </div>
+          <p
+            class="op-1lh animation fade-right delay-3"
+            data-section="sombreMi"
+            data-value="p"
+          >
+            I am a developer with +3 years of experience, specialized in
+            scalable and maintainable projects, which has allowed me to
+            consolidate my logical and technical skills. I consider myself
+            proactive, self-taught and always willing to learn, valuing feedback
+            and teamwork. My goal is to grow professionally in roles such as
+            Full Stack Developer, Frontend Developer, Backend Developer or Web
+            Programmer, providing value through my commitment, dedication and
+            adaptability.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <footer id="contacto" class="contact op-render scroll-overlap-superpones">
+      <div class="contact-info container">
+        <h2 class="title-second" data-section="contacto" data-value="h2">
+          Contact
+        </h2>
+
+        <p data-section="contacto" data-value="h3">Thank you for your visit</p>
+
+        <address class="box-contact">
+          <a
+            href="https://www.linkedin.com/in/fercode"
+            title="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="27"
+              fill="none"
+              viewBox="0 0 28 27"
             >
               <path
-                d="M8.59267 6.99943L13.0522 2.53988C13.2639 2.32861 13.3829 2.04191 13.3832 1.74285C13.3834 1.4438 13.2649 1.15689 13.0536 0.945242C12.8423 0.733593 12.5556 0.614541 12.2566 0.614277C11.9575 0.614013 11.6706 0.732558 11.459 0.943834L6.99943 5.40338L2.53988 0.943834C2.32823 0.732185 2.04118 0.613281 1.74186 0.613281C1.44254 0.613281 1.15548 0.732185 0.943834 0.943834C0.732185 1.15548 0.613281 1.44254 0.613281 1.74186C0.613281 2.04118 0.732185 2.32823 0.943834 2.53988L5.40338 6.99943L0.943834 11.459C0.732185 11.6706 0.613281 11.9577 0.613281 12.257C0.613281 12.5563 0.732185 12.8434 0.943834 13.055C1.15548 13.2667 1.44254 13.3856 1.74186 13.3856C2.04118 13.3856 2.32823 13.2667 2.53988 13.055L6.99943 8.59548L11.459 13.055C11.6706 13.2667 11.9577 13.3856 12.257 13.3856C12.5563 13.3856 12.8434 13.2667 13.055 13.055C13.2667 12.8434 13.3856 12.5563 13.3856 12.257C13.3856 11.9577 13.2667 11.6706 13.055 11.459L8.59267 6.99943Z"
                 fill="currentColor"
-                fill-opacity="1"
+                d="M23.982 1.687H4.332c-1.074 0-2.012.772-2.012 1.834v19.693c0 1.067.938 2.017 2.012 2.017h19.644c1.08 0 1.889-.957 1.889-2.017V3.52c.006-1.062-.81-1.834-1.883-1.834M9.618 21.312H6.245V10.825h3.373zM8.048 9.231h-.024c-1.08 0-1.778-.804-1.778-1.81 0-1.024.717-1.809 1.82-1.809 1.105 0 1.78.78 1.804 1.81 0 1.005-.7 1.809-1.821 1.809m13.898 12.081h-3.373v-5.734c0-1.374-.491-2.312-1.712-2.312-.932 0-1.484.63-1.73 1.245-.091.22-.116.521-.116.828v5.973h-3.373V10.825h3.373v1.46c.491-.7 1.258-1.705 3.042-1.705 2.214 0 3.89 1.46 3.89 4.606z"
               />
             </svg>
           </a>
-        </div>
-      </article>
-    </section>
 
-    <main>
-      <section id="inicio" class="home" data-scroll-spy>
-        <div class="home-box container">
-          <div class="home-info">
-            <h1>Fernando Sosa</h1>
-            <strong data-section="inicio" data-value="h3">
-              FullStack Web Developer
-            </strong>
-
-            <address class="box-contact">
-              <a
-                href="https://www.linkedin.com/in/fercode"
-                title="LinkedIn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  width="28"
-                  height="27"
-                  viewBox="0 0 28 27"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M23.9815 1.68689H4.33186C3.25817 1.68689 2.32007 2.45944 2.32007 3.52052V23.2138C2.32007 24.2807 3.25817 25.2314 4.33186 25.2314H23.9757C25.0552 25.2314 25.8646 24.2743 25.8646 23.2138V3.52052C25.8709 2.45944 25.0552 1.68689 23.9815 1.68689ZM9.61833 21.3124H6.24538V10.8251H9.61833V21.3124ZM8.04852 9.23058H8.02435C6.94488 9.23058 6.2459 8.42702 6.2459 7.42113C6.2459 6.39684 6.96327 5.6122 8.06692 5.6122C9.17057 5.6122 9.84589 6.39106 9.87007 7.42113C9.86954 8.42702 9.17057 9.23058 8.04852 9.23058ZM21.9456 21.3124H18.5726V15.5781C18.5726 14.2044 18.0817 13.2657 16.8614 13.2657C15.9291 13.2657 15.3773 13.8964 15.1318 14.5107C15.0399 14.7315 15.0152 15.0321 15.0152 15.339V21.3124H11.6422V10.8251H15.0152V12.2845C15.506 11.5856 16.2728 10.5797 18.057 10.5797C20.2712 10.5797 21.9461 12.0391 21.9461 15.1856L21.9456 21.3124Z"
-                    fill="#currentColor"
-                  />
-                </svg>
-              </a>
-
-              <a href="#modal" title="Email">
-                <svg
-                  width="28"
-                  height="27"
-                  viewBox="0 0 28 27"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22.7364 4.20947H5.07807C4.29778 4.21031 3.54968 4.52065 2.99793 5.0724C2.44618 5.62415 2.13584 6.37224 2.13501 7.15253V19.7656C2.13584 20.5459 2.44618 21.294 2.99793 21.8458C3.54968 22.3975 4.29778 22.7079 5.07807 22.7087H22.7364C23.5167 22.7079 24.2648 22.3975 24.8166 21.8458C25.3683 21.294 25.6787 20.5459 25.6795 19.7656V7.15253C25.6787 6.37224 25.3683 5.62415 24.8166 5.0724C24.2648 4.52065 23.5167 4.21031 22.7364 4.20947ZM21.9912 9.07761L14.4233 14.9637C14.2758 15.0785 14.0942 15.1407 13.9073 15.1407C13.7203 15.1407 13.5387 15.0785 13.3912 14.9637L5.82329 9.07761C5.73438 9.01046 5.6597 8.92632 5.60358 8.83006C5.54747 8.7338 5.51105 8.62734 5.49643 8.51688C5.48181 8.40643 5.4893 8.29416 5.51844 8.18662C5.54759 8.07908 5.59782 7.97841 5.66621 7.89044C5.7346 7.80248 5.81979 7.72899 5.91683 7.67424C6.01387 7.61948 6.12083 7.58456 6.23148 7.5715C6.34213 7.55844 6.45428 7.5675 6.5614 7.59816C6.66852 7.62882 6.76848 7.68046 6.85547 7.75008L13.9073 13.2347L20.959 7.75008C21.1354 7.61692 21.357 7.55851 21.5761 7.5875C21.7951 7.61648 21.994 7.73053 22.1296 7.90497C22.2652 8.07941 22.3268 8.30023 22.3009 8.51967C22.275 8.73911 22.1637 8.93954 21.9912 9.07761Z"
-                    fill="#currentColor"
-                  />
-                </svg>
-              </a>
-
-              <a
-                href="https://github.com/fergsosa"
-                title="GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  width="28"
-                  height="27"
-                  viewBox="0 0 28 27"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.9998 1.68689C7.49883 1.68689 2.2276 7.09476 2.2276 13.7587C2.2276 19.093 5.60161 23.6127 10.279 25.2104C10.3446 25.2246 10.4115 25.2316 10.4787 25.2314C10.9149 25.2314 11.0831 24.9108 11.0831 24.6322C11.0831 24.3432 11.0725 23.5864 11.0673 22.5774C10.6779 22.6687 10.2795 22.7162 9.87956 22.7193C7.61445 22.7193 7.09942 20.9587 7.09942 20.9587C6.56336 19.566 5.79081 19.1928 5.79081 19.1928C4.76599 18.4728 5.78555 18.4518 5.86438 18.4518H5.86964C7.05212 18.5569 7.67226 19.7026 7.67226 19.7026C8.26087 20.7327 9.04919 21.0217 9.75343 21.0217C10.2191 21.0124 10.6775 20.905 11.0988 20.7064C11.2039 19.9286 11.5087 19.3978 11.8451 19.093C9.23313 18.7882 6.48453 17.7528 6.48453 13.128C6.48453 11.8089 6.94175 10.7315 7.69328 9.89067C7.57241 9.58585 7.16774 8.35607 7.8089 6.69535C7.89491 6.67477 7.9833 6.66593 8.07168 6.66907C8.49737 6.66907 9.45912 6.83199 11.0463 7.93564C12.9748 7.39606 15.0144 7.39606 16.9429 7.93564C18.5301 6.83199 19.4918 6.66907 19.9175 6.66907C20.0059 6.66593 20.0943 6.67477 20.1803 6.69535C20.8214 8.35607 20.4168 9.58585 20.2959 9.89067C21.0474 10.7368 21.5046 11.8142 21.5046 13.128C21.5046 17.7634 18.7508 18.7829 16.1283 19.0825C16.5487 19.4556 16.9271 20.1914 16.9271 21.3161C16.9271 22.9295 16.9114 24.2328 16.9114 24.627C16.9114 24.9108 17.0743 25.2314 17.5105 25.2314C17.5811 25.2317 17.6516 25.2246 17.7207 25.2104C22.4033 23.6127 25.7721 19.0877 25.7721 13.7587C25.7721 7.09476 20.5009 1.68689 13.9998 1.68689Z"
-                    fill="#currentColor"
-                  />
-                </svg>
-              </a>
-            </address>
-          </div>
-        </div>
-      </section>
-
-      <section id="sobreMi" class="about" data-scroll-spy>
-        <div class="about-box container">
-          <img
-            src="assets/fer-cv.avif"
-            alt="Desarrollador Fernando Sosa"
-            title="Programador"
-            decoding="async"
-          />
-          <article class="about-text">
-            <h2 class="title-second" data-section="sombreMi" data-value="h2">
-              About
-            </h2>
-            <p data-section="sombreMi" data-value="p">
-              I am a developer with +2 years of experience, specialized in
-              scalable and maintainable projects, which has allowed me to
-              consolidate my logical and technical skills. I consider myself
-              proactive, self-taught and always willing to learn, valuing
-              feedback and teamwork. My goal is to grow professionally in roles
-              such as Full Stack Developer, Frontend Developer, Backend
-              Developer or Web Programmer, providing value through my
-              commitment, dedication and adaptability.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="habilidades" class="skills" data-scroll-spy>
-        <div class="skills-container container">
-          <div class="skills-box front-ent">
-            <h2 class="title-second">FRONTEND</h2>
-            <div class="skills-item">
-              <figure>
-                <img
-                  src="assets/skill/front-html.svg"
-                  alt="html"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/front-html-text.svg"
-                  alt="html"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/front-css.svg"
-                  alt="css"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/front-css-text.svg"
-                  alt="css"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/front-js.svg"
-                  alt="JavaScript"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/front-js-text.svg"
-                  alt="JavaScript"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/front-ts.svg"
-                  alt="TypeScript"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/front-ts-text.svg"
-                  alt="TypeScript"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/front-react.svg"
-                  alt="react"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/front-react-text.svg"
-                  alt="react"
-                  decoding="async"
-                />
-              </figure>
-            </div>
-          </div>
-
-          <div class="skills-box back-ent">
-            <h2 class="title-second">BACKEND</h2>
-            <div class="skills-item">
-              <figure>
-                <img
-                  src="assets/skill/back-nodejs.svg"
-                  alt="node.js"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/back-nodejs-text.svg"
-                  alt="node.js"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/back-express.svg"
-                  alt="express"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/back-express-text.svg"
-                  alt="express"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/back-mysql.svg"
-                  alt="MySQL"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/back-mysql-text.svg"
-                  alt="MySQL"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/back-sqlite.svg"
-                  alt="SQLite"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/back-sqlite-text.svg"
-                  alt="SQLite"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/back-mongodb.svg"
-                  alt="MongoDB"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/back-mongodb-text.svg"
-                  alt="MongoDB"
-                  decoding="async"
-                />
-              </figure>
-            </div>
-          </div>
-
-          <div class="skills-box herramientas">
-            <h2
-              class="title-second"
-              data-section="habilidades"
-              data-value="tool"
+          <a href="#modal" title="Email">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="27"
+              fill="none"
+              viewBox="0 0 28 27"
             >
-              TOOLS
-            </h2>
-            <div class="skills-item herramie">
-              <figure>
-                <img
-                  src="assets/skill/herr-terminal.svg"
-                  alt="terminal"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/herr-terminal-text.svg"
-                  alt="terminal"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/herr-git.svg"
-                  alt="git"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/herr-git-text.svg"
-                  alt="git"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/herr-github.svg"
-                  alt="github"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/herr-github-text.svg"
-                  alt="github"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/herr-npm.svg"
-                  alt="npm"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/herr-npm-text.svg"
-                  alt="npm"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/herr-vite.svg"
-                  alt="vite"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/herr-vite-text.svg"
-                  alt="vite"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/herr-figma.svg"
-                  alt="figma"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/herr-figma-text.svg"
-                  alt="figma"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/herr-illustrator.svg"
-                  alt="illustrator"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/herr-illustrator-text.svg"
-                  alt="illustrator"
-                  decoding="async"
-                />
-              </figure>
-              <figure>
-                <img
-                  src="assets/skill/herr-photoshop.svg"
-                  alt="photoshop"
-                  decoding="async"
-                />
-                <img
-                  src="assets/skill/herr-photoshop-text.svg"
-                  alt="photoshop"
-                  decoding="async"
-                />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
+              <path
+                fill="currentColor"
+                d="M22.736 4.21H5.078a2.946 2.946 0 0 0-2.943 2.943v12.613a2.946 2.946 0 0 0 2.943 2.943h17.658a2.946 2.946 0 0 0 2.944-2.943V7.153a2.946 2.946 0 0 0-2.944-2.944m-.745 4.868-7.568 5.886a.84.84 0 0 1-1.032 0L5.823 9.078A.841.841 0 1 1 6.855 7.75l7.052 5.485L20.96 7.75a.841.841 0 0 1 1.032 1.328"
+              />
+            </svg>
+          </a>
 
-      <section id="proyectos" class="project container" data-scroll-spy>
-        <h2 class="title-second" data-section="proyecto" data-value="h2">
-          Projects
-        </h2>
-        <div class="proyecto-container">
-          <section class="proyecto-page">
-            <figure class="bg-theme-fs">
-              <a
-                class="link-title"
-                href="https://marketplace.visualstudio.com/items?itemName=cod-fs.theme-italic-fs"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <b data-section="proyecto" data-value="title-theme"
-                  >Theme Italic FS</b
-                >
-
-                <p data-section="proyecto" data-value="p-theme">
-                  Theme Dark/Light <span>.VSIX</span>
-                </p>
-              </a>
-            </figure>
-            <figure class="bg-crud">
-              <a
-                class="link-title"
-                href="https://fergsosa.github.io/react-app-crud"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <b data-section="proyecto" data-value="title-crud">CRUD</b>
-
-                <p data-section="proyecto" data-value="p-crud">
-                  Router/Context/Reducers/Redux <span>React</span>
-                </p>
-              </a>
-            </figure>
-            <figure class="bg-spa-apis">
-              <a
-                class="link-title"
-                href="https://fergsosa.github.io/app-SPA-apis/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <b data-section="proyecto" data-value="title-apis">SPA APIS</b>
-
-                <p data-section="proyecto" data-value="p-apis">
-                  Multiple apis consumption <span> HTML | CSS | JS </span>
-                </p>
-              </a>
-            </figure>
-            <figure class="bg-tarjeta-compra">
-              <a
-                class="link-title"
-                href="https://fergsosa.github.io/react-app-tarjeta_de_compra/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <b data-section="proyecto" data-value="title-shopping"
-                  >Shopping cart</b
-                >
-
-                <p data-section="proyecto" data-value="p-shopping">
-                  Loading product cart <span> React | Tailwind </span>
-                </p>
-              </a>
-            </figure>
-            <figure class="bg-blog">
-              <a
-                class="link-title"
-                target="_blank"
-                href="https://fergsosa.github.io/blog-lenguajes-eleventy/"
-                rel="noopener noreferrer"
-              >
-                <b data-section="proyecto" data-value="title-blog">Blog</b>
-
-                <p data-section="proyecto" data-value="p-blog">
-                  Blog Markdown <span> Eleventy | Nunjucks </span>
-                </p>
-              </a>
-            </figure>
-            <figure class="bg-ajax">
-              <a
-                class="link-title"
-                href="https://fergsosa.github.io/Incluir-html-AJAX/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <b data-section="proyecto" data-value="title-ajax"
-                  >Simple Page</b
-                >
-
-                <p data-section="proyecto" data-value="p-ajax">
-                  Integrating HTML with AJAX <span>HTML | CSS | JS</span>
-                </p>
-              </a>
-            </figure>
-            <figure class="bg-sliders">
-              <a
-                class="link-title"
-                href="https://fergsosa.github.io/Slider-Efectos-Series/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <b data-section="proyecto" data-value="title-slider"
-                  >Slider Effect</b
-                >
-                <p data-section="proyecto" data-value="p-slider">
-                  Slider details/automatic <span>HTML | CSS | JS</span>
-                </p>
-              </a>
-            </figure>
-          </section>
-        </div>
-      </section>
-
-      <section id="contacto" class="contact" data-scroll-spy>
-        <div class="contact-info container">
-          <h2 class="title-second" data-section="contacto" data-value="h2">
-            Contact
-          </h2>
-          <p data-section="contacto" data-value="h3">
-            Thank you for your visit
-          </p>
-
-          <address class="box-contact">
-            <a
-              href="https://www.linkedin.com/in/fercode"
-              title="LinkedIn"
-              target="_blank"
-              rel="noopener noreferrer"
+          <a
+            href="https://github.com/fergsosa"
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="27"
+              fill="none"
+              viewBox="0 0 28 27"
             >
-              <svg
-                width="28"
-                height="27"
-                viewBox="0 0 28 27"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23.9815 1.68689H4.33186C3.25817 1.68689 2.32007 2.45944 2.32007 3.52052V23.2138C2.32007 24.2807 3.25817 25.2314 4.33186 25.2314H23.9757C25.0552 25.2314 25.8646 24.2743 25.8646 23.2138V3.52052C25.8709 2.45944 25.0552 1.68689 23.9815 1.68689ZM9.61833 21.3124H6.24538V10.8251H9.61833V21.3124ZM8.04852 9.23058H8.02435C6.94488 9.23058 6.2459 8.42702 6.2459 7.42113C6.2459 6.39684 6.96327 5.6122 8.06692 5.6122C9.17057 5.6122 9.84589 6.39106 9.87007 7.42113C9.86954 8.42702 9.17057 9.23058 8.04852 9.23058ZM21.9456 21.3124H18.5726V15.5781C18.5726 14.2044 18.0817 13.2657 16.8614 13.2657C15.9291 13.2657 15.3773 13.8964 15.1318 14.5107C15.0399 14.7315 15.0152 15.0321 15.0152 15.339V21.3124H11.6422V10.8251H15.0152V12.2845C15.506 11.5856 16.2728 10.5797 18.057 10.5797C20.2712 10.5797 21.9461 12.0391 21.9461 15.1856L21.9456 21.3124Z"
-                  fill="#currentColor"
-                />
-              </svg>
-            </a>
+              <path
+                fill="currentColor"
+                d="M14 1.687c-6.501 0-11.772 5.408-11.772 12.072 0 5.334 3.374 9.854 8.051 11.451a1 1 0 0 0 .2.021c.436 0 .604-.32.604-.599 0-.289-.01-1.046-.016-2.055q-.586.139-1.187.142c-2.266 0-2.78-1.76-2.78-1.76-.537-1.393-1.31-1.766-1.31-1.766-1.024-.72-.004-.741.074-.741h.006c1.182.105 1.802 1.25 1.802 1.25.589 1.03 1.377 1.32 2.081 1.32a3.3 3.3 0 0 0 1.346-.316c.105-.777.41-1.308.746-1.613-2.612-.305-5.36-1.34-5.36-5.965 0-1.32.457-2.396 1.208-3.237-.12-.305-.525-1.535.116-3.196a1 1 0 0 1 .263-.026c.425 0 1.387.163 2.974 1.267 1.929-.54 3.968-.54 5.897 0 1.587-1.104 2.549-1.267 2.974-1.267a1 1 0 0 1 .263.026c.641 1.661.237 2.89.116 3.196.751.846 1.209 1.923 1.209 3.237 0 4.635-2.754 5.655-5.377 5.954.42.374.8 1.11.8 2.234 0 1.614-.017 2.917-.017 3.311 0 .284.163.604.6.604q.105 0 .21-.02c4.682-1.598 8.051-6.123 8.051-11.452 0-6.664-5.271-12.072-11.772-12.072"
+              />
+            </svg>
+          </a>
+        </address>
 
-            <a href="#modal" title="Email">
-              <svg
-                width="28"
-                height="27"
-                viewBox="0 0 28 27"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22.7364 4.20947H5.07807C4.29778 4.21031 3.54968 4.52065 2.99793 5.0724C2.44618 5.62415 2.13584 6.37224 2.13501 7.15253V19.7656C2.13584 20.5459 2.44618 21.294 2.99793 21.8458C3.54968 22.3975 4.29778 22.7079 5.07807 22.7087H22.7364C23.5167 22.7079 24.2648 22.3975 24.8166 21.8458C25.3683 21.294 25.6787 20.5459 25.6795 19.7656V7.15253C25.6787 6.37224 25.3683 5.62415 24.8166 5.0724C24.2648 4.52065 23.5167 4.21031 22.7364 4.20947ZM21.9912 9.07761L14.4233 14.9637C14.2758 15.0785 14.0942 15.1407 13.9073 15.1407C13.7203 15.1407 13.5387 15.0785 13.3912 14.9637L5.82329 9.07761C5.73438 9.01046 5.6597 8.92632 5.60358 8.83006C5.54747 8.7338 5.51105 8.62734 5.49643 8.51688C5.48181 8.40643 5.4893 8.29416 5.51844 8.18662C5.54759 8.07908 5.59782 7.97841 5.66621 7.89044C5.7346 7.80248 5.81979 7.72899 5.91683 7.67424C6.01387 7.61948 6.12083 7.58456 6.23148 7.5715C6.34213 7.55844 6.45428 7.5675 6.5614 7.59816C6.66852 7.62882 6.76848 7.68046 6.85547 7.75008L13.9073 13.2347L20.959 7.75008C21.1354 7.61692 21.357 7.55851 21.5761 7.5875C21.7951 7.61648 21.994 7.73053 22.1296 7.90497C22.2652 8.07941 22.3268 8.30023 22.3009 8.51967C22.275 8.73911 22.1637 8.93954 21.9912 9.07761Z"
-                  fill="#currentColor"
-                />
-              </svg>
-            </a>
+        <button class="contact-btn-cv">
+          <a
+            href="assets/cv-pdf/CV-Fer-Programacion-F.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-section="contacto"
+            data-value="a"
+          >
+            See CV
 
-            <a
-              href="https://github.com/fergsosa"
-              title="GitHub"
-              target="_blank"
-              rel="noopener noreferrer"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 28 28"
             >
-              <svg
-                width="28"
-                height="27"
-                viewBox="0 0 28 27"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.9998 1.68689C7.49883 1.68689 2.2276 7.09476 2.2276 13.7587C2.2276 19.093 5.60161 23.6127 10.279 25.2104C10.3446 25.2246 10.4115 25.2316 10.4787 25.2314C10.9149 25.2314 11.0831 24.9108 11.0831 24.6322C11.0831 24.3432 11.0725 23.5864 11.0673 22.5774C10.6779 22.6687 10.2795 22.7162 9.87956 22.7193C7.61445 22.7193 7.09942 20.9587 7.09942 20.9587C6.56336 19.566 5.79081 19.1928 5.79081 19.1928C4.76599 18.4728 5.78555 18.4518 5.86438 18.4518H5.86964C7.05212 18.5569 7.67226 19.7026 7.67226 19.7026C8.26087 20.7327 9.04919 21.0217 9.75343 21.0217C10.2191 21.0124 10.6775 20.905 11.0988 20.7064C11.2039 19.9286 11.5087 19.3978 11.8451 19.093C9.23313 18.7882 6.48453 17.7528 6.48453 13.128C6.48453 11.8089 6.94175 10.7315 7.69328 9.89067C7.57241 9.58585 7.16774 8.35607 7.8089 6.69535C7.89491 6.67477 7.9833 6.66593 8.07168 6.66907C8.49737 6.66907 9.45912 6.83199 11.0463 7.93564C12.9748 7.39606 15.0144 7.39606 16.9429 7.93564C18.5301 6.83199 19.4918 6.66907 19.9175 6.66907C20.0059 6.66593 20.0943 6.67477 20.1803 6.69535C20.8214 8.35607 20.4168 9.58585 20.2959 9.89067C21.0474 10.7368 21.5046 11.8142 21.5046 13.128C21.5046 17.7634 18.7508 18.7829 16.1283 19.0825C16.5487 19.4556 16.9271 20.1914 16.9271 21.3161C16.9271 22.9295 16.9114 24.2328 16.9114 24.627C16.9114 24.9108 17.0743 25.2314 17.5105 25.2314C17.5811 25.2317 17.6516 25.2246 17.7207 25.2104C22.4033 23.6127 25.7721 19.0877 25.7721 13.7587C25.7721 7.09476 20.5009 1.68689 13.9998 1.68689Z"
-                  fill="#currentColor"
-                />
-              </svg>
-            </a>
-          </address>
-
-          <button class="contact-cv">
-            <a
-              href="assets/cv/CV-Fer-Programacion-F.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-section="contacto"
-              data-value="a"
-            >
-              See CV
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 28 28"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M23.0401 11.972H15.6819C15.0128 11.972 14.3711 11.7062 13.898 11.2331C13.4249 10.76 13.1591 10.1183 13.1591 9.44917V2.09097C13.1591 2.03521 13.1369 1.98174 13.0975 1.94231C13.0581 1.90289 13.0046 1.88074 12.9488 1.88074H8.11345C7.22132 1.88074 6.36574 2.23513 5.73491 2.86596C5.10409 3.49678 4.74969 4.35237 4.74969 5.24449V22.0632C4.74969 22.9554 5.10409 23.8109 5.73491 24.4418C6.36574 25.0726 7.22132 25.427 8.11345 25.427H19.8866C20.7787 25.427 21.6343 25.0726 22.2651 24.4418C22.8959 23.8109 23.2503 22.9554 23.2503 22.0632V12.1822C23.2503 12.1265 23.2282 12.073 23.1887 12.0336C23.1493 11.9941 23.0958 11.972 23.0401 11.972ZM18.2047 20.3814H9.79532C9.57229 20.3814 9.35839 20.2928 9.20069 20.1351C9.04298 19.9774 8.95438 19.7635 8.95438 19.5404C8.95438 19.3174 9.04298 19.1035 9.20069 18.9458C9.35839 18.7881 9.57229 18.6995 9.79532 18.6995H18.2047C18.4277 18.6995 18.6416 18.7881 18.7993 18.9458C18.957 19.1035 19.0456 19.3174 19.0456 19.5404C19.0456 19.7635 18.957 19.9774 18.7993 20.1351C18.6416 20.2928 18.4277 20.3814 18.2047 20.3814ZM18.2047 16.1767H9.79532C9.57229 16.1767 9.35839 16.0881 9.20069 15.9304C9.04298 15.7727 8.95438 15.5588 8.95438 15.3357C8.95438 15.1127 9.04298 14.8988 9.20069 14.7411C9.35839 14.5834 9.57229 14.4948 9.79532 14.4948H18.2047C18.4277 14.4948 18.6416 14.5834 18.7993 14.7411C18.957 14.8988 19.0456 15.1127 19.0456 15.3357C19.0456 15.5588 18.957 15.7727 18.7993 15.9304C18.6416 16.0881 18.4277 16.1767 18.2047 16.1767Z"
-                  fill="#currentColor"
-                />
-                <path
-                  d="M22.5786 10.1109L15.0202 2.55242C15.0055 2.53781 14.9868 2.52787 14.9664 2.52385C14.9461 2.51983 14.925 2.52191 14.9059 2.52983C14.8867 2.53775 14.8704 2.55115 14.8588 2.56836C14.8472 2.58556 14.841 2.6058 14.8409 2.62653V9.44916C14.8409 9.67219 14.9295 9.88608 15.0872 10.0438C15.245 10.2015 15.4588 10.2901 15.6819 10.2901H22.5045C22.5252 10.29 22.5455 10.2838 22.5627 10.2722C22.5799 10.2607 22.5933 10.2443 22.6012 10.2251C22.6091 10.206 22.6112 10.1849 22.6072 10.1646C22.6032 10.1443 22.5932 10.1256 22.5786 10.1109Z"
-                  fill="#currentColor"
-                />
-              </svg>
-            </a>
-          </button>
-        </div>
-        <small data-section="contacto" data-value="small"
-          >Site designed by <a href="#Fernando">@FernandoSosa</a></small
-        >
-      </section>
-    </main>
+              <path
+                fill="currentColor"
+                d="M23.04 11.972h-7.358a2.523 2.523 0 0 1-2.523-2.523V2.091a.21.21 0 0 0-.21-.21H8.113A3.364 3.364 0 0 0 4.75 5.244v16.82a3.364 3.364 0 0 0 3.363 3.363h11.774a3.364 3.364 0 0 0 3.363-3.364v-9.88a.21.21 0 0 0-.21-.211m-4.835 8.41h-8.41a.84.84 0 0 1 0-1.683h8.41a.84.84 0 0 1 0 1.682m0-4.205h-8.41a.84.84 0 0 1 0-1.682h8.41a.84.84 0 0 1 0 1.682"
+              />
+              <path
+                fill="currentcolor"
+                d="M22.579 10.11 15.02 2.553a.105.105 0 0 0-.18.075V9.45a.84.84 0 0 0 .842.841h6.823a.105.105 0 0 0 .074-.18"
+              />
+            </svg>
+          </a>
+        </button>
+      </div>
+      <small data-section="contacto" data-value="small"
+        >Site designed by <a href="#Fernando">@FernandoSosa</a></small
+      >
+    </footer>
   </body>
+  <script src="script.js" type="module" defer></script>
 </html>
