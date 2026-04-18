@@ -1,13 +1,16 @@
 @import "./base-styles.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Google Sans";
   src:
-    url(../font/Inter-Medium.woff2) format("woff2"),
-    url(../font/Inter-Medium.woff) format("woff");
-  font-weight: 500;
+    url("./fonts/GoogleSans-Regular.woff2") format("woff2"),
+    url("./fonts/GoogleSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Inter";
   src:
@@ -16,11 +19,13 @@
   font-weight: 700;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "League Gothic";
+  font-family: "Inter";
   src:
-    url(../font/LeagueGothic-Regular-VariableFont_wdth.woff2) format("woff2"),
-    url(../font/LeagueGothic-Regular-VariableFont_wdth.woff) format("woff");
+    url(../font/Inter-Medium.woff2) format("woff2"),
+    url(../font/Inter-Medium.woff) format("woff");
+  font-weight: 500;
   font-display: swap;
 }
 
@@ -48,10 +53,9 @@
 
 .title-second {
   font-size: var(--font-48);
+  font-weight: 700;
   line-height: 50px;
-  font-weight: 800;
   letter-spacing: -1.3px;
-  margin-bottom: 1rem;
   margin-bottom: var(--box-15-17);
 
   margin-top: var(--box-32-36);
@@ -197,7 +201,7 @@ header {
       display: flex;
       border-radius: var(--radius-full);
       transition: background-color var(--transition-s);
-      color: var(--color-btn-active);
+      color: #fff;
 
       span {
         display: none;
@@ -268,8 +272,8 @@ header {
       li a {
         span {
           display: inline-block;
-          font-weight: 500;
           padding: 0.8rem 1.6rem;
+          font-weight: 500;
         }
         svg {
           display: none;
@@ -352,16 +356,16 @@ header {
 
       .home-name_role {
         color: #fff;
-        font-family: var(--font-red-hat);
-        line-height: 30px;
+        font-family: var(--font-google-sans);
         font-weight: 300;
+        line-height: 30px;
         letter-spacing: 0.5px; /* 7px scale 400 */
       }
     }
 
     .home-title-propuesta h1 {
-      font-weight: 700;
       text-align: center;
+      font-weight: 700;
       letter-spacing: -1.45px; /* 16px scale 400 */
       color: #fff;
       text-wrap: balance;
@@ -373,20 +377,21 @@ header {
     }
 
     .home-subtitle-resumen {
+      max-width: 750px;
       text-align: center;
-      font-size: var(--font-20);
-      line-height: 23px;
-      font-weight: 700;
+      font-size: 17px;
+      line-height: 20px;
       font-weight: 500;
-      letter-spacing: 0.2px; /* 7px scale 400 */
+      letter-spacing: -0.2px; /* 7px scale 400 */
       text-wrap: balance;
-      color: #bbb;
       color: var(--text-color-alpha);
-      /* color: #86868b; */
 
       span {
         letter-spacing: -0.15px;
         color: #18f;
+      }
+      @media (width > 768px) {
+        line-height: 23px;
       }
     }
 
@@ -412,10 +417,10 @@ header {
 
         p {
           margin-left: 3px;
-          color: var(--color-white);
-          font-family: var(--font-red-hat);
+          font-family: var(--font-google-sans);
           font-weight: 300;
           letter-spacing: 0.5px; /* 7px scale 400 */
+          color: var(--color-white);
         }
       }
     }
@@ -438,7 +443,7 @@ header {
 
       p {
         margin-bottom: 0;
-        font-family: var(--font-red-hat);
+        font-family: var(--font-google-sans);
         font-weight: 300;
         line-height: 26px;
         letter-spacing: 0.5px; /* 7px scale 400 */
@@ -701,7 +706,7 @@ header {
 
     p {
       font-size: var(--font-20);
-      font-weight: 600;
+      font-weight: 700;
       color: var(--text-color-alpha);
     }
   }
