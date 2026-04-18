@@ -349,7 +349,7 @@ header {
         font-family: var(--font-google-sans);
         font-weight: 300;
         line-height: 30px;
-        letter-spacing: 0.5px; /* 7px scale 400 */
+        letter-spacing: -0.2px; /* 7px scale 400 */
       }
     }
 
@@ -409,7 +409,7 @@ header {
           margin-left: 3px;
           font-family: var(--font-google-sans);
           font-weight: 300;
-          letter-spacing: 0.5px; /* 7px scale 400 */
+          letter-spacing: -0.2px; /* 7px scale 400 */
           color: var(--color-white);
         }
       }
@@ -436,7 +436,7 @@ header {
         font-family: var(--font-google-sans);
         font-weight: 300;
         line-height: 26px;
-        letter-spacing: 0.5px; /* 7px scale 400 */
+        letter-spacing: -0.2px; /* 7px scale 400 */
         color: var(--color-white);
       }
     }
