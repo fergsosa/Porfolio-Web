@@ -357,6 +357,7 @@ header {
       text-align: center;
       font-weight: 700;
       letter-spacing: -1.45px; /* 16px scale 400 */
+      letter-spacing: -0.2px; /* 16px scale 400 */
       color: #fff;
       text-wrap: balance;
 
