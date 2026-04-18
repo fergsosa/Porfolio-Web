@@ -1,5 +1,11 @@
 @import "./base-styles.css";
-/* @import url("https://fonts.googleapis.com/css2?family=Google+Sans:wght@300&display=swap"); */
+
+@font-face {
+  font-family: "RedHatDisplay";
+  src: url(../font/RedHatDisplay-Regular.ttf) format("ttf");
+  font-weight: 300;
+  font-display: swap;
+}
 
 @font-face {
   font-family: "Inter";
@@ -405,6 +411,12 @@ header {
         align-items: center;
         align-items: start;
 
+        &.home-oferta p {
+          font-family: var(--font-red-hat);
+          font-weight: 300;
+          letter-spacing: 0.5px; /* 7px scale 400 */
+          /* background-color: #000; */
+        }
         p {
           margin-left: 3px;
           font-family: var(--font-google-sans);
