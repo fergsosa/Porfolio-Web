@@ -1,13 +1,6 @@
 @import "./base-styles.css";
 
 @font-face {
-  font-family: "RedHatDisplay";
-  src: url(../font/RedHatDisplay-Regular.ttf) format("ttf");
-  font-weight: 300;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Inter";
   src:
     url(../font/Inter-Bold.woff2) format("woff2"),
@@ -354,8 +347,9 @@ header {
         color: #fff;
         font-family: var(--font-google-sans);
         font-weight: 300;
-        line-height: 30px;
+        line-height: 29px;
         letter-spacing: -0.2px; /* 7px scale 400 */
+        margin-top: 1px;
       }
     }
 
@@ -411,12 +405,6 @@ header {
         align-items: center;
         align-items: start;
 
-        &.home-oferta p {
-          font-family: var(--font-red-hat);
-          font-weight: 300;
-          letter-spacing: 0.5px; /* 7px scale 400 */
-          /* background-color: #000; */
-        }
         p {
           margin-left: 3px;
           font-family: var(--font-google-sans);
