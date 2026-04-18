@@ -427,8 +427,8 @@ header {
       background-image: linear-gradient(279deg, #0007, #1b1b1b 50%, #0007);
       backdrop-filter: saturate(200%) blur(1px);
       svg {
-        margin-top: 1.2px;
         margin-right: 3px;
+        min-width: 20px;
       }
 
       p {
@@ -436,7 +436,6 @@ header {
         margin-bottom: 0;
         font-family: var(--font-google-sans);
         font-weight: 300;
-        /* line-height: 16px; */
         letter-spacing: -0.2px; /* 7px scale 400 */
         color: var(--color-white);
       }
