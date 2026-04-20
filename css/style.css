@@ -914,6 +914,14 @@ header {
     opacity var(--duration, 0.6s) ease,
     clip-path var(--duration, 0.8s) ease;
 
+  /* efecto escalonado */
+  &.stagger {
+    /* --reveal-delay: 1s; */
+    transition:
+      opacity 0.4s ease calc(var(--reveal-delay, 0ms)),
+      transform 0.4s ease calc(var(--reveal-delay, 0ms));
+  }
+
   /* efectos iniciales */
   &.a-up,
   &.fade-up {

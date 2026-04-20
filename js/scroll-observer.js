@@ -4,10 +4,12 @@
  * RevealObserver — anima elementos al entrar al viewport
  * @param {string|Element|NodeList} target — selector, elemento o lista
  * @param {object} options
- *   className  {string}  clase CSS a agregar (default: "revealed")
+ *   className  {string}  clase CSS a agregar          (default: "revealed")
  *   threshold  {number}  0–1, qué porcentaje debe ser visible (default: 0.15)
- *   once       {boolean} si desconectar tras primera aparición (default: true)
- *   rootMargin {string}  margen extra del viewport (default: "0px")
+ *   once       {boolean} desconectar tras primer uso   (default: true)
+ *   rootMargin {string}  margen extra del viewport     (default: "0px")
+ *   stagger    {number}  ms de delay entre elementos   (default: 0)
+ *   maxStagger {number   cap máximo de delay acumulado (default: 600)
  *   onReveal   {fn}      callback(element) al revelar
  *   onHide     {fn}      callback(element) al ocultar (solo si once=false)
  */
@@ -17,6 +19,8 @@ export function revealObserver(target, options = {}) {
     threshold = 0.15,
     once = true,
     rootMargin = "0px",
+    stagger = 0,
+    maxStagger = 600,
     onReveal = null,
     onHide = null,
   } = options;
@@ -29,16 +33,40 @@ export function revealObserver(target, options = {}) {
 
   if (!$elements.length) return { disconnect: () => {} };
 
+  // Pre-asigna el delay como data attribute para no recalcular en cada entry
+  if (stagger > 0) {
+    $elements.forEach((el, i) => {
+      const delay = Math.min(i * stagger, maxStagger);
+      el.style.setProperty("--reveal-delay", `${delay}ms`);
+    });
+  }
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
+        const el = entry.target;
+        const index = $elements.indexOf(el);
+
         if (entry.isIntersecting) {
-          entry.target.classList.add(className);
-          onReveal?.(entry.target);
-          if (once) observer.unobserve(entry.target);
+          const delay = stagger > 0 ? Math.min(index * stagger, maxStagger) : 0;
+
+          if (delay > 0) {
+            // Guarda el timer para poder cancelarlo si el elemento sale antes
+            el._revealTimer = setTimeout(() => {
+              el.classList.add(className);
+              onReveal?.(el, index);
+              if (once) observer.unobserve(el);
+            }, delay);
+          } else {
+            el.classList.add(className);
+            onReveal?.(el, index);
+            if (once) observer.unobserve(el);
+          }
         } else if (!once) {
-          entry.target.classList.remove(className);
-          onHide?.(entry.target);
+          // Cancela el timer pendiente si el elemento salió antes de revelarse
+          clearTimeout(el._revealTimer);
+          el.classList.remove(className);
+          onHide?.(el, index);
         }
       });
     },
@@ -47,8 +75,13 @@ export function revealObserver(target, options = {}) {
 
   $elements.forEach((el) => observer.observe(el));
 
-  // Retorna handle para desconectar manualmente si hace falta
-  return { disconnect: () => observer.disconnect() };
+  return {
+    disconnect: () => {
+      // Limpia timers pendientes al desconectar
+      $elements.forEach((el) => clearTimeout(el._revealTimer));
+      observer.disconnect();
+    },
+  };
 }
 
 /**
@@ -102,7 +135,6 @@ export function toggleObserver(trigger, target, options = {}) {
 
   return { disconnect: () => observer.disconnect() };
 }
-
 
 /** # Ejemplo de uso
  *
@@ -177,6 +209,15 @@ export function toggleObserver(trigger, target, options = {}) {
  *   once: false,
  *   onReveal: (el) => el.play(),
  *   onHide:   (el) => el.pause(),
+ * });
+ *
+ * --------------------------------------------------
+ * 🎥 delay
+ * --------------------------------------------------
+ * revealObserver(".card", {
+ * stagger: 80,     // cada card espera 80ms más que la anterior
+ * maxStagger: 400, // en listas de 10+ cards, el delay no supera 400ms
+ * threshold: 0.1,
  * });
  *
  * ==================================================
