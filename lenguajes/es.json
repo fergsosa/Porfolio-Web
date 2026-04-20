@@ -1,9 +1,9 @@
 {
   "menu": {
     "m1": "Inicio",
-    "m2": "Perfil",
     "m3": "Habilidades",
-    "m4": "Proyecto",
+    "m4": "Proyectos",
+    "m2": "Perfil",
     "m5": "Contacto"
   },
   "inicio": {
