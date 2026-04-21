@@ -322,7 +322,7 @@ header {
     /* margin-top: clamp(40px, 10vw, 150px); */
     margin-top: clamp(10px, 25vw, 150px);
 
-    padding-top: 54px;
+    padding-top: 64px;
     gap: var(--gab-20-16);
 
     .home-box-perfil {
