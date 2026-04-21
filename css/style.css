@@ -338,12 +338,23 @@ header {
       border: 1.25px solid #fff3;
       background-color: #0007;
       backdrop-filter: saturate(200%) blur(7px);
-      box-shadow: 0 0 12px #e3f4ff80;
-      box-shadow:
+      /* box-shadow:
         0 0 5px #fff,
         0 0 10px #00d2ff,
         0 0 30px #18c,
-        0 0 50px var(--btn-first);
+        0 0 50px var(--btn-first); */
+      box-shadow:
+        0 0 5px 1px #fff,
+        -2px -1px 6px 1px #00d2ffd0,
+        2px 1px 6px 1px #18cd,
+        0 0 36px 7px var(--btn-first);
+
+      /* original 
+      box-shadow:
+        0 0 20px 2px #ff69b4,
+        -15px -10px 45px 10px #6394ed,
+        15px 10px 45px 10px #9470db,
+        0 0 60px 15px #00ffff33; */
 
       .home-image {
         height: 30px;
