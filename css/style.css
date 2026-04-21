@@ -377,8 +377,8 @@ header {
       text-wrap: balance;
       color: var(--text-color-alpha);
 
-      span {
-        letter-spacing: -0.15px;
+      b {
+        letter-spacing: -0.25px;
         color: #18f;
       }
       @media (width > 768px) {
