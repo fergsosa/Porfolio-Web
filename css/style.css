@@ -360,6 +360,7 @@ header {
       letter-spacing: -0.2px; /* 16px scale 400 */
       color: #fff;
       text-wrap: balance;
+      text-shadow: 0 0 6px #e3f4ff80;
 
       @media (width > 768px) {
         font-size: var(--font-48);
@@ -368,7 +369,7 @@ header {
     }
 
     .home-subtitle-resumen {
-      max-width: 750px;
+      max-width: 800px;
       text-align: center;
       font-size: 17px;
       line-height: 20px;
@@ -380,6 +381,7 @@ header {
       b {
         letter-spacing: -0.25px;
         color: #18f;
+        /* font-weight: normal; */
       }
       @media (width > 768px) {
         line-height: 23px;
