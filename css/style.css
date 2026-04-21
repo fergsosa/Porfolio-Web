@@ -338,6 +338,12 @@ header {
       border: 1.25px solid #fff3;
       background-color: #0007;
       backdrop-filter: saturate(200%) blur(7px);
+      box-shadow: 0 0 12px #e3f4ff80;
+      box-shadow:
+        0 0 5px #fff,
+        0 0 10px #00d2ff,
+        0 0 30px #18c,
+        0 0 50px var(--btn-first);
 
       .home-image {
         height: 30px;
