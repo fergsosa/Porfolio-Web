@@ -17,6 +17,22 @@
   font-weight: 500;
   font-display: swap;
 }
+@font-face {
+  font-family: "Google Sans";
+  src:
+    url(../font/GoogleSans-Regular.woff2) format("woff2"),
+    url(../font/GoogleSans-Regular.woff) format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src:
+    url(../font/RedHatDisplay-Regular.ttf) format("truetype"),
+    url(../font/Inter-Medium.woff) format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
 
 :root {
   --header-height-t: 60.6px;
@@ -360,6 +376,7 @@ header {
       .home-name_role {
         color: #fff;
         font-family: var(--font-google-sans);
+        font-family: var(--font-red-hat);
         font-weight: 300;
         line-height: 29px;
         letter-spacing: -0.2px; /* 7px scale 400 */
