@@ -17,6 +17,7 @@
   font-weight: 500;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Red Hat Display";
   src:
@@ -229,6 +230,7 @@ header {
       border: 0.5px solid var(--bg-navbar-borde);
       background-color: var(--bg-navbar) !important;
       backdrop-filter: saturate(200%) blur(7px);
+      -webkit-backdrop-filter: saturate(200%) blur(7px);
 
       transform: scale(1);
       opacity: 1;
@@ -343,11 +345,7 @@ header {
       border: 1.25px solid #fff3;
       background-color: #0007;
       backdrop-filter: saturate(200%) blur(7px);
-      /* box-shadow:
-        0 0 5px #fff,
-        0 0 10px #00d2ff,
-        0 0 30px #18c,
-        0 0 50px var(--btn-first); */
+      -webkit-backdrop-filter: saturate(200%) blur(7px);
       box-shadow:
         0 0 5px 1px #fff,
         -2px -1px 6px 1px #00d2ffd0,
@@ -414,9 +412,7 @@ header {
       padding: 4px 11px 4px 4px;
       border: 1.25px solid #fff4;
       border-radius: var(--radius-m);
-
-      background-color: #0004;
-      backdrop-filter: saturate(200%) blur(10px);
+      background-color: #0006;
 
       .image-check {
         width: 24px;
