@@ -18,19 +18,11 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Google Sans";
-  src:
-    url(../font/GoogleSans-Regular.woff2) format("woff2"),
-    url(../font/GoogleSans-Regular.woff) format("woff");
-  font-weight: 300;
-  font-display: swap;
-}
-@font-face {
   font-family: "Red Hat Display";
   src:
-    url(../font/RedHatDisplay-Regular.ttf) format("truetype"),
-    url(../font/Inter-Medium.woff) format("woff");
-  font-weight: 500;
+    url(../font/RedHatDisplay-Regular.woff2) format("woff2"),
+    url(../font/RedHatDisplay-Regular.ttf) format("truetype");
+  font-weight: 300;
   font-display: swap;
 }
 
@@ -375,11 +367,10 @@ header {
 
       .home-name_role {
         color: #fff;
-        font-family: var(--font-google-sans);
         font-family: var(--font-red-hat);
         font-weight: 300;
         line-height: 29px;
-        letter-spacing: -0.2px; /* 7px scale 400 */
+        letter-spacing: 0.2px; /* 7px scale 400 */
         margin-top: 1px;
       }
     }
@@ -441,9 +432,9 @@ header {
 
         p {
           margin-left: 3px;
-          font-family: var(--font-google-sans);
+          font-family: var(--font-red-hat);
           font-weight: 300;
-          letter-spacing: -0.2px; /* 7px scale 400 */
+          letter-spacing: 0.2px; /* 7px scale 400 */
           color: var(--color-white);
         }
       }
@@ -468,9 +459,9 @@ header {
       p {
         align-self: center;
         margin-bottom: 0;
-        font-family: var(--font-google-sans);
+        font-family: var(--font-red-hat);
         font-weight: 300;
-        letter-spacing: -0.2px; /* 7px scale 400 */
+        letter-spacing: 0.2px; /* 7px scale 400 */
         color: var(--color-white);
       }
     }
