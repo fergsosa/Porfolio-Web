@@ -393,7 +393,7 @@ header {
     .home-subtitle-resumen {
       max-width: 800px;
       text-align: center;
-      font-size: 17px;
+      font-size: var(--font-17);
       line-height: 20px;
       font-weight: 500;
       letter-spacing: -0.2px; /* 7px scale 400 */
