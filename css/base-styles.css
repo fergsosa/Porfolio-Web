@@ -91,7 +91,7 @@
   --font-32: clamp(1.875rem, 1.8295rem + 0.2273vw, 2rem);
   --font-24: clamp(1.375rem, 1.3125rem + 0.3125vw, 1.5rem);
   --font-20: clamp(1.125rem, 1.0625rem + 0.3125vw, 1.25rem);
-  --font-17: clamp(0.8854rem, 0.8526rem + 0.146vw, 0.95rem);
+  --font-17: clamp(1.0625rem, 0.9989rem + 0.2825vw, 1.1875rem);
   --font-16: clamp(0.875rem, 0.8125rem + 0.3125vw, 1rem);
   --font-13: clamp(0.6875rem, 0.625rem + 0.3125vw, 0.8125rem);
   --font-11: clamp(0.5625rem, 0.5rem + 0.3125vw, 0.6875rem);
