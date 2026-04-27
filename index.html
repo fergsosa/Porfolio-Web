@@ -30,6 +30,17 @@
           </a>
 
           <div id="flags" class="header-flags">
+            <div class="qr-wrapper">
+              <button class="qr-btn" aria-label="Mostrar código QR">
+                <img src="./assets/icon/icon-qr.svg" alt="icon qr" />
+              </button>
+
+              <div class="qr-card" role="tooltip">
+                <p>Scan QR para ver version móvil</p>
+                <img src="./assets/qr-porfolio.svg" alt="Código QR" />
+              </div>
+            </div>
+
             <figure class="flags-item" data-language="es" title="español">
               <img
                 src="assets/icon/bandera-es.svg"
@@ -292,320 +303,325 @@
       </div>
     </div>
 
-    <section id="habilidades" class="skills op-render">
-      <div class="f-hidden">
-        <h2
-          class="title-second animation fade-up-hidden"
-          data-section="habil"
-          data-value="skills"
-        >
-          Habilidades
-        </h2>
+    <div class="scroll-container">
+      <div class="sticky-wrap">
+        <section id="habilidades" class="skills op-render expanding-box">
+          <div class="f-hidden">
+            <h2
+              class="title-second animation fade-up-hidden"
+              data-section="habil"
+              data-value="skills"
+            >
+              Habilidades
+            </h2>
+          </div>
+          <div class="skill-container container">
+            <div class="skill-box op-card front-end">
+              <h2 class="skill-title">FRONTEND</h2>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/front-html.svg"
+                  alt="html"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>HTML</h3>
+                  <p data-section="habil" data-value="html">
+                    Estructura el contenido de la web.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/front-css-new.svg"
+                  alt="CSS"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>CSS</h3>
+                  <p data-section="habil" data-value="css">
+                    Define estilos, diseño y responsividad.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/front-js.svg"
+                  alt="javascript"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>JavaScript</h3>
+                  <p data-section="habil" data-value="js">
+                    Agrega lógica y comportamiento dinámico.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/front-ts.svg"
+                  alt="typescript"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>TypeScript</h3>
+                  <p data-section="habil" data-value="ts">
+                    JavaScript con tipado estático para mayor control.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/front-react.svg"
+                  alt="React"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>React JS</h3>
+                  <p data-section="habil" data-value="react">
+                    Librería para crear interfaces dinámicas basadas en
+                    componentes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-box op-card back-ent">
+              <h2 class="skill-title">BACKEND</h2>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/back-nodejs.svg"
+                  alt="nodejs"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>Node JS</h3>
+                  <p data-section="habil" data-value="node">
+                    Entorno JavaScript para servidor backend
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/back-express.svg"
+                  alt="express"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>Express</h3>
+                  <p data-section="habil" data-value="express">
+                    Framework NodeJS para servidores y APIs rápidas.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/back-mysql.svg"
+                  alt="mysql"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>MySQL</h3>
+                  <p data-section="habil" data-value="mysql">
+                    Base de datos relacional estructurada (SQL).
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/back-sqlite.svg"
+                  alt="sqlite"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>SQLite</h3>
+                  <p data-section="habil" data-value="sqlite">
+                    Base de datos liviana, ideal para proyectos simples.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/back-mongodb.svg"
+                  alt="mongodb"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>MongoDB</h3>
+                  <p data-section="habil" data-value="mongodb">
+                    Base de datos NoSQL basada en documentos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-box op-card tool">
+              <h2 class="skill-title" data-section="habil" data-value="tool">
+                HERRAMIENTAS
+              </h2>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/herr-magento.svg"
+                  alt="magento"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>Magento</h3>
+                  <p data-section="habil" data-value="Magento">
+                    Plataforma para desarrollo de e-commerce.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/herr-terminal.svg"
+                  alt="terminal"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>Terminal</h3>
+                  <p data-section="habil" data-value="terminal">
+                    Consola para ejecutar comandos.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/herr-git.svg"
+                  alt="git"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>Git</h3>
+                  <p data-section="habil" data-value="git">
+                    Controla versiones y historial de proyectos de código.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/herr-github.svg"
+                  alt="github"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>GitHub</h3>
+                  <p data-section="habil" data-value="github">
+                    Aloja y colabora en repositorios Git.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/herr-npm.svg"
+                  alt="npm"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>npm</h3>
+                  <p data-section="habil" data-value="npm">
+                    Gestor de paquetes de Node.js.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/herr-vite.svg"
+                  alt="vite"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>Vite</h3>
+                  <p data-section="habil" data-value="vite">
+                    Herramienta rápida para desarrollo frontend.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/herr-figma.svg"
+                  alt="figma"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>Figma</h3>
+                  <p data-section="habil" data-value="figma">
+                    Diseña interfaces y prototipos UI/UX colaborativos.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-item animation stagger fade-right">
+                <img
+                  src="assets/skill/herr-illustrator.svg"
+                  alt="illustrator"
+                  loading="lazy"
+                  decoding="async"
+                />
+
+                <div class="skill-info">
+                  <h3>Illustrator</h3>
+                  <p data-section="habil" data-value="illustrator">
+                    Diseño gráfico vectorial profesional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="skill-container container">
-        <div class="skill-box op-card front-end">
-          <h2 class="skill-title">FRONTEND</h2>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/front-html.svg"
-              alt="html"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>HTML</h3>
-              <p data-section="habil" data-value="html">
-                Estructura el contenido de la web.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/front-css-new.svg"
-              alt="CSS"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>CSS</h3>
-              <p data-section="habil" data-value="css">
-                Define estilos, diseño y responsividad.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/front-js.svg"
-              alt="javascript"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>JavaScript</h3>
-              <p data-section="habil" data-value="js">
-                Agrega lógica y comportamiento dinámico.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/front-ts.svg"
-              alt="typescript"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>TypeScript</h3>
-              <p data-section="habil" data-value="ts">
-                JavaScript con tipado estático para mayor control.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/front-react.svg"
-              alt="React"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>React JS</h3>
-              <p data-section="habil" data-value="react">
-                Librería para crear interfaces dinámicas basadas en componentes.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-box op-card back-ent">
-          <h2 class="skill-title">BACKEND</h2>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/back-nodejs.svg"
-              alt="nodejs"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>Node JS</h3>
-              <p data-section="habil" data-value="node">
-                Entorno JavaScript para servidor backend
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/back-express.svg"
-              alt="express"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>Express</h3>
-              <p data-section="habil" data-value="express">
-                Framework NodeJS para servidores y APIs rápidas.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/back-mysql.svg"
-              alt="mysql"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>MySQL</h3>
-              <p data-section="habil" data-value="mysql">
-                Base de datos relacional estructurada (SQL).
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/back-sqlite.svg"
-              alt="sqlite"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>SQLite</h3>
-              <p data-section="habil" data-value="sqlite">
-                Base de datos liviana, ideal para proyectos simples.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/back-mongodb.svg"
-              alt="mongodb"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>MongoDB</h3>
-              <p data-section="habil" data-value="mongodb">
-                Base de datos NoSQL basada en documentos.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-box op-card tool">
-          <h2 class="skill-title" data-section="habil" data-value="tool">
-            HERRAMIENTAS
-          </h2>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/herr-magento.svg"
-              alt="magento"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>Magento</h3>
-              <p data-section="habil" data-value="Magento">
-                Plataforma para desarrollo de e-commerce.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/herr-terminal.svg"
-              alt="terminal"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>Terminal</h3>
-              <p data-section="habil" data-value="terminal">
-                Consola para ejecutar comandos.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/herr-git.svg"
-              alt="git"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>Git</h3>
-              <p data-section="habil" data-value="git">
-                Controla versiones y historial de proyectos de código.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/herr-github.svg"
-              alt="github"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>GitHub</h3>
-              <p data-section="habil" data-value="github">
-                Aloja y colabora en repositorios Git.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/herr-npm.svg"
-              alt="npm"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>npm</h3>
-              <p data-section="habil" data-value="npm">
-                Gestor de paquetes de Node.js.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/herr-vite.svg"
-              alt="vite"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>Vite</h3>
-              <p data-section="habil" data-value="vite">
-                Herramienta rápida para desarrollo frontend.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/herr-figma.svg"
-              alt="figma"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>Figma</h3>
-              <p data-section="habil" data-value="figma">
-                Diseña interfaces y prototipos UI/UX colaborativos.
-              </p>
-            </div>
-          </div>
-
-          <div class="skill-item animation stagger fade-right">
-            <img
-              src="assets/skill/herr-illustrator.svg"
-              alt="illustrator"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="skill-info">
-              <h3>Illustrator</h3>
-              <p data-section="habil" data-value="illustrator">
-                Diseño gráfico vectorial profesional.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <section id="proyectos" class="project op-render">
       <div class="f-hidden">
@@ -764,7 +780,7 @@
       </div>
     </section>
 
-    <footer id="contacto" class="contact op-render scroll-overlap-superpones">
+    <footer id="contacto." class="contact op-render scroll-overlap-superpones">
       <div class="contact-info container">
         <h2 class="title-second" data-section="contacto" data-value="h2">
           Contacto
