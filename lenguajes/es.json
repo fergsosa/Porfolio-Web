@@ -107,23 +107,6 @@
     "me-s3": "Validé datos utilizando Zod",
     "me-s4": "Estructuré una API REST clara y escalable"
   },
-  "proyecto_###": {
-    "h2": "Proyectos",
-    "title-slider": "Efectos de slider",
-    "p-slider": "Slider detalles/automático  <span>HTML | CSS | JS</span>",
-    "title-ajax": "Página Simple",
-    "p-ajax": "Integrar HTML con AJAX  <span>HTML | CSS | JS</span>",
-    "title-shopping": "Carro de compra",
-    "p-shopping": "Carga carrito de productos  <span> React | Tailwind </span>",
-    "title-blog": "Blog",
-    "p-blog": "Blog Markdown <span> Eleventy | Nunjucks </span>",
-    "title-theme": "Tema Itálica FS",
-    "p-theme": "Tema Oscuro/Claro <span> .VSIX </span>",
-    "title-crud": "CRUD",
-    "p-crud": "Router/Context/Reducers/Redux <span>React</span>",
-    "title-apis": "SPA APIS",
-    "p-apis": "Consumo de multiples apis <span> HTML | CSS | JS </span>"
-  },
   "contacto": {
     "h2": "Contacto",
     "h3": "Gracias por su visita",

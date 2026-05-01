@@ -107,36 +107,6 @@
     "me-s3": "Validated data using Zod",
     "me-s4": "Structured a clear and scalable REST API"
   },
-  "proyecto_###": {
-    "td": "IN-Desafíos",
-    "ts": "IN-Soluciones",
-
-    "ms-title": "IN-Multi Slider View",
-    "ms-d1": "IN-Lograr una navegación accesible",
-    "ms-d2": "IN-Implementar transiciones suaves",
-    "ms-d3": "IN-Adaptar la interfaz a distintos dispositivos",
-    "ms-d4": "IN-Desarrollar efectos visuales",
-    "ms-s1": "IN-Apliqué criterios de accesibilidad",
-    "ms-s2": "IN-Implementé animaciones fluidas con CSS",
-    "ms-s3": "IN-Desarrollé un diseño responsive consistente",
-    "ms-s4": "IN-Incorporé lógica para interacciones dinámicas",
-
-    "h2": "Projects",
-    "title-slider": "Slider Effect",
-    "p-slider": "Slider details/automatic <span>HTML | CSS | JS</span>",
-    "title-ajax": "Simple Page",
-    "p-ajax": "Integrating HTML with AJAX <span>HTML | CSS | JS</span>",
-    "title-shopping": "Shopping cart",
-    "p-shopping": "Loading product cart <span> React | Tailwind </span>",
-    "title-blog": "Blog",
-    "p-blog": "Blog Markdown <span> Eleventy | Nunjucks </span>",
-    "title-theme": "Theme Italic FS",
-    "p-theme": "Theme Dark/Light <span> .VSIX </span>",
-    "title-crud": "CRUD",
-    "p-crud": "Router/Context/Reducers/Redux <span>React</span>",
-    "title-apis": "SPA APIS",
-    "p-apis": "Multiple apis consumption <span> HTML | CSS | JS </span>"
-  },
   "contacto": {
     "h2": "Contact",
     "h3": "Thank you for your visit",
