@@ -61,7 +61,7 @@
     </div>
 
     <div id="animation-menu-trigger"></div>
-    <nav aria-label="menu" class="menu">
+    <nav aria-label="menu" class="menu" data-section="menu">
       <ul>
         <li class="nav-inicio">
           <a href="#inicio">
@@ -87,7 +87,7 @@
                 d="M27.339 13.357 23.28 9.475V3.583a.87.87 0 0 0-.868-.868h-2.605a.87.87 0 0 0-.868.868V5.32l-3.142-3.004c-.294-.297-.731-.468-1.204-.468-.47 0-.907.17-1.201.468L1.853 13.356c-.337.325-.38.861-.072 1.214a.87.87 0 0 0 1.257.057L14.296 3.87a.434.434 0 0 1 .6 0l11.258 10.757a.87.87 0 0 0 1.226-.024c.333-.345.306-.915-.041-1.246"
               />
             </svg>
-            <span data-section="menu" data-value="m1">Inicio</span>
+            <span data-value="m1">Inicio</span>
           </a>
         </li>
         <li class="nav-habilidades">
@@ -113,7 +113,7 @@
                 </clipPath>
               </defs>
             </svg>
-            <span data-section="menu" data-value="m3">Habilidades</span>
+            <span data-value="m3">Habilidades</span>
           </a>
         </li>
         <li class="nav-proyectos">
@@ -134,7 +134,7 @@
                 d="M20.78 8.792H8.625a.868.868 0 1 1 0-1.737H20.78a.868.868 0 0 1 0 1.737m.867 3.472H7.758a.868.868 0 0 1 0-1.736h13.89a.868.868 0 0 1 0 1.736"
               />
             </svg>
-            <span data-section="menu" data-value="m4">Proyectos</span>
+            <span data-value="m4">Proyectos</span>
           </a>
         </li>
         <li class="nav-sobre-mi">
@@ -152,7 +152,7 @@
                 d="M26.19 11.316c-.56-2.64-2.048-5.042-4.189-6.765a12.34 12.34 0 0 0-7.714-2.704c-3.305 0-6.392 1.273-8.7 3.586-2.23 2.237-3.452 5.191-3.443 8.316a11.7 11.7 0 0 0 1.934 6.443l.236.328-1.302 5.633 6.229-1.55s.124.042.217.077c.092.036.886.34 1.728.575.7.196 2.156.489 3.297.489 3.236 0 6.258-1.254 8.508-3.53a11.96 11.96 0 0 0 3.459-8.459c0-.82-.087-1.638-.26-2.44m-17.1 4.421a1.737 1.737 0 1 1 0-3.473 1.737 1.737 0 0 1 0 3.473m5.208 0a1.737 1.737 0 1 1 0-3.473 1.737 1.737 0 0 1 0 3.473m5.209 0a1.737 1.737 0 1 1 0-3.473 1.737 1.737 0 0 1 0 3.473"
               />
             </svg>
-            <span data-section="menu" data-value="m2">Perfil</span>
+            <span data-value="m2">Perfil</span>
           </a>
         </li>
         <li class="nav-contacto">
@@ -169,7 +169,7 @@
                 d="M18.564 3.615c-1.056-1.14-2.53-1.768-4.158-1.768-1.636 0-3.116.624-4.167 1.757-1.062 1.145-1.58 2.702-1.458 4.382C9.022 11.303 11.545 14 14.406 14c2.86 0 5.38-2.697 5.625-6.012.123-1.666-.398-3.22-1.467-4.373m5.39 22.538H4.859a1.68 1.68 0 0 1-1.313-.604c-.353-.422-.495-.997-.39-1.58.458-2.54 1.887-4.673 4.133-6.171 1.996-1.33 4.523-2.062 7.118-2.062s5.123.732 7.118 2.062c2.246 1.497 3.675 3.63 4.133 6.171.105.582-.037 1.158-.39 1.58a1.68 1.68 0 0 1-1.312.604"
               />
             </svg>
-            <span data-section="menu" data-value="m5">Contacto</span>
+            <span data-value="m5">Contacto</span>
           </a>
         </li>
       </ul>
@@ -189,7 +189,7 @@
         <source src="./assets/fondo-hero-01.mp4" type="video/mp4" />
       </video>
 
-      <div class="home">
+      <div class="home" data-section="inicio">
         <div class="home-info">
           <div class="animation-zoom">
             <div class="home-box-perfil">
@@ -198,7 +198,7 @@
                 alt="fer-desarrollador"
                 class="home-image"
               />
-              <p class="home-name_role" data-section="inicio" data-value="p">
+              <p class="home-name_role" data-value="p">
                 Fernando Sosa. Desarrollador Web
               </p>
             </div>
@@ -208,7 +208,6 @@
             <div class="animation-curtain">
               <h1
                 class="home-title-propuesta propuesta-one"
-                data-section="inicio"
                 data-value="title-1"
               >
                 Desarrollador Full Stack enfocado
@@ -217,7 +216,6 @@
             <div class="animation-curtain">
               <h1
                 class="home-title-propuesta propuesta-two"
-                data-section="inicio"
                 data-value="title-2"
               >
                 en crear soluciones reales
@@ -226,11 +224,7 @@
           </div>
 
           <div class="animation-curtain">
-            <p
-              class="home-subtitle-resumen"
-              data-section="inicio"
-              data-value="sub-title"
-            >
+            <p class="home-subtitle-resumen" data-value="sub-title">
               Construyo aplicaciones web modernas con
               <b> JavaScript, React y Node.js </b>, aplicando buenas prácticas,
               <b>arquitectura escalable</b> y <b>resolución</b> eficiente de
@@ -247,7 +241,7 @@
                   alt="check"
                   class="image-check"
                 />
-                <p data-section="inicio" data-value="competencias-01">
+                <p data-value="competencias-01">
                   Experiencia práctica construyendo aplicaciones (MERN, SPAs,
                   APIs REST).
                 </p>
@@ -259,7 +253,7 @@
                   alt="check"
                   class="image-check"
                 />
-                <p data-section="inicio" data-value="competencias-02">
+                <p data-value="competencias-02">
                   Código mantenible, enfoque en performance y capacidad de
                   adaptación.
                 </p>
@@ -294,7 +288,7 @@
               </g>
             </svg>
 
-            <p data-section="inicio" data-value="disponiblidad">
+            <p data-value="disponiblidad">
               Disponibilidad para trabajar • Enfoque en resultados • Aprendizaje
               continuo
             </p>
@@ -305,11 +299,14 @@
 
     <div class="scroll-container">
       <div class="sticky-wrap">
-        <section id="habilidades" class="skills op-render expanding-box">
+        <section
+          id="habilidades"
+          class="skills op-render expanding-box"
+          data-section="habilidades"
+        >
           <div class="f-hidden">
             <h2
               class="title-second animation fade-up-hidden"
-              data-section="habil"
               data-value="skills"
             >
               Habilidades
@@ -329,9 +326,7 @@
 
                 <div class="skill-info">
                   <h3>HTML</h3>
-                  <p data-section="habil" data-value="html">
-                    Estructura el contenido de la web.
-                  </p>
+                  <p data-value="html">Estructura el contenido de la web.</p>
                 </div>
               </div>
 
@@ -345,7 +340,7 @@
 
                 <div class="skill-info">
                   <h3>CSS</h3>
-                  <p data-section="habil" data-value="css">
+                  <p data-value="css">
                     Define estilos, diseño y responsividad.
                   </p>
                 </div>
@@ -361,7 +356,7 @@
 
                 <div class="skill-info">
                   <h3>JavaScript</h3>
-                  <p data-section="habil" data-value="js">
+                  <p data-value="js">
                     Agrega lógica y comportamiento dinámico.
                   </p>
                 </div>
@@ -377,7 +372,7 @@
 
                 <div class="skill-info">
                   <h3>TypeScript</h3>
-                  <p data-section="habil" data-value="ts">
+                  <p data-value="ts">
                     JavaScript con tipado estático para mayor control.
                   </p>
                 </div>
@@ -393,7 +388,7 @@
 
                 <div class="skill-info">
                   <h3>React JS</h3>
-                  <p data-section="habil" data-value="react">
+                  <p data-value="react">
                     Librería para crear interfaces dinámicas basadas en
                     componentes.
                   </p>
@@ -414,7 +409,7 @@
 
                 <div class="skill-info">
                   <h3>Node JS</h3>
-                  <p data-section="habil" data-value="node">
+                  <p data-value="node">
                     Entorno JavaScript para servidor backend
                   </p>
                 </div>
@@ -430,7 +425,7 @@
 
                 <div class="skill-info">
                   <h3>Express</h3>
-                  <p data-section="habil" data-value="express">
+                  <p data-value="express">
                     Framework NodeJS para servidores y APIs rápidas.
                   </p>
                 </div>
@@ -446,7 +441,7 @@
 
                 <div class="skill-info">
                   <h3>MySQL</h3>
-                  <p data-section="habil" data-value="mysql">
+                  <p data-value="mysql">
                     Base de datos relacional estructurada (SQL).
                   </p>
                 </div>
@@ -462,7 +457,7 @@
 
                 <div class="skill-info">
                   <h3>SQLite</h3>
-                  <p data-section="habil" data-value="sqlite">
+                  <p data-value="sqlite">
                     Base de datos liviana, ideal para proyectos simples.
                   </p>
                 </div>
@@ -478,7 +473,7 @@
 
                 <div class="skill-info">
                   <h3>MongoDB</h3>
-                  <p data-section="habil" data-value="mongodb">
+                  <p data-value="mongodb">
                     Base de datos NoSQL basada en documentos.
                   </p>
                 </div>
@@ -486,9 +481,7 @@
             </div>
 
             <div class="skill-box op-card tool">
-              <h2 class="skill-title" data-section="habil" data-value="tool">
-                HERRAMIENTAS
-              </h2>
+              <h2 class="skill-title" data-value="tool">HERRAMIENTAS</h2>
 
               <div class="skill-item animation stagger fade-right">
                 <img
@@ -500,7 +493,7 @@
 
                 <div class="skill-info">
                   <h3>Magento</h3>
-                  <p data-section="habil" data-value="Magento">
+                  <p data-value="Magento">
                     Plataforma para desarrollo de e-commerce.
                   </p>
                 </div>
@@ -516,9 +509,7 @@
 
                 <div class="skill-info">
                   <h3>Terminal</h3>
-                  <p data-section="habil" data-value="terminal">
-                    Consola para ejecutar comandos.
-                  </p>
+                  <p data-value="terminal">Consola para ejecutar comandos.</p>
                 </div>
               </div>
 
@@ -532,7 +523,7 @@
 
                 <div class="skill-info">
                   <h3>Git</h3>
-                  <p data-section="habil" data-value="git">
+                  <p data-value="git">
                     Controla versiones y historial de proyectos de código.
                   </p>
                 </div>
@@ -548,7 +539,7 @@
 
                 <div class="skill-info">
                   <h3>GitHub</h3>
-                  <p data-section="habil" data-value="github">
+                  <p data-value="github">
                     Aloja y colabora en repositorios Git.
                   </p>
                 </div>
@@ -564,9 +555,7 @@
 
                 <div class="skill-info">
                   <h3>npm</h3>
-                  <p data-section="habil" data-value="npm">
-                    Gestor de paquetes de Node.js.
-                  </p>
+                  <p data-value="npm">Gestor de paquetes de Node.js.</p>
                 </div>
               </div>
 
@@ -580,7 +569,7 @@
 
                 <div class="skill-info">
                   <h3>Vite</h3>
-                  <p data-section="habil" data-value="vite">
+                  <p data-value="vite">
                     Herramienta rápida para desarrollo frontend.
                   </p>
                 </div>
@@ -596,7 +585,7 @@
 
                 <div class="skill-info">
                   <h3>Figma</h3>
-                  <p data-section="habil" data-value="figma">
+                  <p data-value="figma">
                     Diseña interfaces y prototipos UI/UX colaborativos.
                   </p>
                 </div>
@@ -612,7 +601,7 @@
 
                 <div class="skill-info">
                   <h3>Illustrator</h3>
-                  <p data-section="habil" data-value="illustrator">
+                  <p data-value="illustrator">
                     Diseño gráfico vectorial profesional.
                   </p>
                 </div>
@@ -623,7 +612,281 @@
       </div>
     </div>
 
-    <section id="proyectos" class="project op-render">
+    <div
+      id="proyectos"
+      data-section="proyecto"
+      class="project carousel op-render"
+    >
+      <div class="f-hidden">
+        <h2
+          class="title-second animation fade-up-hidden"
+          data-section="proyecto"
+          data-value="h2"
+        >
+          Proyectos
+        </h2>
+      </div>
+
+      <div class="list">
+        <section class="item">
+          <img src="../assets/project/reloj-serie.avif" />
+          <section class="info">
+            <h2 data-value="ms-title" class="info-title">name_proyecto</h2>
+            <p>HTML | CSS | JS</p>
+
+            <div class="info-block">
+              <h3 data-value="td">Desafíos</h3>
+              <ul>
+                <li data-value="ms-d1">Desafíos</li>
+                <li data-value="ms-d2">Desafíos</li>
+                <li data-value="ms-d3">Desafíos</li>
+                <li data-value="ms-d4">Desafíos</li>
+              </ul>
+            </div>
+
+            <div class="info-block">
+              <h3 data-value="ts">Soluciones</h3>
+              <ul>
+                <li data-value="ms-s1">Soluciones</li>
+                <li data-value="ms-s2">Soluciones</li>
+                <li data-value="ms-s3">Soluciones</li>
+                <li data-value="ms-s4">Soluciones</li>
+              </ul>
+            </div>
+
+            <a
+              class="info-link"
+              href="link_pagina"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-value="ver-pag"
+            >
+              Ver página ↗
+            </a>
+          </section>
+        </section>
+
+        <section class="item">
+          <img src="../assets/project/incluir-html-ajax.avif" />
+          <section class="info">
+            <h2 data-value="sj-title" class="info-title">name_proyecto</h2>
+            <p>HTML | CSS | JS</p>
+
+            <div class="info-block">
+              <h3 data-value="td">Desafíos</h3>
+              <ul>
+                <li data-value="sj-d1">Desafíos</li>
+                <li data-value="sj-d2">Desafíos</li>
+                <li data-value="sj-d3">Desafíos</li>
+                <li data-value="sj-d4">Desafíos</li>
+              </ul>
+            </div>
+
+            <div class="info-block">
+              <h3 data-value="ts">Soluciones</h3>
+              <ul>
+                <li data-value="sj-s1">Soluciones</li>
+                <li data-value="sj-s2">Soluciones</li>
+                <li data-value="sj-s3">Soluciones</li>
+                <li data-value="sj-s4">Soluciones</li>
+              </ul>
+            </div>
+
+            <a
+              class="info-link"
+              href="link_pagina"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-value="ver-pag"
+            >
+              Ver página ↗
+            </a>
+          </section>
+        </section>
+
+        <section class="item">
+          <img src="../assets/project/theme-fs.avif" />
+          <section class="info">
+            <h2 data-value="fs-title" class="info-title">name_proyecto</h2>
+            <p>.VSIX</p>
+
+            <div class="info-block">
+              <h3 data-value="td">Desafíos</h3>
+              <ul>
+                <li data-value="fs-d1">Desafíos</li>
+                <li data-value="fs-d2">Desafíos</li>
+                <li data-value="fs-d3">Desafíos</li>
+                <li data-value="fs-d4">Desafíos</li>
+              </ul>
+            </div>
+
+            <div class="info-block">
+              <h3 data-value="ts">Soluciones</h3>
+              <ul>
+                <li data-value="fs-s1">Soluciones</li>
+                <li data-value="fs-s2">Soluciones</li>
+                <li data-value="fs-s3">Soluciones</li>
+                <li data-value="fs-s4">Soluciones</li>
+              </ul>
+            </div>
+
+            <a
+              class="info-link"
+              href="link_pagina"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-value="ver-pag"
+            >
+              Ver página ↗
+            </a>
+          </section>
+        </section>
+
+        <section class="item">
+          <img src="../assets/project/spa_apis.png" />
+          <section class="info">
+            <h2 data-value="sa-title" class="info-title">name_proyecto</h2>
+            <p>HTML | CSS | JS</p>
+
+            <div class="info-block">
+              <h3 data-value="td">Desafíos</h3>
+              <ul>
+                <li data-value="sa-d1">Desafíos</li>
+                <li data-value="sa-d2">Desafíos</li>
+                <li data-value="sa-d3">Desafíos</li>
+                <li data-value="sa-d4">Desafíos</li>
+              </ul>
+            </div>
+
+            <div class="info-block">
+              <h3 data-value="ts">Soluciones</h3>
+              <ul>
+                <li data-value="sa-s1">Soluciones</li>
+                <li data-value="sa-s2">Soluciones</li>
+                <li data-value="sa-s3">Soluciones</li>
+                <li data-value="sa-s4">Soluciones</li>
+              </ul>
+            </div>
+
+            <a
+              class="info-link"
+              href="link_pagina"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-value="ver-pag"
+            >
+              Ver página ↗
+            </a>
+          </section>
+        </section>
+
+        <section class="item">
+          <img src="../assets/project/crud.avif" />
+          <section class="info">
+            <h2 data-value="ce-title" class="info-title">name_proyecto</h2>
+            <p>React | Redux Toolkit | React Router</p>
+
+            <div class="info-block">
+              <h3 data-value="td">Desafíos</h3>
+              <ul>
+                <li data-value="ce-d1">Desafíos</li>
+                <li data-value="ce-d2">Desafíos</li>
+                <li data-value="ce-d3">Desafíos</li>
+                <li data-value="ce-d4">Desafíos</li>
+              </ul>
+            </div>
+
+            <div class="info-block">
+              <h3 data-value="ts">Soluciones</h3>
+              <ul>
+                <li data-value="ce-s1">Soluciones</li>
+                <li data-value="ce-s2">Soluciones</li>
+                <li data-value="ce-s3">Soluciones</li>
+                <li data-value="ce-s4">Soluciones</li>
+              </ul>
+            </div>
+
+            <a
+              class="info-link"
+              href="link_pagina"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-value="ver-pag"
+            >
+              Ver página ↗
+            </a>
+          </section>
+        </section>
+
+        <section class="item">
+          <img src="../assets/project/mern-crud-auth.avif" />
+          <section class="info">
+            <h2 data-value="me-title" class="info-title">name_proyecto</h2>
+            <p>React | Node | MongoDB | JWT | bcrypt | Zod</p>
+
+            <div class="info-block">
+              <h3 data-value="td">Desafíos</h3>
+              <ul>
+                <li data-value="me-d1">Desafíos</li>
+                <li data-value="me-d2">Desafíos</li>
+                <li data-value="me-d3">Desafíos</li>
+                <li data-value="me-d4">Desafíos</li>
+              </ul>
+            </div>
+
+            <div class="info-block">
+              <h3 data-value="ts">Soluciones</h3>
+              <ul>
+                <li data-value="me-s1">Soluciones</li>
+                <li data-value="me-s2">Soluciones</li>
+                <li data-value="me-s3">Soluciones</li>
+                <li data-value="me-s4">Soluciones</li>
+              </ul>
+            </div>
+
+            <a
+              class="info-link"
+              href="link_pagina"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-value="ver-pag"
+            >
+              Ver página ↗
+            </a>
+          </section>
+        </section>
+      </div>
+      <div class="arrows">
+        <button id="prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="17"
+            viewBox="0 0 10 17"
+          >
+            <path
+              fill="currentColor"
+              d="M9.559 2.58 3.618 8.502l5.904 5.96a1.5 1.5 0 1 1-2.13 2.112L.435 9.552A1.5 1.5 0 0 1 .44 7.434l7-6.978A1.5 1.5 0 1 1 9.559 2.58"
+            />
+          </svg>
+        </button>
+        <button id="next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="17"
+            viewBox="0 0 10 17"
+          >
+            <path
+              fill="currentColor"
+              d="M9.54 7.398a1.5 1.5 0 0 1 .007 2.118L2.59 16.538a1.5 1.5 0 1 1-2.13-2.112l5.904-5.96L.423 2.544A1.5 1.5 0 0 1 2.54.42z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- <section id="proyectos" class="project-2 op-render">
       <div class="f-hidden">
         <h2
           class="title-second animation fade-up-hidden"
@@ -741,10 +1004,10 @@
           </figure>
         </section>
       </div>
-    </section>
+    </section> -->
 
     <section id="sobreMi" class="about op-render scroll-overlap-fija">
-      <div class="about-box container">
+      <div class="about-box container" data-section="sombreMi">
         <img
           class="animate-logo"
           src="assets/fer-cv.avif"
@@ -754,19 +1017,11 @@
         />
         <article class="about-text">
           <div class="f-hidden">
-            <h2
-              class="title-second animation fade-up-hidden"
-              data-section="sombreMi"
-              data-value="h2"
-            >
+            <h2 class="title-second animation fade-up-hidden" data-value="h2">
               Sobre mi
             </h2>
           </div>
-          <p
-            class="op-1lh animation fade-right delay-3"
-            data-section="sombreMi"
-            data-value="p"
-          >
+          <p class="op-1lh animation fade-right delay-3" data-value="p">
             Soy un desarrollador con +3 años de experiencia, especializado en
             proyectos escalables y mantenibles, lo que me ha permitido
             consolidar mis habilidades lógicas y técnicas. Me considero
@@ -780,13 +1035,15 @@
       </div>
     </section>
 
-    <footer id="contacto." class="contact op-render scroll-overlap-superpones">
+    <footer
+      id="contacto"
+      class="contact op-render scroll-overlap-superpones"
+      data-section="contacto"
+    >
       <div class="contact-info container">
-        <h2 class="title-second" data-section="contacto" data-value="h2">
-          Contacto
-        </h2>
+        <h2 class="title-second" data-value="h2">Contacto</h2>
 
-        <p data-section="contacto" data-value="h3">Gracias por su visita</p>
+        <p data-value="h3">Gracias por su visita</p>
 
         <address class="box-contact">
           <a
@@ -850,7 +1107,6 @@
             href="assets/cv-pdf/CV-Fer-Programacion-F.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            data-section="contacto"
             data-value="a"
           >
             Ver CV
@@ -873,7 +1129,7 @@
           </a>
         </button>
       </div>
-      <small data-section="contacto" data-value="small"
+      <small data-value="small"
         >Sitio diseñado por <a href="#Fernando">@FernandoSosa</a></small
       >
     </footer>

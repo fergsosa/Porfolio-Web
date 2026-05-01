@@ -11,7 +11,8 @@ export default function language(btns, textsToChange) {
       const texts = await requestJson.json();
 
       for (const textToChange of $textsToChange) {
-        const { section, value } = textToChange.dataset;
+        const section = textToChange.closest("[data-section]").dataset.section;
+        const { value } = textToChange.dataset;
         textToChange.innerHTML = texts[section][value];
       }
     } catch (error) {
@@ -20,9 +21,7 @@ export default function language(btns, textsToChange) {
   };
 
   $flagsElement.addEventListener("click", (e) => {
-    //* Asegúrate de que `data-language` esté en el elemento correcto
     const lang = e.target.parentElement.dataset.language;
-
     if (lang) {
       changeLanguage(lang);
       localStorage.setItem("language", lang);
