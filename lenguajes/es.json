@@ -57,16 +57,6 @@
     "ms-s3": "Desarrollé un diseño responsive consistente",
     "ms-s4": "Incorporé lógica para interacciones dinámicas",
 
-    "sj-title": "SPA con AJAX",
-    "sj-d1": "Cargar datos sin recargar la página",
-    "sj-d2": "Actualizar la interfaz de forma dinámica",
-    "sj-d3": "Conectar cliente con servidor",
-    "sj-d4": "Estructurar una página única (SPA)",
-    "sj-s1": "Mejoré los tiempos de respuesta",
-    "sj-s2": "implementé una interfaz fluida y asíncrona",
-    "sj-s3": "estructuré DOM de forma clara",
-    "sj-s4": "Construí navegación tipo SPA",
-
     "fs-title": "Theme Italic FS para VSCode",
     "fs-d1": "Elegir una tipografía adecuada",
     "fs-d2": "Equilibrar el contraste de colores",
@@ -105,7 +95,17 @@
     "me-s1": "implementé autenticación con JWT y cookies",
     "me-s2": "Aseguré contraseñas mediante encriptación",
     "me-s3": "Validé datos utilizando Zod",
-    "me-s4": "Estructuré una API REST clara y escalable"
+    "me-s4": "Estructuré una API REST clara y escalable",
+
+    "bl-title": "Blog Lenguajes",
+    "bl-d1": "Documentar conceptos técnicos de forma clara",
+    "bl-d2": "Mantener consistencia entre las notas",
+    "bl-d3": "Generar un sitio rápido y optimizado",
+    "bl-d4": "Separar contenido, lógica y presentación",
+    "bl-s1": "Documenté tecnologías en guías prácticas",
+    "bl-s2": "Definí formato reutilizable estándar",
+    "bl-s3": "Implementé generación estática con Eleventy p",
+    "bl-s4": "Organicé contenido con Nunjucks y Markdown"
   },
   "contacto": {
     "h2": "Contacto",

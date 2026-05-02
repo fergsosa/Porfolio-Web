@@ -57,16 +57,6 @@
     "ms-s3": "Developed a consistent responsive design",
     "ms-s4": "Incorporated logic for dynamic interactions",
 
-    "sj-title": "SPA with AJAX",
-    "sj-d1": "Loading data without refreshing the page",
-    "sj-d2": "Updating the interface dynamically",
-    "sj-d3": "Connecting client and server",
-    "sj-d4": "Structuring a single page application",
-    "sj-s1": "Improved response times",
-    "sj-s2": "Implemented a fluid asynchronous interface",
-    "sj-s3": "Structured the DOM clearly",
-    "sj-s4": "Built SPA style navigation",
-
     "fs-title": "Italic FS Theme for VSCode",
     "fs-d1": "Choosing appropriate typography",
     "fs-d2": "Balancing color contrast",
@@ -105,7 +95,17 @@
     "me-s1": "Implemented authentication with JWT and cookies",
     "me-s2": "Secured passwords through encryption",
     "me-s3": "Validated data using Zod",
-    "me-s4": "Structured a clear and scalable REST API"
+    "me-s4": "Structured a clear and scalable REST API",
+
+    "bl-title": "Languages Blog",
+    "bl-d1": "Documenting technical concepts clearly",
+    "bl-d2": "Maintaining consistency across notes",
+    "bl-d3": "Generating a fast and optimized site",
+    "bl-d4": "Separating content, logic, and presentation",
+    "bl-s1": "Documented technologies into practical guides",
+    "bl-s2": "Defined a standard reusable format",
+    "bl-s3": "Implemented static generation with Eleventy",
+    "bl-s4": "Organized content with Nunjucks and Markdown"
   },
   "contacto": {
     "h2": "Contact",
