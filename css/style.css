@@ -563,8 +563,8 @@ header {
   margin: 0 var(--box-15-17);
 
   .skill-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); */
     grid-gap: var(--gab-20-16);
     margin-top: var(--box-15-17);
 
@@ -609,6 +609,13 @@ header {
           }
         }
       }
+    }
+  }
+
+  @media (width > 768px) {
+    .skill-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     }
   }
 }
