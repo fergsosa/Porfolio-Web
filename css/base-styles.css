@@ -156,8 +156,11 @@ a {
 h1 {
   margin: 0;
   font-family: var(--font-base);
-  font-size: var(--font-48);
   text-wrap: balance;
+  font-size: var(--font-36);
+  @media (width > 768px) {
+    font-size: var(--font-48);
+  }
 }
 h2 {
   margin: 0;
