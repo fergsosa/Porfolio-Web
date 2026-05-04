@@ -86,13 +86,17 @@
 }
 
 .title-second {
-  font-size: var(--font-48);
+  font-size: var(--font-36);
   font-weight: 700;
   line-height: 50px;
   letter-spacing: -1.3px;
   margin-bottom: var(--box-15-17);
 
   margin-top: var(--box-32-36);
+
+  @media (width > 768px) {
+    font-size: var(--font-48);
+  }
 
   @media (width > 1024px) {
     margin-top: var(--header-height-t);
