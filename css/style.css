@@ -563,8 +563,8 @@ header {
   margin: 0 var(--box-15-17);
 
   .skill-container {
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-gap: var(--gab-20-16);
     margin-top: var(--box-15-17);
 
@@ -609,13 +609,6 @@ header {
           }
         }
       }
-    }
-  }
-
-  @media (width > 768px) {
-    .skill-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     }
   }
 }
@@ -1453,50 +1446,52 @@ header {
   clip-path: inset(0 0 0 0);
 }
 
-/*? ********** Scroll + timeline */
+/*? ********** Scroll - timeline */
 
 .scroll-container {
-  height: 350vh;
-  view-timeline-name: --box;
-  view-timeline-axis: block;
-  overflow: clip;
+  @media (width > 768px) {
+    height: 350vh;
+    view-timeline-name: --box;
+    view-timeline-axis: block;
+    overflow: clip;
 
-  background-color: #000;
+    background-color: #000;
 
-  background: linear-gradient(#000, #fff, #fff);
-  background-image:
-    linear-gradient(transparent, transparent, #fff9, #fff),
-    url(../assets/fondo-hero-blur.jpg);
-  background-image:
-    linear-gradient(#0002, #0001, #fff9, #fff),
-    url(../assets/fondo-hero-blur.jpg);
-  /* background-image: url(../assets/fondo-hero-blur-2.png); */
-  /* background-image: url(../assets/fondo-hero-blur.jpg); */
+    background: linear-gradient(#000, #fff, #fff);
+    background-image:
+      linear-gradient(transparent, transparent, #fff9, #fff),
+      url(../assets/fondo-hero-blur.jpg);
+    background-image:
+      linear-gradient(#0002, #0001, #fff9, #fff),
+      url(../assets/fondo-hero-blur.jpg);
+    /* background-image: url(../assets/fondo-hero-blur-2.png); */
+    /* background-image: url(../assets/fondo-hero-blur.jpg); */
 
-  .sticky-wrap {
-    position: sticky;
-    top: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-
-    .expanding-box {
-      width: 100%;
-      max-width: 60px;
-      min-height: 99vh;
-      border-radius: 24px;
-      background: #fff;
-
+    .sticky-wrap {
+      position: sticky;
+      top: 0;
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      gap: 16px;
+      overflow: hidden;
 
-      animation: expand linear both;
-      animation-timeline: --box;
-      animation-range: entry 10% exit 1%;
+      .expanding-box {
+        width: 100%;
+        max-width: 60px;
+        min-height: 99vh;
+        border-radius: 24px;
+        background: #fff;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        animation: expand linear both;
+        animation-timeline: --box;
+        animation-range: entry 10% exit 1%;
+      }
     }
   }
 }
