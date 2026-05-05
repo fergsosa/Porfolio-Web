@@ -991,30 +991,6 @@ header {
   background-color: var(--bg-footer);
   color: var(--color-footer);
 
-  .footer-glow- {
-    --bg-glow: radial-gradient(
-      47.08% 45.75% at 50% 50%,
-      #4e55a8 0%,
-      rgba(69, 82, 158, 0.91) 33.36%,
-      rgba(72, 42, 105, 0) 100%
-    );
-    position: absolute;
-    z-index: 3;
-    bottom: -90rem;
-    left: -15%;
-    width: 130%;
-    height: 106rem;
-    background: var(--bg-glow, transparent);
-    mix-blend-mode: screen;
-    pointer-events: none;
-
-    @media (width > 768px) {
-      bottom: -76rem;
-      left: -25%;
-      width: 150vw;
-    }
-  }
-
   .footer-glow {
     --bg-glow: radial-gradient(
       47.08% 45.75% at 50% 50%,
@@ -1025,7 +1001,7 @@ header {
 
     position: absolute;
     z-index: 3;
-    bottom: -85rem;
+    bottom: -80rem;
     left: 50%;
     transform: translateX(-50%);
     width: max(160%, 1068px);
@@ -1034,7 +1010,7 @@ header {
     mix-blend-mode: screen;
     pointer-events: none;
     @media (width > 768px) {
-      /* bottom: -76rem; */
+      bottom: -76rem;
     }
   }
 
