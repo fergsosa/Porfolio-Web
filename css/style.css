@@ -1033,11 +1033,8 @@ header {
     background: var(--bg-glow);
     mix-blend-mode: screen;
     pointer-events: none;
-  }
-
-  @media (width > 768px) {
-    .footer-glow {
-      bottom: -76rem;
+    @media (width > 768px) {
+      /* bottom: -76rem; */
     }
   }
 
