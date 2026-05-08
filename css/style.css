@@ -1169,6 +1169,10 @@ header {
   @media (width > 768px) {
     padding-top: 68px;
 
+    .p-proyecto {
+      padding: 0 !important;
+    }
+
     .contac-actions {
       width: 100%;
       flex-direction: row !important;
