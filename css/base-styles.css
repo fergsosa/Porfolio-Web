@@ -30,7 +30,9 @@
 /* ********** Custom Properties ********** */
 :root {
   --first-color: #0071e3;
-  --first-color-hover: #19f;
+  --first-color-hover: #0091ff;
+  --second-color: #0059b3;
+  --second-color-hover: #001b3a;
   --bg-color: #fff;
 
   --color-white: #f5f5f7;
@@ -45,10 +47,10 @@
   --text-color-alpha: #aeaeb2; /* #0000008f; */
   --text-color-w: var(--color-white);
 
-  --btn-first: var(--first-color);
-  --btn-first-color: #fff;
-  --btn-second: var(--color-white);
-  --btn-second-color: #063865;
+  /* --btn-first: var(--first-color); */
+  /* --btn-first-color: #fff; */
+  /* --btn-second-bg: #fffd; */
+  /* --btn-second-color: var(--second-color); */
 
   --font-base: "Inter", Helvetica, sans-serif;
   --font-red-hat: "Red Hat Display", sans-serif;

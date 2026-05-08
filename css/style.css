@@ -107,6 +107,34 @@
   display: none;
 }
 
+.btn-first {
+  border-radius: var(--radius-full);
+  background-color: var(--first-color);
+  color: #fff;
+  font-weight: 500;
+  padding: 11px 32px;
+  /* margin-top: 1.5rem; */
+  font-size: var(--font-20);
+  span {
+    vertical-align: middle;
+  }
+  &:hover {
+    opacity: 1;
+  }
+  &:hover {
+    background-color: var(--first-color-hover);
+    background-color: #001b3a;
+  }
+}
+.btn-second {
+  padding: 4px 10px 4.4px 12px;
+  border-radius: var(--radius-full);
+  background-color: #fffd;
+  font-weight: 500;
+  text-align: end;
+  color: #0059b3;
+}
+
 /* ********** Opmitimizer ********** */
 
 /* Optimiza secciones fuera del viewport */
@@ -464,7 +492,7 @@ header {
         0 0 5px 1px #fff,
         -2px -1px 6px 1px #00d2ffd0,
         2px 1px 6px 1px #18cd,
-        0 0 36px 7px var(--btn-first);
+        0 0 36px 7px var(--first-color);
 
       /* original 
       box-shadow:
@@ -753,11 +781,15 @@ header {
         .info-link {
           margin-top: 1rem;
           padding: 5px 0;
-          color: #fff9;
-          color: #519bdf;
+          padding: 4px 10px 4.4px 12px;
+          border-radius: var(--radius-full);
+          background-color: var(--btn-second-bg);
+          font-weight: 500;
           text-align: end;
-          /* color: #001b3a20; */
-          /* letter-spacing: 3px; */
+          color: var(--btn-second-color);
+          span {
+            vertical-align: middle;
+          }
         }
       }
 
@@ -847,7 +879,8 @@ header {
   @media (width > 768px) {
     --img-width: 65%;
     --info-width: 370px;
-    --carousel-box-bg-color: #001b3ac0;
+    /* --carousel-box-bg-color: #001b3ac0; */
+    /* --carousel-box-bg-color: #06141bc0; */
     --top-height-title: 60px;
 
     min-height: 100vh;
@@ -991,7 +1024,7 @@ header {
   background-color: var(--bg-footer);
   color: var(--color-footer);
 
-  .footer-glow {
+  .footer-bg-glow {
     --bg-glow: radial-gradient(
       47.08% 45.75% at 50% 50%,
       #0d539b 0%,
@@ -1019,89 +1052,101 @@ header {
     align-items: center;
     flex-direction: column;
     gap: var(--gab-20-16);
+    max-width: 800px;
 
     .title-second {
       color: var(--color-footer);
-    }
-    .box-contact a {
-      color: var(--color-footer);
+      margin-bottom: 0;
+      margin-top: 1rem;
     }
 
-    p {
+    .p-proyecto {
+      margin-top: 50px;
+      margin: var(--box-15-17) 0;
+      padding: 0 1rem;
+      /* text-wrap: balance; */
+      /* text-align: center; */
+
       font-size: var(--font-20);
       font-weight: 700;
       color: var(--text-color-alpha);
     }
-  }
 
-  .box-contact {
-    display: flex;
-    justify-content: center;
-    gap: var(--gab-24);
-
-    transition: transform var(--transition-m);
-
-    /* a[title="Email"] {
-      svg {
-        fill: var(--icon-contacto);
-        filter: drop-shadow(0 0 9px var(--icon-shadow));
-        &:hover {
-          filter: none;
-        }
-      }
-    } */
-    a {
-      --icon-contacto: #fff;
-      --icon-shadow: #e3f4ff;
-      --bg-btn-active-border: #0003;
-
-      /* border: 2px solid #f00 !important; */
-
-      &:hover,
-      &:active {
-        transform: scale(1.05);
-      }
-      svg {
-        fill: var(--icon-contacto);
-
-        filter: drop-shadow(0 0 9px var(--icon-shadow));
-        &:hover {
-          filter: none;
-        }
-      }
-    }
-  }
-
-  .contact-btn-cv {
-    position: relative;
-    padding: 11px 32px;
-    border: none;
-    border-radius: 32px;
-    margin-top: 1.5rem;
-    overflow: hidden;
-    font-size: var(--font-20);
-    background-color: var(--btn-first);
-
-    a {
-      position: relative;
-      z-index: 1;
+    .contac-actions {
       display: flex;
-      align-items: center;
-      gap: var(--gab-10-8);
-      letter-spacing: 0.1px;
-      color: var(--color-footer);
-      user-select: none;
-      svg {
-        fill: var(--color-footer);
-      }
-    }
+      flex-direction: column;
+      gap: 56px;
+      gap: var(--box-60-67);
+      .actions-contac {
+        .contact-card {
+          display: flex;
+          gap: var(--gab-10-8);
 
-    &:hover svg,
-    &:hover a {
-      opacity: 1;
-    }
-    &:hover {
-      background-color: var(--first-color-hover);
+          .contact-text-correo {
+            line-height: 29px;
+            font-size: var(--font-14);
+          }
+          .status-badge {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: var(--gab-10-8);
+            --color-disp: #4ad968;
+
+            .status-badge-dot {
+              width: 10px;
+              height: 10px;
+              border-radius: 10px;
+              background-color: var(--color-disp);
+            }
+            p {
+              font-weight: 500;
+              padding-left: 5px;
+              font-size: var(--font-14);
+              line-height: 29px;
+              color: var(--color-disp);
+            }
+          }
+        }
+      }
+      .actions-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gab-10-8);
+      }
+
+      .contact-btn {
+        width: fit-content;
+        border-radius: var(--radius-full);
+        font-weight: 900;
+        color: #000;
+        background-color: #fff;
+
+        &.btn-correo {
+          padding: 3.5px 12px 5px 15px;
+        }
+        &.btn-linkedin {
+          display: inline-flex;
+          align-items: center;
+          padding: 4px 12px 5px 15px;
+          max-height: 29px;
+          gap: 4px;
+        }
+        &.btn-github {
+          border: 1px solid #fff;
+          padding: 1px 8px;
+          background-color: transparent;
+        }
+        &.btn-cv-pdf {
+          background-color: var(--first-color);
+          color: #fff;
+          padding: 5px 12px 3.3px 15px;
+          span {
+            vertical-align: middle;
+            font-size: 18px;
+          }
+        }
+      }
     }
   }
 
@@ -1122,15 +1167,16 @@ header {
   }
 
   @media (width > 768px) {
-    padding-top: 58px;
+    padding-top: 68px;
 
-    .box-contact {
-      gap: 36px;
-    }
-
-    .contact-info .box-contact a > svg {
-      width: 34px;
-      height: 32px;
+    .contac-actions {
+      width: 100%;
+      flex-direction: row !important;
+      justify-content: space-between;
+      .actions-portfolio {
+        align-items: end !important;
+        margin-top: 24px;
+      }
     }
 
     small {
