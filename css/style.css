@@ -780,15 +780,17 @@ header {
         }
         .info-link {
           margin-top: 1rem;
-          padding: 5px 0;
           padding: 4px 10px 4.4px 12px;
           border-radius: var(--radius-full);
-          background-color: var(--btn-second-bg);
-          font-weight: 500;
-          text-align: end;
-          color: var(--btn-second-color);
+          font-weight: 900;
+          color: #000;
+          background-color: #fff;
+          background-color: var(--first-color);
+          color: #fff;
           span {
             vertical-align: middle;
+            font-size: 18px;
+            padding-left: 2px;
           }
         }
       }
@@ -1135,7 +1137,6 @@ header {
           }
         }
         &.btn-linkedin {
-          display: inline-flex;
           align-items: center;
           padding: 4px 12px 5px 15px;
           max-height: 29px;
@@ -1147,9 +1148,9 @@ header {
           background-color: transparent;
         }
         &.btn-cv-pdf {
+          padding: 5px 12px 3.3px 15px;
           background-color: var(--first-color);
           color: #fff;
-          padding: 5px 12px 3.3px 15px;
           span {
             vertical-align: middle;
             font-size: 18px;

@@ -45,7 +45,7 @@
     "h2": "Projects",
     "td": "Challenges",
     "ts": "Solutions",
-    "ver-pag": "See page ↗",
+    "ver-pag": "Visit site<span>↗</span>",
 
     "ms-title": "Multi Slider View",
     "ms-d1": "Achieving accessible navigation",
