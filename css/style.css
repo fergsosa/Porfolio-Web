@@ -671,18 +671,13 @@ header {
 
   &::before {
     position: absolute;
-    /* top: 50%; */
-    /* left: 10%; */
-    /* transform: translate(-10%, -50%); */
     width: 100vw;
     height: 100vh;
     content: "";
-    /* background-image: url(img/bg-watch.svg); */
     background-position: start;
     background-size: cover;
     opacity: 0.1;
     z-index: -1;
-    /* transition: 1s; */
   }
 
   .list {
@@ -742,7 +737,6 @@ header {
         aspect-ratio: 16/9;
         border-radius: var(--radius-l);
         width: var(--img-width);
-        /* top: 350px; */
         top: 0px;
       }
 
@@ -751,7 +745,6 @@ header {
         opacity: 0;
         pointer-events: none;
         --fluid-220-24: clamp(13.75rem, 12.438rem + 5.598vw, 15.125rem);
-        /* margin-top: var(--fluid-220-24); */
 
         .info-title {
           font-size: var(--font-25);
@@ -842,9 +835,7 @@ header {
     gap: 16px;
     button {
       --carousel-bg-color: #d2d2d7a3;
-      /* --carousel-bg-color: #519bdfa3; */
       --svg-color: #0000008f;
-      /* --svg-color: #ffffff8f; */
       --width-arrow: 36px;
 
       width: var(--width-arrow);
@@ -863,7 +854,6 @@ header {
       }
       &:hover {
         background-color: #dfdfe3b2;
-        /* background-color: #519bdfb2; */
       }
     }
     #prev svg {
@@ -880,8 +870,6 @@ header {
   @media (width > 768px) {
     --img-width: 65%;
     --info-width: 370px;
-    /* --carousel-box-bg-color: #001b3ac0; */
-    /* --carousel-box-bg-color: #06141bc0; */
     --top-height-title: 60px;
 
     min-height: 100vh;
@@ -891,7 +879,6 @@ header {
         height: 100vh;
         & > img {
           position: absolute;
-          /* top: var(--top-height-title); */
           top: calc(20% + var(--top-height-title));
 
           right: 0;
@@ -905,7 +892,6 @@ header {
         }
         &:nth-child(2) .info {
           position: absolute;
-          /* top: var(--top-height-title); */
           top: calc(25% + var(--top-height-title));
 
           width: var(--info-width);
@@ -1065,9 +1051,6 @@ header {
       margin-top: 50px;
       margin: var(--box-15-17) 0;
       padding: 0 1rem;
-      /* text-wrap: balance; */
-      /* text-align: center; */
-
       font-size: var(--font-20);
       font-weight: 700;
       color: var(--text-color-alpha);
