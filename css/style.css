@@ -782,7 +782,7 @@ header {
           margin-top: 1rem;
           padding: 4px 10px 4.4px 12px;
           border-radius: var(--radius-full);
-          font-weight: bold;
+          font-weight: 700;
           color: #000;
           background-color: #fff;
           background-color: var(--first-color);
@@ -1122,13 +1122,13 @@ header {
       .contact-btn {
         width: fit-content;
         border-radius: var(--radius-full);
-        font-weight: bold;
+        font-weight: 700;
         color: #000;
         background-color: #fff;
         display: inline-flex;
 
         span {
-          font-weight: bold;
+          font-weight: 700;
         }
 
         &.btn-correo {
