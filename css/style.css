@@ -1127,6 +1127,10 @@ header {
         background-color: #fff;
         display: inline-flex;
 
+        span {
+          font-weight: bold;
+        }
+
         &.btn-correo {
           padding: 3.5px 12px 5px 15px;
           font-size: var(--font-16);
