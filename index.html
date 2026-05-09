@@ -1037,11 +1037,19 @@
                 <p data-value="open">Abierto a nuevas oportunidades</p>
               </div>
             </article>
+
             <article class="contact-card">
-              <a class="contact-btn btn-correo" href="#" data-value="copy"
-                >copiar →</a
+              <button
+                class="contact-btn btn-correo"
+                id="btnCopiar"
+                onclick="copiarUrl()"
               >
-              <p class="contact-text-correo">fer.9cba2@gmail.com</p>
+                <span id="btnText">copiar</span>
+                <span id="icoCopy">→</span>
+              </button>
+              <p class="contact-text-correo" id="textCopy">
+                fer.sosa.info@gmail.com
+              </p>
             </article>
           </div>
           <div class="actions-portfolio">

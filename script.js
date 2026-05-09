@@ -1,4 +1,5 @@
 import showSlider from "./js/carousel.js";
+import copiarCorreo from "./js/copiarCorreo.js";
 import language from "./js/language.js";
 import { revealObserver, toggleObserver } from "./js/scroll-observer.js";
 
@@ -22,4 +23,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
   });
 
   showSlider();
+
+  copiarCorreo("textCopy", "btnText", "icoCopy");
 });

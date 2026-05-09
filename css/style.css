@@ -1085,6 +1085,8 @@ header {
           .contact-text-correo {
             line-height: 29px;
             font-size: var(--font-14);
+            user-select: none;
+            pointer-events: none;
           }
           .status-badge {
             display: inline-flex;
@@ -1121,9 +1123,16 @@ header {
         font-weight: 900;
         color: #000;
         background-color: #fff;
+        display: inline-flex;
 
         &.btn-correo {
           padding: 3.5px 12px 5px 15px;
+          font-size: var(--font-16);
+          font-family: var(--font-base);
+          max-height: 29px;
+          #icoCopy {
+            padding-left: 3px;
+          }
         }
         &.btn-linkedin {
           display: inline-flex;
@@ -1134,7 +1143,7 @@ header {
         }
         &.btn-github {
           border: 1px solid #fff;
-          padding: 1px 8px;
+          padding: 4px 10px;
           background-color: transparent;
         }
         &.btn-cv-pdf {
