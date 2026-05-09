@@ -301,7 +301,7 @@ header {
   --bg-navbar-borde: #f5f5f730;
   --color-navbar: var(--text-color);
 
-  --bg-btn-active: var(--btn-first);
+  --bg-btn-active: var(--first-color);
   --color-btn-active: var(--color-white);
   --btn-navbar-active-border: #0003;
 
