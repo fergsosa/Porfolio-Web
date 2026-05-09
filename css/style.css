@@ -664,7 +664,8 @@ header {
   --carousel-text-color: #fff;
 
   position: relative;
-  min-height: 667px;
+  /* min-height: 667px; */
+  min-height: 680px;
   /* min-height: 795px; */
   background-color: var(--carousel-bg-color);
   color: var(--carousel-text-color);
