@@ -97,6 +97,16 @@
     "me-s3": "Validated data using Zod",
     "me-s4": "Structured a clear and scalable REST API",
 
+    "ec-title": "React E-Commerce Experience",
+    "ec-d1": "Achieving accessible navigation",
+    "ec-d2": "Implementing smooth transitions",
+    "ec-d3": "Adapting the interface for various devices",
+    "ec-d4": "Developing visual effects",
+    "ec-s1": "Applied accessibility standards",
+    "ec-s2": "Implemented fluid CSS animations",
+    "ec-s3": "Developed a consistent responsive design",
+    "ec-s4": "Incorporated logic for dynamic interactions",
+
     "bl-title": "Languages Blog",
     "bl-d1": "Documenting technical concepts clearly",
     "bl-d2": "Maintaining consistency across notes",

@@ -47,11 +47,6 @@
   --text-color-alpha: #aeaeb2; /* #0000008f; */
   --text-color-w: var(--color-white);
 
-  /* --btn-first: var(--first-color); */
-  /* --btn-first-color: #fff; */
-  /* --btn-second-bg: #fffd; */
-  /* --btn-second-color: var(--second-color); */
-
   --font-base: "Inter", Helvetica, sans-serif;
   --font-red-hat: "Red Hat Display", sans-serif;
   /* letter-spacing:xxx  16px/scale_400 title lg */
