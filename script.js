@@ -2,6 +2,9 @@ import showSlider from "./js/carousel.js";
 import copiarCorreo from "./js/copiarCorreo.js";
 import language from "./js/language.js";
 import { revealObserver, toggleObserver } from "./js/scroll-observer.js";
+import { inject } from "@vercel/analytics";
+
+inject();
 
 document.addEventListener("DOMContentLoaded", (e) => {
   // language("flags", "[data-section]");
